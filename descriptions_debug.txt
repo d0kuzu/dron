@@ -19,14 +19,6 @@ URL: https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=bb27a197a0c64
 TEXT: purpose of this modification is to change the subject to uas components / 3d printers.  1st psyop battalion requests the following equipment to establish an organic production capability for future training. 
 ========================================
 
-TITLE: MSHA -Skydio X10 Drone
-URL: https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=320b782d564c4f6cb185a58feeb0b262
-TEXT: <p>the drone will be used as part of msha enforcement&rsquo;s pilot program to incorporate state-of-the-art image capturing technology in its investigations and inspections. this technology will greatly enhance the speed, efficiency, accuracy, thoroughness, and safety of accident investigations and inspections. for example, the drone can be quickly deployed at accident sites and access areas that would otherwise be unsafe to capture images of areas, objects, and structures in enhanced 2-dimensional image and video, as well as in 3-dimensions. the pilot program will involve three enforcement districts; and when complete, the plan is to incorporate lessons learned and implement this technology in the rest of enforcement&rsquo;s districts and field offices.<br />
-<br />
-the prospective contractor must have the ability to meet all requirements needed for the skydio x10 starter kit drone part number: dr4eskt2vlg0000na, skydio rtk/ppk for x10 part number: dr4attrtk, skydio nightsense with visible light attachment for x10 part number: dr4attswnav.&nbsp;</p>
-
-========================================
-
 TITLE: UAVs, Thermal Cameras & Training for Bosnia
 URL: https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=b38a5e9a7c7c44afa609bc6eb475e88a
 TEXT: <p>the government has a requirement for 4 uavs with 4 extra battery, 4 uav mountable radiometric thermal cameras, both uav and camera with 2-year warranties, as well as training and certification for 16 personnel on both practical and theoretical uav components from an independent and accredited organization.</p>
@@ -46,15 +38,4 @@ TEXT: <p>the u.s. army contracting command &ndash; redstone arsenal (acc-rsa) is
 TITLE: UAS Components
 URL: https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=dd958c88cf5a43a3adcdfff9a9e552f1
 TEXT: uas components 
-========================================
-
-TITLE: Platoon Level Small Uncrewed Aircraft System (SUAS)
-URL: https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=1db3f797829b4a16a8a4d1e3fbee1213
-TEXT: <p>acc-rsa, in conjunction with pm-uas, is proud to announce the release of the&nbsp;<strong>platoon level small uncrewed aircraft system (suas) call for solutions (c4s) </strong>under the uncrewed aircraft systems (uas) marketplace commercial solution opening (cso) w58rgz-26-s-c001.&nbsp;this call will competitively acquire and/or onboard innovative commercial, vertical take-off and landing (vtol) uncrewed aircraft systems (uas) in the platoon level suas classification. the government reserves the<br />
-right to alter or cancel this call at any time.</p>
-
-<p>the purpose of this effort is to increase current capabilities in the field, advance the army&rsquo;s requirements and accelerate the integration of cutting-edge suas technologies while driving cost efficiencies. this effort aligns with the department of war&#39;s (dow) strategic objective of achieving drone dominance. through this call, the army ensures that industry remains informed of its changing needs, fostering ongoing investment and innovation in suas technologies to address future opportunities.</p>
-
-<p>please read the call and the attachments, in their entirety,&nbsp;for detailed submission information.</p>
-
 ========================================

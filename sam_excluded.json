@@ -1,0 +1,267 @@
+{
+  "generated_at": "2026-05-10T17:28:31.127943+00:00",
+  "excluded_count": 3,
+  "opportunities": [
+    {
+      "notice_id": "d1185c4a34c441659fc0e56c325f5648",
+      "title": "Precision Imagery, Sampling, and Dispersion Drone",
+      "agency": "AGRICULTURE, DEPARTMENT OF.AGRICULTURAL RESEARCH SERVICE.USDA ARS AFM APD",
+      "department_bucket": "USDA / Forest",
+      "posted_date": "2026-04-22",
+      "response_deadline": "2026-05-01T16:00:00-05:00",
+      "type": "Combined Synopsis/Solicitation",
+      "set_aside": "Total Small Business Set-Aside (FAR 19.5)",
+      "match_analysis": {
+        "total_score": 5,
+        "match_level": "Low",
+        "reasons": [
+          "Drone/DFR/delivery keyword",
+          "Small Business set-aside"
+        ],
+        "detected_weights_kg": [],
+        "is_small_business": true
+      },
+      "sam_link": "https://sam.gov/workspace/contract/opp/d1185c4a34c441659fc0e56c325f5648/view",
+      "full_description": "",
+      "raw_api_data": {
+        "noticeId": "d1185c4a34c441659fc0e56c325f5648",
+        "title": "Precision Imagery, Sampling, and Dispersion Drone",
+        "solicitationNumber": "1232SA26Q0469",
+        "fullParentPathName": "AGRICULTURE, DEPARTMENT OF.AGRICULTURAL RESEARCH SERVICE.USDA ARS AFM APD",
+        "fullParentPathCode": "012.12H2.1232SA",
+        "postedDate": "2026-04-22",
+        "type": "Combined Synopsis/Solicitation",
+        "baseType": "Combined Synopsis/Solicitation",
+        "archiveType": "auto15",
+        "archiveDate": "2026-05-16",
+        "typeOfSetAsideDescription": "Total Small Business Set-Aside (FAR 19.5)",
+        "typeOfSetAside": "SBA",
+        "responseDeadLine": "2026-05-01T16:00:00-05:00",
+        "naicsCode": "336411",
+        "naicsCodes": [
+          "336411"
+        ],
+        "classificationCode": "1550",
+        "active": "Yes",
+        "award": null,
+        "pointOfContact": [
+          {
+            "fax": "",
+            "type": "primary",
+            "email": "lynn.hults@usda.gov",
+            "phone": "9124649723",
+            "title": null,
+            "fullName": "lynn Hults"
+          }
+        ],
+        "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=d1185c4a34c441659fc0e56c325f5648",
+        "organizationType": "OFFICE",
+        "officeAddress": {
+          "zipcode": "20705",
+          "city": "BELTSVILLE",
+          "countryCode": "USA",
+          "state": "MD"
+        },
+        "placeOfPerformance": {
+          "city": {
+            "code": "25810",
+            "name": "Florence"
+          },
+          "state": {
+            "code": "SC",
+            "name": "South Carolina"
+          },
+          "zip": "29501",
+          "country": {
+            "code": "USA",
+            "name": "UNITED STATES"
+          }
+        },
+        "additionalInfoLink": null,
+        "uiLink": "https://sam.gov/workspace/contract/opp/d1185c4a34c441659fc0e56c325f5648/view",
+        "links": [
+          {
+            "rel": "self",
+            "href": "https://api.sam.gov/prod/opportunities/v2/search?noticeid=d1185c4a34c441659fc0e56c325f5648&limit=1"
+          }
+        ],
+        "resourceLinks": [
+          "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/34fee8da1bee49188f244eed720cba2e/download",
+          "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/69032fd36cac4e3390bf188ebdaba087/download",
+          "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/84b55b181f6e495aac5f04ae8bb2ccd7/download",
+          "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/9dcea8ffa1f4432db606a1a11d7494b2/download",
+          "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/a069119fd8db46c286cd144f480a1bf0/download"
+        ]
+      }
+    },
+    {
+      "notice_id": "cd80b1c454394318a7197341a24cb469",
+      "title": "Mapping Essentials – Drone Package - Lubbock TX",
+      "agency": "AGRICULTURE, DEPARTMENT OF.AGRICULTURAL RESEARCH SERVICE.USDA ARS AFM APD",
+      "department_bucket": "USDA / Forest",
+      "posted_date": "2026-04-24",
+      "response_deadline": "2026-05-05T08:00:00-05:00",
+      "type": "Combined Synopsis/Solicitation",
+      "set_aside": "Total Small Business Set-Aside (FAR 19.5)",
+      "match_analysis": {
+        "total_score": 5,
+        "match_level": "Low",
+        "reasons": [
+          "Drone/DFR/delivery keyword",
+          "Small Business set-aside"
+        ],
+        "detected_weights_kg": [],
+        "is_small_business": true
+      },
+      "sam_link": "https://sam.gov/workspace/contract/opp/cd80b1c454394318a7197341a24cb469/view",
+      "full_description": "",
+      "raw_api_data": {
+        "noticeId": "cd80b1c454394318a7197341a24cb469",
+        "title": "Mapping Essentials – Drone Package - Lubbock TX",
+        "solicitationNumber": "1232SA26Q0482",
+        "fullParentPathName": "AGRICULTURE, DEPARTMENT OF.AGRICULTURAL RESEARCH SERVICE.USDA ARS AFM APD",
+        "fullParentPathCode": "012.12H2.1232SA",
+        "postedDate": "2026-04-24",
+        "type": "Combined Synopsis/Solicitation",
+        "baseType": "Combined Synopsis/Solicitation",
+        "archiveType": "auto15",
+        "archiveDate": "2026-05-20",
+        "typeOfSetAsideDescription": "Total Small Business Set-Aside (FAR 19.5)",
+        "typeOfSetAside": "SBA",
+        "responseDeadLine": "2026-05-05T08:00:00-05:00",
+        "naicsCode": "336411",
+        "naicsCodes": [
+          "336411"
+        ],
+        "classificationCode": "1550",
+        "active": "Yes",
+        "award": null,
+        "pointOfContact": [
+          {
+            "fax": "",
+            "type": "primary",
+            "email": "shane.pope@usda.gov",
+            "phone": "970-851-3735",
+            "title": null,
+            "fullName": "Shane Pope"
+          }
+        ],
+        "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=cd80b1c454394318a7197341a24cb469",
+        "organizationType": "OFFICE",
+        "officeAddress": {
+          "zipcode": "20705",
+          "city": "BELTSVILLE",
+          "countryCode": "USA",
+          "state": "MD"
+        },
+        "placeOfPerformance": {
+          "city": {
+            "code": "45000",
+            "name": "Lubbock"
+          },
+          "state": {
+            "code": "TX",
+            "name": "Texas"
+          },
+          "zip": "79415",
+          "country": {
+            "code": "USA",
+            "name": "UNITED STATES"
+          }
+        },
+        "additionalInfoLink": null,
+        "uiLink": "https://sam.gov/workspace/contract/opp/cd80b1c454394318a7197341a24cb469/view",
+        "links": [
+          {
+            "rel": "self",
+            "href": "https://api.sam.gov/prod/opportunities/v2/search?noticeid=cd80b1c454394318a7197341a24cb469&limit=1"
+          }
+        ],
+        "resourceLinks": [
+          "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/2463e04c60334ddbb8a56900cb34f91c/download",
+          "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/a51eff80ffac463f819c2013a22943fd/download",
+          "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/bc4c7a3197cb41a986f0acea2986f010/download"
+        ]
+      }
+    },
+    {
+      "notice_id": "b6c0d4b70e6e4b46a4a8274381feef18",
+      "title": "Contractor support instrumentation integration and test flights for Snow4Flow..",
+      "agency": "NATIONAL AERONAUTICS AND SPACE ADMINISTRATION.NATIONAL AERONAUTICS AND SPACE ADMINISTRATION.NASA SHARED SERVICES CENTER",
+      "department_bucket": "NATIONAL AERONAUTICS AND SPACE ADMINISTRATION.NATIONAL AERONAUTICS AND SPACE ADMINISTRATION.NASA SHARED SERVICES CENTER",
+      "posted_date": "2026-05-04",
+      "response_deadline": "2026-05-07T16:00:00-05:00",
+      "type": "Solicitation",
+      "set_aside": null,
+      "match_analysis": {
+        "total_score": 2,
+        "match_level": "Low",
+        "reasons": [
+          "Drone/DFR/delivery keyword"
+        ],
+        "detected_weights_kg": [],
+        "is_small_business": false
+      },
+      "sam_link": "https://sam.gov/workspace/contract/opp/b6c0d4b70e6e4b46a4a8274381feef18/view",
+      "full_description": "",
+      "raw_api_data": {
+        "noticeId": "b6c0d4b70e6e4b46a4a8274381feef18",
+        "title": "Contractor support instrumentation integration and test flights for Snow4Flow..",
+        "solicitationNumber": "80NSSC26932134Q",
+        "fullParentPathName": "NATIONAL AERONAUTICS AND SPACE ADMINISTRATION.NATIONAL AERONAUTICS AND SPACE ADMINISTRATION.NASA SHARED SERVICES CENTER",
+        "fullParentPathCode": "080.8000.80NSSC",
+        "postedDate": "2026-05-04",
+        "type": "Solicitation",
+        "baseType": "Solicitation",
+        "archiveType": "auto15",
+        "archiveDate": "2026-05-22",
+        "typeOfSetAsideDescription": null,
+        "typeOfSetAside": null,
+        "responseDeadLine": "2026-05-07T16:00:00-05:00",
+        "naicsCode": "541715",
+        "naicsCodes": [
+          "541715"
+        ],
+        "classificationCode": "H218",
+        "active": "Yes",
+        "award": null,
+        "pointOfContact": [
+          {
+            "fax": "",
+            "type": "primary",
+            "email": "laura.a.quave@nasa.gov",
+            "phone": "2288136420",
+            "title": null,
+            "fullName": "laura quave"
+          }
+        ],
+        "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=b6c0d4b70e6e4b46a4a8274381feef18",
+        "organizationType": "OFFICE",
+        "officeAddress": {
+          "zipcode": "39529",
+          "city": "STENNIS SPACE CENTER",
+          "countryCode": "USA",
+          "state": "MS"
+        },
+        "placeOfPerformance": {
+          "country": {
+            "code": "USA",
+            "name": "UNITED STATES"
+          }
+        },
+        "additionalInfoLink": null,
+        "uiLink": "https://sam.gov/workspace/contract/opp/b6c0d4b70e6e4b46a4a8274381feef18/view",
+        "links": [
+          {
+            "rel": "self",
+            "href": "https://api.sam.gov/prod/opportunities/v2/search?noticeid=b6c0d4b70e6e4b46a4a8274381feef18&limit=1"
+          }
+        ],
+        "resourceLinks": [
+          "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/1d5d6e5054d3459081a15bb7c9bf1c46/download",
+          "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/9e313f87795c4d228592cb97ce128a85/download"
+        ]
+      }
+    }
+  ]
+}

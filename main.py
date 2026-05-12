@@ -47,13 +47,15 @@ TARGET_DEPARTMENT_KEYWORDS = [
     "fire department",
     "public safety",
     "first responder",
+    # Improvement #2: Added military/defense departments — largest drone buyers
+    "dept of defense",
+    "army",
+    "navy",
+    "air force",
+    "marine corps",
+    "homeland security",
+    "dhs",
 ]
-
-# Suggested additional departments/agencies (uncomment to prioritize):
-# SUGGESTED_DEPARTMENTS = [
-#     "dept of defense", "army", "navy", "air force", "marine corps",
-#     "labor", "justice", "energy", "commerce", "homeland security", "dhs"
-# ]
 
 RFP_TOPIC_KEYWORDS = [
     "drone",
@@ -68,7 +70,37 @@ RFP_TOPIC_KEYWORDS = [
     "forest",
     "wildfire",
     "inspection",
+    # Improvement #3: Keywords matching AIRIS 3 capabilities
+    "vtol",
+    "vertical take-off",
+    "surveillance",
+    "reconnaissance",
+    "bvlos",
+    "beyond visual line of sight",
+    "long range",
+    "suas",
 ]
+
+# Improvement #4 & #5: Brand-name detection
+KNOWN_COMPETITOR_BRANDS = [
+    "skydio", "dji", "draganfly", "autel", "parrot",
+    "freefly", "wingtra", "sensfly", "ebee", "matrice",
+    "mavic", "phantom", "inspire", "agras",
+]
+OR_EQUAL_PATTERNS = [r"\bor equal\b", r"\bor equivalent\b", r"\bor similar\b"]
+
+# Negative keywords: these indicate the opportunity is NOT about buying a drone
+# Counter-UAS = systems to fight drones, not drones themselves
+# Components/kits = spare parts, not complete drone systems
+NEGATIVE_KEYWORDS = [
+    "c-suas", "counter-uas", "counter uas", "counter-unmanned",
+    "anti-drone", "anti drone", "drone shield", "droneshield",
+    "defeat uas", "detect and defeat",
+    "3d print", "3d printer",
+    "repair parts", "spare parts", "replacement parts",
+]
+# Softer penalty: title says "components" or "parts" without "system"/"complete"
+COMPONENTS_ONLY_KEYWORDS = ["components", "parts", "accessories", "kits"]
 
 # AIRIS 3 matching cues (broadened for general heavy lift/delivery)
 PAYLOAD_PATTERNS = [
@@ -82,6 +114,11 @@ PAYLOAD_PATTERNS = [
 WINCH_PATTERNS = [r"\bwinch\b", r"\bgravity release\b", r"\bdrop( system)?\b"]
 PARACHUTE_PATTERNS = [r"\bparachute\b", r"\brecovery system\b"]
 COMMS_PATTERNS = [r"\blte\b", r"\b900\s?mhz\b", r"\bcommand and control\b", r"\bc2\b"]
+
+# Improvement #1: Multiple NAICS codes for broader search
+# 336411 = Aircraft Manufacturing, 334511 = Search/Detection/Navigation,
+# 541715 = R&D Engineering, 423860 = Transportation Equipment
+DEFAULT_NAICS_CODES = "336411,334511,541715,423860"
 
 SMALL_BIZ_CODES = {
     "SBA",
@@ -230,6 +267,18 @@ def score_record(record: Dict[str, Any], full_description: str = "") -> Dict[str
     reasons: List[str] = []
     score = 0
 
+    # Negative keyword check (counter-drone, spare parts, etc.)
+    if any(neg in text for neg in NEGATIVE_KEYWORDS):
+        score -= 5
+        reasons.append("Negative keyword (counter-UAS / parts / 3D print) - penalty")
+
+    # Softer penalty for "components only" orders
+    title_lower = normalize_text(record.get("title"))
+    if any(kw in title_lower for kw in COMPONENTS_ONLY_KEYWORDS):
+        if not any(pos in title_lower for pos in ["system", "complete", "drone", "aircraft"]):
+            score -= 3
+            reasons.append("Title suggests components/parts only, not a complete system")
+
     if has_topic_keyword(text):
         score += 2
         reasons.append("Drone/DFR/delivery keyword")
@@ -278,6 +327,32 @@ def score_record(record: Dict[str, Any], full_description: str = "") -> Dict[str
         score += 2
         reasons.append("LTE / 900MHz / C2 communication cue")
 
+    # Brand-name and 'or equal' analysis
+    has_brand = any(brand in text for brand in KNOWN_COMPETITOR_BRANDS)
+    has_or_equal = contains_any_regex(text, OR_EQUAL_PATTERNS)
+    if has_brand:
+        if has_or_equal:
+            # Improvement #5: "or equal" bonus — we CAN compete
+            score += 2
+            reasons.append("Brand name mentioned with 'or equal' — open to alternatives")
+        else:
+            # Specific brand only — we likely can't compete
+            score -= 3
+            reasons.append("Specific brand required (no 'or equal') — penalty applied")
+
+    # Technical Capability Matching (AIRIS 3 Strengths)
+    if "vtol" in text or "vertical take-off" in text:
+        score += 3
+        reasons.append("VTOL requirement match")
+    
+    if any(kw in text for kw in ["bvlos", "beyond visual line of sight", "long range"]):
+        score += 2
+        reasons.append("BVLOS / Long-range capability match")
+
+    if any(kw in text for kw in ["surveillance", "reconnaissance", "rsta", "monitoring"]):
+        score += 2
+        reasons.append("Surveillance/Reconnaissance mission match")
+
     set_aside_code = normalize_text(record.get("typeOfSetAside"))
     set_aside_desc = normalize_text(record.get("typeOfSetAsideDescription"))
     small_biz = (
@@ -306,6 +381,7 @@ def score_record(record: Dict[str, Any], full_description: str = "") -> Dict[str
         "likely_relevant": likely_relevant,
         "topic_match": topic_match,
         "reasons": reasons,
+        "found_weights_kg": found_weights_kg,
     }
 
 
@@ -391,13 +467,14 @@ def search_opportunities(
         "If you have a US HTTP/HTTPS proxy, set HTTPS_PROXY or pass --https-proxy. "
         "Many consumer VPNs only tunnel the browser unless you enable full-tunnel / system proxy. "
         "Alpha (api-alpha.sam.gov) needs a key from alpha.sam.gov. "
-        "Verify the key under SAM.gov → Account Details (password required to view)."
+        "Verify the key under SAM.gov -> Account Details (password required to view)."
     )
     raise RuntimeError(f"{hint}\nAttempts:\n" + "\n".join(errors))
 
 
-def build_report(opps: List[Dict[str, Any]], api_key: str = "", out_desc: str = "") -> Dict[str, Any]:
-    analyzed: List[Dict[str, Any]] = []
+def build_report(opps: List[Dict[str, Any]], api_key: str = "", out_desc: str = "") -> Tuple[Dict[str, Any], Dict[str, Any]]:
+    analyzed_matched: List[Dict[str, Any]] = []
+    analyzed_excluded: List[Dict[str, Any]] = []
     dept_map: Dict[str, int] = {}
     descriptions_log: List[str] = []
 
@@ -405,6 +482,7 @@ def build_report(opps: List[Dict[str, Any]], api_key: str = "", out_desc: str = 
         # 1. Quick pre-score to see if we should bother fetching description
         scoring = score_record(rec)
         desc_url = rec.get("description")
+        full_text = ""
 
         # If it's a topic match but lacks info, try to fetch full description
         if scoring["topic_match"] and desc_url and api_key:
@@ -417,78 +495,98 @@ def build_report(opps: List[Dict[str, Any]], api_key: str = "", out_desc: str = 
             else:
                 print(f"  [FAIL] Could not fetch description text from {desc_url[:50]}...")
 
-        if not scoring["likely_relevant"]:
-            if scoring["topic_match"]:
-                print(f"Skipped drone opportunity (low score {scoring['score']}): {rec.get('title')}")
-            continue
-
         dept = summarize_department(rec)
         dept_map[dept] = dept_map.get(dept, 0) + 1
-        analyzed.append(
-            {
-                "notice_id": rec.get("noticeId"),
-                "title": rec.get("title"),
-                "agency": rec.get("fullParentPathName"),
-                "department_bucket": dept,
-                "posted_date": rec.get("postedDate"),
-                "response_deadline": rec.get("responseDeadLine"),
-                "type": rec.get("type"),
-                "base_type": rec.get("baseType"),
-                "set_aside_code": rec.get("typeOfSetAside"),
-                "set_aside_description": rec.get("typeOfSetAsideDescription"),
-                "naics_code": rec.get("naicsCode"),
-                "solicitation_number": rec.get("solicitationNumber"),
-                "match_score": scoring["score"],
+
+        item_data = {
+            "notice_id": rec.get("noticeId"),
+            "title": rec.get("title"),
+            "agency": rec.get("fullParentPathName"),
+            "department_bucket": dept,
+            "posted_date": rec.get("postedDate"),
+            "response_deadline": rec.get("responseDeadLine"),
+            "type": rec.get("type"),
+            "set_aside": rec.get("typeOfSetAsideDescription") or rec.get("typeOfSetAside"),
+            "match_analysis": {
+                "total_score": scoring["score"],
                 "match_level": scoring["match_level"],
-                "small_business_priority": scoring["small_business"],
-                "match_reasons": scoring["reasons"],
-                "sam_link": get_ui_link(rec),
-            }
+                "reasons": scoring["reasons"],
+                "detected_weights_kg": [round(w, 2) for w in scoring["found_weights_kg"]],
+                "is_small_business": scoring["small_business"]
+            },
+            "sam_link": get_ui_link(rec),
+            "full_description": full_text,
+            "raw_api_data": rec
+        }
+
+        if not scoring["likely_relevant"]:
+            if scoring["topic_match"]:
+                analyzed_excluded.append(item_data)
+            continue
+
+        analyzed_matched.append(item_data)
+    for lst in [analyzed_matched, analyzed_excluded]:
+        lst.sort(
+            key=lambda x: (
+                0 if x["match_analysis"]["match_level"] == "High" else 1 if x["match_analysis"]["match_level"] == "Medium" else 2,
+                -x["match_analysis"]["total_score"],
+                x.get("posted_date") or "",
+            )
         )
-    analyzed.sort(
-        key=lambda x: (
-            0 if x["match_level"] == "High" else 1 if x["match_level"] == "Medium" else 2,
-            -x["match_score"],
-            x.get("posted_date") or "",
-        )
-    )
 
     departments_ranked = sorted(dept_map.items(), key=lambda x: x[1], reverse=True)
+
     if out_desc and descriptions_log:
         with open(out_desc, "w", encoding="utf-8") as f:
             f.write("\n".join(descriptions_log))
         print(f"Saved {len(descriptions_log)} full descriptions to {out_desc}")
-
-    return {
+    
+    matched_report = {
         "generated_at": dt.datetime.now(dt.timezone.utc).isoformat(),
-        "matched_count": len(analyzed),
+        "matched_count": len(analyzed_matched),
         "departments": [{"name": name, "opportunity_count": count} for name, count in departments_ranked],
-        "opportunities": analyzed,
+        "opportunities": analyzed_matched,
     }
+    excluded_report = {
+        "generated_at": dt.datetime.now(dt.timezone.utc).isoformat(),
+        "excluded_count": len(analyzed_excluded),
+        "opportunities": analyzed_excluded,
+    }
+    return matched_report, excluded_report
 
 
-def render_text_summary(report: Dict[str, Any], top_n: int = 25) -> str:
-    lines: List[str] = []
-    lines.append("SAM.gov Drone Opportunities Report")
+def render_text_summary(report: Dict[str, Any], top_n: int = 25, is_excluded: bool = False) -> str:
+    lines = []
+    status_label = "EXCLUDED (REJECTED)" if is_excluded else "ACCEPTED (MATCHED)"
+    
+    lines.append("=" * 60)
+    lines.append(f"SAM.GOV DRONE ANALYSIS REPORT - {status_label}")
     lines.append(f"Generated at: {report.get('generated_at')}")
-    lines.append(f"Matched opportunities: {report.get('matched_count')}")
-    lines.append("")
-    lines.append("Top departments/agencies:")
-    for dep in report.get("departments", [])[:15]:
-        lines.append(f"- {dep['name']}: {dep['opportunity_count']}")
-    lines.append("")
-    lines.append("Top opportunities:")
-    for idx, item in enumerate(report.get("opportunities", [])[:top_n], start=1):
-        reasons = "; ".join(item.get("match_reasons", [])) or "General drone relevance"
-        lines.append(
-            f"{idx}. [{item.get('match_level')}] {item.get('title')} | "
-            f"{item.get('department_bucket')} | score={item.get('match_score')}"
-        )
-        lines.append(f"   Agency: {item.get('agency')}")
-        lines.append(f"   Deadline: {item.get('response_deadline') or 'N/A'}")
-        lines.append(f"   Set-Aside: {item.get('set_aside_description') or item.get('set_aside_code') or 'N/A'}")
-        lines.append(f"   Why match: {reasons}")
-        lines.append(f"   Link: {item.get('sam_link')}")
+    lines.append(f"Total {status_label.lower()} opportunities: {len(report.get('opportunities', []))}")
+    lines.append("=" * 60 + "\n")
+
+    opps = report.get("opportunities", []) or []
+    for i, opp in enumerate(opps[:top_n], 1):
+        m = opp.get("match_analysis", {})
+        score = m.get("total_score", 0)
+        level = m.get("match_level", "Unknown")
+        reasons = "; ".join(m.get("reasons", []))
+        
+        lines.append(f"{i}. [{level}] {opp.get('title')} | SCORE: {score}")
+        lines.append(f"   Agency:   {opp.get('agency')}")
+        lines.append(f"   Deadline: {opp.get('response_deadline')}")
+        lines.append(f"   Link:     {opp.get('sam_link')}")
+        lines.append(f"   Status:   {'[REJECTED]' if is_excluded else '[ACCEPTED]'}")
+        lines.append(f"   Analysis: {reasons}")
+        
+        desc = opp.get("full_description", "").strip()
+        if desc:
+            # Shorten description for report if it's too long
+            clean_desc = desc[:1000] + ("..." if len(desc) > 1000 else "")
+            lines.append(f"   Description Preview:\n      {clean_desc}")
+        
+        lines.append("-" * 40)
+
     return "\n".join(lines)
 
 
@@ -575,7 +673,7 @@ def parse_args() -> argparse.Namespace:
     p.add_argument("--days-back", type=int, default=30, help="Date window in days (default: 30)")
     p.add_argument("--limit", type=int, default=200, help="Records per request (max 1000)")
     p.add_argument("--offset", type=int, default=0, help="Offset for pagination")
-    p.add_argument("--ncode", default="336411", help="NAICS code filter; empty to disable")
+    p.add_argument("--ncode", default=DEFAULT_NAICS_CODES, help="NAICS codes, comma-separated (default: multiple drone-related codes)")
     p.add_argument("--out-json", default="sam_matches.json", help="Output JSON report path")
     p.add_argument("--out-raw", default="", help="Save raw un-filtered API response to this JSON file")
     p.add_argument("--out-desc", default="descriptions_debug.txt", help="Save all fetched descriptions to this file")
@@ -615,31 +713,66 @@ def main() -> int:
         return 2
 
     try:
-        raw = search_opportunities(
-            api_key=args.api_key,
-            days_back=args.days_back,
-            limit=max(1, min(args.limit, 1000)),
-            offset=max(0, args.offset),
-            ncode=args.ncode.strip(),
-            search_urls=search_urls,
-            proxy_url=proxy_url,
-        )
+        naics_codes = [c.strip() for c in args.ncode.split(",") if c.strip()]
+        if not naics_codes:
+            naics_codes = [""]  # Empty string = no NAICS filter
+
+        all_opportunities: List[Dict[str, Any]] = []
+        seen_ids: set = set()
+
+        for ncode in naics_codes:
+            label = ncode or "ALL"
+            print(f"Searching NAICS={label}...", end=" ")
+            try:
+                raw = search_opportunities(
+                    api_key=args.api_key,
+                    days_back=args.days_back,
+                    limit=max(1, min(args.limit, 1000)),
+                    offset=max(0, args.offset),
+                    ncode=ncode,
+                    search_urls=search_urls,
+                    proxy_url=proxy_url,
+                )
+                batch = raw.get("opportunitiesData", []) or []
+                new_count = 0
+                for opp in batch:
+                    nid = opp.get("noticeId")
+                    if nid and nid not in seen_ids:
+                        seen_ids.add(nid)
+                        all_opportunities.append(opp)
+                        new_count += 1
+                print(f"found {len(batch)} records ({new_count} new)")
+            except Exception as e:
+                print(f"FAILED: {e}")
+
+        if not all_opportunities:
+            print("No opportunities found from any NAICS code.", file=sys.stderr)
+            return 1
+
+        print(f"\nTotal unique opportunities: {len(all_opportunities)}")
+        opportunities = all_opportunities
     except Exception as e:
         print(f"SAM API request failed: {e}", file=sys.stderr)
         return 1
-    opportunities = raw.get("opportunitiesData", []) or []
+
     if args.out_raw:
-        write_json(args.out_raw, raw)
+        write_json(args.out_raw, {"totalRecords": len(opportunities), "opportunitiesData": opportunities})
         print(f"Raw API data saved to {args.out_raw} ({len(opportunities)} records total)")
 
-    report = build_report(opportunities, api_key=args.api_key, out_desc=args.out_desc)
+    report, excluded = build_report(opportunities, api_key=args.api_key, out_desc=args.out_desc)
     write_json(args.out_json, report)
+    write_json("sam_excluded.json", excluded)
 
     summary = render_text_summary(report, top_n=25)
     with open(args.out_txt, "w", encoding="utf-8") as f:
         f.write(summary + "\n")
 
+    summary_excluded = render_text_summary(excluded, top_n=100, is_excluded=True)
+    with open("sam_excluded.txt", "w", encoding="utf-8") as f:
+        f.write(summary_excluded + "\n")
+
     print(summary)
+    print(f"\nSaved {len(report['opportunities'])} matched and {len(excluded['opportunities'])} excluded opportunities.")
 
     if args.telegram:
         if not args.telegram_token or not args.telegram_chat_id:
@@ -649,8 +782,9 @@ def main() -> int:
         if top:
             message_lines = ["Found matching SAM.gov opportunities:"]
             for item in top:
+                analysis = item.get("match_analysis", {})
                 message_lines.append(
-                    f"- [{item['match_level']}] {item['department_bucket']}: {item['title']}\n{item['sam_link']}"
+                    f"- [{analysis.get('match_level')}] {item['department_bucket']}: {item['title']}\n{item['sam_link']}"
                 )
             send_telegram(
                 args.telegram_token, args.telegram_chat_id, "\n\n".join(message_lines), proxy_url=proxy_url

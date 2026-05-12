@@ -1,7 +1,104 @@
-SAM.gov Drone Opportunities Report
-Generated at: 2026-05-09T14:14:17.994283+00:00
-Matched opportunities: 0
+============================================================
+SAM.GOV DRONE ANALYSIS REPORT - ACCEPTED (MATCHED)
+Generated at: 2026-05-10T17:28:31.127858+00:00
+Total accepted (matched) opportunities: 14
+============================================================
 
-Top departments/agencies:
-
-Top opportunities:
+1. [Medium] Unmanned aerial surveillance drone  | SCORE: 10
+   Agency:   DEPT OF DEFENSE.DEPT OF THE ARMY.AMC.ACC.MISSION INSTALLATION CONTRACTING COMMAND.419TH CSB.W6QM MICC-FT DRUM
+   Deadline: 2026-04-21T11:00:00-06:00
+   Link:     https://sam.gov/workspace/contract/opp/876ad75cb1054125981b73c5e085a383/view
+   Status:   [ACCEPTED]
+   Analysis: Drone/DFR/delivery keyword; Target department/agency match; Surveillance/Reconnaissance mission match; Small Business set-aside
+----------------------------------------
+2. [Medium] DRONE | SCORE: 8
+   Agency:   DEPT OF DEFENSE.DEPT OF THE ARMY.AMC.ACC.MISSION INSTALLATION CONTRACTING COMMAND.419TH CSB.W6QM MICC-FT DRUM
+   Deadline: 2026-04-24T06:50:00-06:00
+   Link:     https://sam.gov/workspace/contract/opp/e45eee819d1044cdbea1f41fc7d9bd5a/view
+   Status:   [ACCEPTED]
+   Analysis: Drone/DFR/delivery keyword; Target department/agency match; Small Business set-aside
+----------------------------------------
+3. [Medium] Drones | SCORE: 8
+   Agency:   DEPT OF DEFENSE.DEPT OF THE ARMY.AMC.ACC.MISSION INSTALLATION CONTRACTING COMMAND.419TH CSB.W6QM MICC-FT DRUM
+   Deadline: 2026-05-13T13:00:00-07:00
+   Link:     https://sam.gov/workspace/contract/opp/aac611a16140462186fa904c0332ce1b/view
+   Status:   [ACCEPTED]
+   Analysis: Drone/DFR/delivery keyword; Target department/agency match; Small Business set-aside
+----------------------------------------
+4. [Medium] Battalion Reconnaissance Uncrewed Aircraft Systems (UAS) | SCORE: 7
+   Agency:   DEPT OF DEFENSE.DEPT OF THE ARMY.AMC.ACC.ACC-CTRS.ACC RSA.W6QK ACC-RSA
+   Deadline: 2026-05-05T23:59:00-05:00
+   Link:     https://sam.gov/workspace/contract/opp/1ae84253396340848943f71a741a1015/view
+   Status:   [ACCEPTED]
+   Analysis: Drone/DFR/delivery keyword; Target department/agency match; Surveillance/Reconnaissance mission match
+----------------------------------------
+5. [Medium] DRAGANFLY HEAVY LIFT DRONE  | SCORE: 7
+   Agency:   DEPT OF DEFENSE.DEPT OF THE ARMY.AMC.ACC.MISSION INSTALLATION CONTRACTING COMMAND.419TH CSB.W6QM MICC-FT DRUM
+   Deadline: 2026-05-15T23:55:00-05:00
+   Link:     https://sam.gov/workspace/contract/opp/77c669fc2fa6436b83669b933c8891fd/view
+   Status:   [ACCEPTED]
+   Analysis: Drone/DFR/delivery keyword; Target department/agency match; Generic Heavy Lift/Cargo keyword match; Specific brand required (no 'or equal') — penalty applied; Small Business set-aside
+----------------------------------------
+6. [Low] South Korean S-UAS BPAs | SCORE: 5
+   Agency:   DEPT OF DEFENSE.DEPT OF THE ARMY.AMC.ACC.ACC-OO.411TH CSB.0411 AQ HQ     CONTRACT AUG
+   Deadline: 2026-06-10T10:00:00+09:00
+   Link:     https://sam.gov/workspace/contract/opp/b8214aa8ae814a198055edc5b69f6be2/view
+   Status:   [ACCEPTED]
+   Analysis: Drone/DFR/delivery keyword; Target department/agency match
+----------------------------------------
+7. [Low] Call for Solutions for UAS Marketplace Onboarding of Group 1 and 2 Uncrewed Aircraft Systems (UAS) and Launched Effects (LE) | SCORE: 5
+   Agency:   DEPT OF DEFENSE.DEPT OF THE ARMY.AMC.ACC.ACC-CTRS.ACC RSA.W6QK ACC-RSA
+   Deadline: 2026-04-17T23:59:00-05:00
+   Link:     https://sam.gov/workspace/contract/opp/a1c5ab527bde44a5ad422b04ccccc1bb/view
+   Status:   [ACCEPTED]
+   Analysis: Drone/DFR/delivery keyword; Target department/agency match
+----------------------------------------
+8. [Low] Platoon Level Small Uncrewed Aircraft System (SUAS) | SCORE: 5
+   Agency:   DEPT OF DEFENSE.DEPT OF THE ARMY.AMC.ACC.ACC-CTRS.ACC RSA.W6QK ACC-RSA
+   Deadline: 2026-05-15T17:00:00-05:00
+   Link:     https://sam.gov/workspace/contract/opp/1db3f797829b4a16a8a4d1e3fbee1213/view
+   Status:   [ACCEPTED]
+   Analysis: Drone/DFR/delivery keyword; Target department/agency match
+----------------------------------------
+9. [Low] UAS Components | SCORE: 5
+   Agency:   DEPT OF DEFENSE.DEPT OF THE ARMY.AMC.ACC.MISSION INSTALLATION CONTRACTING COMMAND.419TH CSB.W6QM MICC-FT DRUM
+   Deadline: 2026-05-06T09:00:00-05:00
+   Link:     https://sam.gov/workspace/contract/opp/dd958c88cf5a43a3adcdfff9a9e552f1/view
+   Status:   [ACCEPTED]
+   Analysis: Title suggests components/parts only, not a complete system; Drone/DFR/delivery keyword; Target department/agency match; Small Business set-aside
+----------------------------------------
+10. [Low] UAVs, Thermal Cameras & Training for Bosnia | SCORE: 5
+   Agency:   DEPT OF DEFENSE.DEPT OF THE ARMY.AMC.ACC.ACC-OO.409TH CSB.0409 AQ HQ     CONTRACT
+   Deadline: 2026-05-11T12:00:00+02:00
+   Link:     https://sam.gov/workspace/contract/opp/b38a5e9a7c7c44afa609bc6eb475e88a/view
+   Status:   [ACCEPTED]
+   Analysis: Drone/DFR/delivery keyword; Target department/agency match
+----------------------------------------
+11. [Low] C-SUAS Equipment | SCORE: 3
+   Agency:   DEPT OF DEFENSE.DEPT OF THE AIR FORCE.AIR EDUCATION AND TRAINING COMMAND.FA4419   97 CONF  CC
+   Deadline: 2026-05-06T11:00:00-05:00
+   Link:     https://sam.gov/workspace/contract/opp/6b07c8f9ddbd47c1b85f3afd1e04db5e/view
+   Status:   [ACCEPTED]
+   Analysis: Negative keyword (counter-UAS / parts / 3D print) - penalty; Drone/DFR/delivery keyword; Target department/agency match; Small Business set-aside
+----------------------------------------
+12. [Low] 82 SFS Drone Shield | SCORE: 3
+   Agency:   DEPT OF DEFENSE.DEPT OF THE AIR FORCE.AIR EDUCATION AND TRAINING COMMAND.FA3020  82 CONS LGC
+   Deadline: 2026-05-07T12:30:00-05:00
+   Link:     https://sam.gov/workspace/contract/opp/5133e24d31a543198e409d191b0a2c66/view
+   Status:   [ACCEPTED]
+   Analysis: Negative keyword (counter-UAS / parts / 3D print) - penalty; Drone/DFR/delivery keyword; Target department/agency match; Small Business set-aside
+----------------------------------------
+13. [Low] 24 Small UAS kits and 3D print files | SCORE: 0
+   Agency:   DEPT OF DEFENSE.DEPT OF THE ARMY.NATIONAL GUARD BUREAU.JFHQ USPFO OR.USPFO OR PROCUREMENT.W7NW USPFO ACTIVITY OR ARNG
+   Deadline: 2026-05-19T11:00:00-07:00
+   Link:     https://sam.gov/workspace/contract/opp/f6673f1748674560907bcabc3a6048f0/view
+   Status:   [ACCEPTED]
+   Analysis: Negative keyword (counter-UAS / parts / 3D print) - penalty; Title suggests components/parts only, not a complete system; Drone/DFR/delivery keyword; Target department/agency match; Small Business set-aside
+----------------------------------------
+14. [Low] UAS components / 3D printers | SCORE: 0
+   Agency:   DEPT OF DEFENSE.DEPT OF THE ARMY.AMC.ACC.MISSION INSTALLATION CONTRACTING COMMAND.419TH CSB.W6QM MICC-FT DRUM
+   Deadline: 2026-05-08T10:40:00+05:00
+   Link:     https://sam.gov/workspace/contract/opp/bb27a197a0c64d55876f53eb9b7eae97/view
+   Status:   [ACCEPTED]
+   Analysis: Negative keyword (counter-UAS / parts / 3D print) - penalty; Title suggests components/parts only, not a complete system; Drone/DFR/delivery keyword; Target department/agency match; Small Business set-aside
+----------------------------------------
