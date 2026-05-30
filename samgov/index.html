@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SAM.gov Tender Bot</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="topbar" aria-label="Верхняя панель">
+      <a class="brand" href="/" aria-label="SAM.gov Tender Bot">
+        <span class="brand-mark" aria-hidden="true">SG</span>
+        <span>SAM.gov Tender Bot</span>
+      </a>
+      <span class="status-pill">TXT report</span>
+    </header>
+
+    <main class="shell">
+      <section class="hero" aria-labelledby="page-title">
+        <p class="eyebrow">Tender search automation</p>
+        <h1 id="page-title">Поиск тендеров SAM.gov</h1>
+        <p class="lead">
+          Нажмите кнопку, чтобы запустить Python-скрипт и скачать готовый TXT-файл с результатами.
+        </p>
+
+        <button class="run-button" id="runButton" type="button">
+          <span class="button-main">Запустить бота</span>
+          <span class="button-sub">Скачать отчет TXT</span>
+        </button>
+
+        <p class="status-text" id="statusText" role="status" aria-live="polite">
+          Готов к запуску.
+        </p>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <span>Local Python bridge</span>
+      <span>Minimal interface</span>
+    </footer>
+
+    <script src="app.js"></script>
+  </body>
+</html>

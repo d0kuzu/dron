@@ -1,0 +1,229 @@
+:root {
+  color-scheme: light;
+  --page: #eee4d4;
+  --paper: #f8f2e8;
+  --paper-strong: #fffaf1;
+  --ink: #2f2a24;
+  --muted: #70675c;
+  --line: #d7c8b5;
+  --accent: #7a5636;
+  --accent-dark: #563820;
+  --accent-soft: #dfc7aa;
+  --shadow: 0 22px 60px rgba(67, 45, 25, 0.14);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  margin: 0;
+  font-family:
+    Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+    sans-serif;
+  color: var(--ink);
+  background:
+    linear-gradient(180deg, rgba(255, 250, 241, 0.88), rgba(238, 228, 212, 0.94)),
+    var(--page);
+}
+
+body::before {
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  pointer-events: none;
+  content: "";
+  background-image:
+    linear-gradient(rgba(122, 86, 54, 0.045) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(122, 86, 54, 0.045) 1px, transparent 1px);
+  background-size: 44px 44px;
+  mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.8), transparent 82%);
+}
+
+.topbar,
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: min(1120px, calc(100% - 40px));
+  margin: 0 auto;
+}
+
+.topbar {
+  min-height: 78px;
+}
+
+.brand {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  color: inherit;
+  font-size: 15px;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.brand-mark {
+  display: inline-grid;
+  width: 42px;
+  height: 42px;
+  place-items: center;
+  color: var(--paper-strong);
+  background: var(--accent-dark);
+  border-radius: 6px;
+  font-size: 13px;
+  letter-spacing: 0;
+}
+
+.status-pill {
+  display: inline-flex;
+  align-items: center;
+  min-height: 34px;
+  padding: 0 13px;
+  color: var(--accent-dark);
+  background: rgba(255, 250, 241, 0.72);
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  font-size: 13px;
+  font-weight: 650;
+}
+
+.shell {
+  display: grid;
+  min-height: calc(100vh - 144px);
+  place-items: center;
+  padding: 36px 20px 54px;
+}
+
+.hero {
+  width: min(760px, 100%);
+  text-align: center;
+}
+
+.eyebrow {
+  margin: 0 0 18px;
+  color: var(--accent);
+  font-size: 13px;
+  font-weight: 750;
+  letter-spacing: 0;
+  text-transform: uppercase;
+}
+
+h1 {
+  max-width: 720px;
+  margin: 0 auto;
+  font-size: clamp(42px, 8vw, 76px);
+  font-weight: 800;
+  line-height: 0.98;
+  letter-spacing: 0;
+}
+
+.lead {
+  width: min(560px, 100%);
+  margin: 22px auto 38px;
+  color: var(--muted);
+  font-size: 18px;
+  line-height: 1.65;
+}
+
+.run-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 7px;
+  width: min(430px, 100%);
+  min-height: 118px;
+  padding: 24px 28px;
+  color: var(--paper-strong);
+  background: var(--accent-dark);
+  border: 1px solid rgba(86, 56, 32, 0.9);
+  border-radius: 8px;
+  box-shadow: var(--shadow);
+  cursor: pointer;
+  transition:
+    transform 180ms ease,
+    background 180ms ease,
+    box-shadow 180ms ease;
+}
+
+.run-button:hover {
+  background: #68462a;
+  box-shadow: 0 24px 66px rgba(67, 45, 25, 0.19);
+  transform: translateY(-2px);
+}
+
+.run-button:focus-visible {
+  outline: 3px solid var(--accent-soft);
+  outline-offset: 5px;
+}
+
+.run-button:disabled {
+  cursor: progress;
+  opacity: 0.72;
+  transform: none;
+}
+
+.button-main {
+  font-size: clamp(24px, 6vw, 36px);
+  font-weight: 800;
+  line-height: 1.08;
+}
+
+.button-sub {
+  color: #e9d8c1;
+  font-size: 14px;
+  font-weight: 650;
+}
+
+.status-text {
+  min-height: 24px;
+  margin: 24px 0 0;
+  color: var(--muted);
+  font-size: 15px;
+}
+
+.status-text.is-error {
+  color: #8b2d22;
+}
+
+.status-text.is-success {
+  color: #4f6b38;
+}
+
+.footer {
+  min-height: 66px;
+  color: var(--muted);
+  border-top: 1px solid rgba(122, 86, 54, 0.18);
+  font-size: 13px;
+}
+
+@media (max-width: 620px) {
+  .topbar,
+  .footer {
+    width: min(100% - 28px, 1120px);
+  }
+
+  .status-pill {
+    display: none;
+  }
+
+  .shell {
+    min-height: calc(100vh - 132px);
+    padding-top: 22px;
+  }
+
+  .lead {
+    font-size: 16px;
+  }
+
+  .run-button {
+    min-height: 108px;
+  }
+
+  .footer {
+    justify-content: center;
+    gap: 16px;
+  }
+}
