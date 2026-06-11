@@ -467,12 +467,16 @@ document.addEventListener('DOMContentLoaded', () => {
     async function loadData() {
         try {
             const res = await fetch('/api/data');
-            if (!res.ok) throw new Error('Ошибка сети');
+            if (!res.ok) {
+                const text = await res.text();
+                throw new Error(`HTTP ${res.status}: ${text}`);
+            }
             const data = await res.json();
             renderData(data);
         } catch (error) {
             console.error('Ошибка загрузки данных:', error);
-            lastUpdatedEl.textContent = 'Ошибка загрузки данных. Убедитесь, что файлы существуют.';
+            lastUpdatedEl.textContent = `Детали ошибки: ${error.message}`;
+            lastUpdatedEl.style.color = 'var(--danger-color)';
         }
     }
 
