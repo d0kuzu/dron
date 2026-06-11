@@ -5,6 +5,11 @@ from fastapi import FastAPI, HTTPException
 from fastapi.staticfiles import StaticFiles
 from fastapi.responses import JSONResponse, FileResponse
 from dotenv import load_dotenv
+import mimetypes
+
+# Fix for Windows registry sometimes having wrong mimetypes
+mimetypes.add_type('text/css', '.css')
+mimetypes.add_type('application/javascript', '.js')
 
 load_dotenv()
 
