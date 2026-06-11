@@ -2,25 +2,16 @@ import os
 import subprocess
 import json
 from fastapi import FastAPI, HTTPException
-from fastapi.staticfiles import StaticFiles
 from fastapi.responses import JSONResponse, FileResponse
 from dotenv import load_dotenv
-import mimetypes
-
-# Fix for Windows registry sometimes having wrong mimetypes
-mimetypes.add_type('text/css', '.css')
-mimetypes.add_type('application/javascript', '.js')
 
 load_dotenv()
 
 app = FastAPI()
 
-# Mount static directory for JS and CSS
-app.mount("/static", StaticFiles(directory="static"), name="static")
-
 @app.get("/")
 async def root():
-    # Serve index.html from static folder
+    # Serve index.html
     return FileResponse("static/index.html")
 
 @app.get("/api/data")

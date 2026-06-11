@@ -4,8 +4,325 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Drone Opportunity Analyzer</title>
-    <link rel="stylesheet" href="/static/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+:root {
+    --bg-color: #0f172a;
+    --panel-bg: rgba(30, 41, 59, 0.7);
+    --panel-border: rgba(255, 255, 255, 0.1);
+    --text-primary: #f8fafc;
+    --text-secondary: #94a3b8;
+    --accent-color: #3b82f6;
+    --accent-hover: #2563eb;
+    --danger-color: #ef4444;
+    --success-color: #10b981;
+    --card-bg: rgba(30, 41, 59, 0.5);
+    --card-hover: rgba(30, 41, 59, 0.9);
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: var(--bg-color);
+    color: var(--text-primary);
+    min-height: 100vh;
+    background-image: radial-gradient(circle at 15% 50%, rgba(59, 130, 246, 0.15), transparent 25%),
+                      radial-gradient(circle at 85% 30%, rgba(16, 185, 129, 0.15), transparent 25%);
+    background-attachment: fixed;
+}
+
+.app-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+.glass-panel {
+    background: var(--panel-bg);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid var(--panel-border);
+    border-radius: 16px;
+}
+
+header {
+    padding: 1.5rem 2rem;
+    margin-bottom: 2rem;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+h1 {
+    font-size: 1.8rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+    background: linear-gradient(to right, #60a5fa, #34d399);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.subtitle {
+    color: var(--text-secondary);
+    font-size: 0.95rem;
+}
+
+button {
+    font-family: inherit;
+    cursor: pointer;
+    border: none;
+    border-radius: 8px;
+    font-weight: 600;
+    transition: all 0.2s ease;
+}
+
+.primary-btn {
+    background-color: var(--accent-color);
+    color: white;
+    padding: 0.75rem 1.5rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    box-shadow: 0 4px 14px 0 rgba(59, 130, 246, 0.39);
+}
+
+.primary-btn:hover:not(:disabled) {
+    background-color: var(--accent-hover);
+    transform: translateY(-1px);
+    box-shadow: 0 6px 20px rgba(59, 130, 246, 0.23);
+}
+
+.primary-btn:disabled {
+    opacity: 0.7;
+    cursor: not-allowed;
+}
+
+.secondary-btn {
+    background-color: transparent;
+    color: var(--text-primary);
+    border: 1px solid var(--panel-border);
+    padding: 0.75rem 1.5rem;
+}
+
+.secondary-btn:hover {
+    background-color: rgba(255, 255, 255, 0.05);
+}
+
+.loader {
+    width: 20px;
+    height: 20px;
+    border: 3px solid rgba(255, 255, 255, 0.3);
+    border-radius: 50%;
+    border-top-color: white;
+    animation: spin 1s ease-in-out infinite;
+}
+
+@keyframes spin {
+    to { transform: rotate(360deg); }
+}
+
+.hidden {
+    display: none !important;
+}
+
+/* Tabs */
+.tabs {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.tab-btn {
+    background: none;
+    color: var(--text-secondary);
+    padding: 0.75rem 1.5rem;
+    border-bottom: 2px solid transparent;
+    border-radius: 0;
+    font-size: 1.05rem;
+}
+
+.tab-btn.active {
+    color: var(--text-primary);
+    border-bottom-color: var(--accent-color);
+}
+
+.tab-btn:hover:not(.active) {
+    color: var(--text-primary);
+}
+
+.tab-content {
+    display: none;
+}
+
+.tab-content.active {
+    display: block;
+    animation: fadeIn 0.3s ease;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* Cards */
+.cards-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+    gap: 1.5rem;
+}
+
+.card {
+    background: var(--card-bg);
+    border: 1px solid var(--panel-border);
+    border-radius: 12px;
+    padding: 1.5rem;
+    transition: all 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.card:hover {
+    background: var(--card-hover);
+    transform: translateY(-4px);
+    border-color: rgba(255, 255, 255, 0.2);
+    box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.3);
+}
+
+.card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 1rem;
+}
+
+.card-title {
+    font-size: 1.1rem;
+    font-weight: 600;
+    line-height: 1.4;
+    color: var(--text-primary);
+}
+
+.score-badge {
+    background: rgba(59, 130, 246, 0.2);
+    color: #60a5fa;
+    padding: 0.25rem 0.6rem;
+    border-radius: 20px;
+    font-weight: 700;
+    font-size: 0.9rem;
+    white-space: nowrap;
+}
+
+.card-body {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    flex-grow: 1;
+}
+
+.info-row {
+    display: flex;
+    gap: 0.5rem;
+    font-size: 0.9rem;
+}
+
+.info-label {
+    color: var(--text-secondary);
+    min-width: 80px;
+}
+
+.info-value {
+    color: var(--text-primary);
+    word-break: break-word;
+}
+
+.reasons-list {
+    margin-top: 0.5rem;
+    padding-top: 0.5rem;
+    border-top: 1px solid var(--panel-border);
+    font-size: 0.85rem;
+    color: var(--text-secondary);
+}
+
+.reasons-list ul {
+    padding-left: 1.2rem;
+    margin-top: 0.3rem;
+}
+
+.card-footer {
+    margin-top: auto;
+    padding-top: 1rem;
+}
+
+.link-btn {
+    display: inline-block;
+    background: rgba(255, 255, 255, 0.05);
+    color: var(--text-primary);
+    text-decoration: none;
+    padding: 0.6rem 1rem;
+    border-radius: 6px;
+    font-size: 0.9rem;
+    font-weight: 500;
+    text-align: center;
+    width: 100%;
+    transition: background 0.2s;
+    border: 1px solid var(--panel-border);
+}
+
+.link-btn:hover {
+    background: rgba(255, 255, 255, 0.1);
+}
+
+/* Dialog */
+.dialog-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.7);
+    backdrop-filter: blur(4px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+    animation: fadeIn 0.2s ease;
+}
+
+.dialog {
+    width: 90%;
+    max-width: 450px;
+    padding: 2rem;
+    text-align: center;
+}
+
+.dialog h3 {
+    font-size: 1.4rem;
+    margin-bottom: 1rem;
+    color: var(--text-primary);
+}
+
+.dialog p {
+    color: var(--text-secondary);
+    margin-bottom: 1.5rem;
+    line-height: 1.5;
+}
+
+.dialog-actions {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+    </style>
 </head>
 <body>
     <div class="app-container">
@@ -53,6 +370,161 @@
             </div>
         </main>
     </div>
-    <script src="/static/app.js"></script>
+    <script>
+document.addEventListener('DOMContentLoaded', () => {
+    const refreshBtn = document.getElementById('refresh-btn');
+    const btnText = refreshBtn.querySelector('.btn-text');
+    const loader = refreshBtn.querySelector('.loader');
+    const lastUpdatedEl = document.getElementById('last-updated');
+    
+    const confirmDialog = document.getElementById('confirm-dialog');
+    const confirmBtn = document.getElementById('confirm-btn');
+    const cancelBtn = document.getElementById('cancel-btn');
+    
+    const matchedCards = document.getElementById('matched-cards');
+    const excludedCards = document.getElementById('excluded-cards');
+    
+    const tabBtns = document.querySelectorAll('.tab-btn');
+    const tabContents = document.querySelectorAll('.tab-content');
+
+    // Tabs logic
+    tabBtns.forEach(btn => {
+        btn.addEventListener('click', () => {
+            tabBtns.forEach(b => b.classList.remove('active'));
+            tabContents.forEach(c => c.classList.remove('active'));
+            
+            btn.classList.add('active');
+            document.getElementById(btn.dataset.target).classList.add('active');
+        });
+    });
+
+    // Formatting date
+    function formatDate(isoString) {
+        if (!isoString) return 'Неизвестно';
+        const date = new Date(isoString);
+        return new Intl.DateTimeFormat('ru-RU', {
+            day: 'numeric', month: 'long', year: 'numeric',
+            hour: '2-digit', minute: '2-digit'
+        }).format(date);
+    }
+
+    // Creating Card HTML
+    function createCard(item) {
+        const score = item.match_analysis?.total_score ?? 0;
+        const reasons = item.match_analysis?.reasons || [];
+        
+        const reasonsHtml = reasons.length > 0 
+            ? `<div class="reasons-list">
+                <strong>Причины:</strong>
+                <ul>${reasons.map(r => `<li>${r}</li>`).join('')}</ul>
+               </div>` 
+            : '';
+
+        return `
+            <div class="card">
+                <div class="card-header">
+                    <div class="card-title">${item.title || 'Без названия'}</div>
+                    <div class="score-badge">Счет: ${score}</div>
+                </div>
+                <div class="card-body">
+                    <div class="info-row">
+                        <span class="info-label">Агентство:</span>
+                        <span class="info-value">${item.department_bucket || item.agency || 'Н/Д'}</span>
+                    </div>
+                    <div class="info-row">
+                        <span class="info-label">Дедлайн:</span>
+                        <span class="info-value">${item.response_deadline || 'Н/Д'}</span>
+                    </div>
+                    ${reasonsHtml}
+                </div>
+                <div class="card-footer">
+                    <a href="${item.sam_link}" target="_blank" class="link-btn">Открыть на SAM.gov</a>
+                </div>
+            </div>
+        `;
+    }
+
+    // Render data
+    function renderData(data) {
+        const matched = data.matched?.opportunities || [];
+        const excluded = data.excluded?.opportunities || [];
+        const generatedAt = data.matched?.generated_at;
+
+        if (generatedAt) {
+            lastUpdatedEl.textContent = `Последний запуск: ${formatDate(generatedAt)}`;
+        }
+
+        matchedCards.innerHTML = matched.length > 0 
+            ? matched.map(createCard).join('') 
+            : '<p class="subtitle">Нет подходящих заказов</p>';
+            
+        excludedCards.innerHTML = excluded.length > 0 
+            ? excluded.map(createCard).join('') 
+            : '<p class="subtitle">Нет отклоненных заказов</p>';
+    }
+
+    // Fetch initial data
+    async function loadData() {
+        try {
+            const res = await fetch('/api/data');
+            if (!res.ok) throw new Error('Ошибка сети');
+            const data = await res.json();
+            renderData(data);
+        } catch (error) {
+            console.error('Ошибка загрузки данных:', error);
+            lastUpdatedEl.textContent = 'Ошибка загрузки данных. Убедитесь, что файлы существуют.';
+        }
+    }
+
+    // Refresh action
+    refreshBtn.addEventListener('click', () => {
+        confirmDialog.classList.remove('hidden');
+    });
+
+    cancelBtn.addEventListener('click', () => {
+        confirmDialog.classList.add('hidden');
+    });
+
+    confirmBtn.addEventListener('click', async () => {
+        confirmDialog.classList.add('hidden');
+        
+        // UI loading state
+        refreshBtn.disabled = true;
+        btnText.textContent = 'Обработка...';
+        loader.classList.remove('hidden');
+        lastUpdatedEl.textContent = 'Скрипт выполняется, пожалуйста подождите...';
+        
+        try {
+            const res = await fetch('/api/refresh', { method: 'POST' });
+            if (!res.ok) {
+                const err = await res.json();
+                throw new Error(err.detail || 'Ошибка выполнения');
+            }
+            const data = await res.json();
+            renderData(data);
+        } catch (error) {
+            console.error('Ошибка при обновлении:', error);
+            
+            const errorStr = error.message.toLowerCase();
+            if (errorStr.includes('429') || errorStr.includes('throttled') || errorStr.includes('quota') || errorStr.includes('too many requests')) {
+                alert('Лимит запросов исчерпан! SAM.gov временно заблокировал доступ (обычно до следующего дня). На экране остались старые данные.');
+                await loadData(); 
+                lastUpdatedEl.textContent = 'Внимание: Достигнут суточный лимит запросов SAM.gov';
+                lastUpdatedEl.style.color = 'var(--danger-color)';
+            } else {
+                alert(`Произошла ошибка: ${error.message}`);
+                await loadData(); // Revert to old data
+            }
+        } finally {
+            refreshBtn.disabled = false;
+            btnText.textContent = 'Загрузить новые';
+            loader.classList.add('hidden');
+        }
+    });
+
+    // Init
+    loadData();
+});
+    </script>
 </body>
 </html>
