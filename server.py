@@ -16,24 +16,26 @@ async def root():
 
 @app.get("/api/data")
 async def get_data():
-    try:
-        with open("sam_matches.json", "r", encoding="utf-8") as f:
-            matched = json.load(f)
-        
-        excluded = {"opportunities": []}
-        if os.path.exists("sam_excluded.json"):
-            try:
-                with open("sam_excluded.json", "r", encoding="utf-8") as f:
-                    excluded = json.load(f)
-            except Exception:
-                pass
+    matched = {"opportunities": []}
+    if os.path.exists("sam_matches.json"):
+        try:
+            with open("sam_matches.json", "r", encoding="utf-8") as f:
+                matched = json.load(f)
+        except Exception:
+            pass
+
+    excluded = {"opportunities": []}
+    if os.path.exists("sam_excluded.json"):
+        try:
+            with open("sam_excluded.json", "r", encoding="utf-8") as f:
+                excluded = json.load(f)
+        except Exception:
+            pass
             
-        return {
-            "matched": matched,
-            "excluded": excluded
-        }
-    except Exception as e:
-        raise HTTPException(status_code=500, detail=str(e))
+    return {
+        "matched": matched,
+        "excluded": excluded
+    }
 
 @app.post("/api/refresh")
 async def refresh_data():
