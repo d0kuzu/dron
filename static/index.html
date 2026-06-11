@@ -466,7 +466,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // Fetch initial data
     async function loadData() {
         try {
-            const res = await fetch('/api/data');
+            const res = await fetch('/drone-data');
             if (!res.ok) {
                 const text = await res.text();
                 throw new Error(`HTTP ${res.status}: ${text}`);
@@ -499,7 +499,7 @@ document.addEventListener('DOMContentLoaded', () => {
         lastUpdatedEl.textContent = 'Скрипт выполняется, пожалуйста подождите...';
         
         try {
-            const res = await fetch('/api/refresh', { method: 'POST' });
+            const res = await fetch('/drone-refresh', { method: 'POST' });
             if (!res.ok) {
                 const err = await res.json();
                 throw new Error(err.detail || 'Ошибка выполнения');

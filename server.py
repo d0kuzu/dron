@@ -14,7 +14,7 @@ async def root():
     # Serve index.html
     return FileResponse("static/index.html")
 
-@app.get("/api/data")
+@app.get("/drone-data")
 async def get_data():
     matched = {"opportunities": []}
     if os.path.exists("sam_matches.json"):
@@ -37,7 +37,7 @@ async def get_data():
         "excluded": excluded
     }
 
-@app.post("/api/refresh")
+@app.post("/drone-refresh")
 async def refresh_data():
     api_key = os.getenv("SAM_API_KEY")
     if not api_key:
