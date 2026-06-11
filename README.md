@@ -2,25 +2,21 @@
 
 This project is designed to automatically fetch and evaluate drone (UAV) related procurement opportunities from the SAM.gov API. The application consists of a Python scraper script and a web interface (powered by FastAPI) for convenient viewing and updating of the results.
 
-## Running with Docker (Recommended for Servers)
+## Running with Docker Compose (Recommended for Servers)
 
-You can easily deploy this project to any server using Docker.
+You can easily deploy this project to any server using Docker Compose.
 
 1. **Environment Setup**
    Ensure there is a `.env` file in the root directory containing your API key:
    `SAM_API_KEY=<your_api_key>`
 
-2. **Build the Docker Image**
+2. **Start the Application**
+   Run the following command to build and start the container in the background:
    ```bash
-   docker build -t drone-analyzer .
+   docker compose up -d --build
    ```
 
-3. **Run the Container**
-   ```bash
-   docker run -d -p 8000:8000 --env-file .env --name drone-analyzer-app drone-analyzer
-   ```
-
-4. **Open the Interface**
+3. **Open the Interface**
    Navigate in your browser to: `http://<your-server-ip>:8000`
 
 ---
