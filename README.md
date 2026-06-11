@@ -17,7 +17,7 @@ You can easily deploy this project to any server using Docker Compose.
    ```
 
 3. **Open the Interface**
-   Navigate in your browser to: `http://<your-server-ip>:8000`
+   Navigate in your browser to: `http://<your-server-ip>:1234`
 
 ---
 
