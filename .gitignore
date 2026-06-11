@@ -1,0 +1,18 @@
+# Virtual Environment
+venv/
+env/
+.env
+
+# Python Temp Files
+__pycache__/
+*.pyc
+
+# Debug & Temporary Files (Keeping only sam_matches.json and sam_excluded.json)
+raw_api_data.json
+raw_data.json
+descriptions_debug.txt
+sam_matches.txt
+sam_excluded.txt
+Drone Order API Analysis.md
+rescore.py
+samgov/

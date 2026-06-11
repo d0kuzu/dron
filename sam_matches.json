@@ -1,89 +1,93 @@
 {
-  "generated_at": "2026-05-10T17:28:31.127858+00:00",
-  "matched_count": 14,
+  "generated_at": "2026-06-11T14:21:35.875050+00:00",
+  "matched_count": 16,
   "departments": [
     {
       "name": "DEPT OF DEFENSE.DEFENSE LOGISTICS AGENCY.DLA AVIATION.DLA AV RICHMOND.DLA AVIATION",
-      "opportunity_count": 73
+      "opportunity_count": 118
     },
     {
       "name": "DEPT OF DEFENSE.DEFENSE LOGISTICS AGENCY.DLA MARITIME.DLA MARITIME COLUMBUS.DLA LAND AND MARITIME",
-      "opportunity_count": 35
-    },
-    {
-      "name": "DEPT OF DEFENSE.DEPT OF THE NAVY.NAVSUP.NAVSUP WEAPON SYSTEMS SUPPORT.NAVSUP WSS MECHANICSBURG.NAVSUP WEAPON SYSTEMS SUPPORT MECH",
-      "opportunity_count": 24
+      "opportunity_count": 22
     },
     {
       "name": "DEPT OF DEFENSE.DEPT OF THE NAVY.NAVSUP.NAVSUP WEAPON SYSTEMS SUPPORT.NAVSUP WSS PHILADELPHIA.NAVSUP WEAPON SYSTEMS SUPPORT",
-      "opportunity_count": 21
+      "opportunity_count": 19
     },
     {
       "name": "DEPT OF DEFENSE.DEFENSE LOGISTICS AGENCY.DLA LAND.DLA LAND COLUMBUS.DLA LAND AND MARITIME",
-      "opportunity_count": 16
+      "opportunity_count": 18
     },
     {
-      "name": "DEPT OF DEFENSE.DEPT OF THE NAVY.NAVAIR.NAVAIR HQS.NAVAL AIR SYSTEMS COMMAND",
+      "name": "DEPT OF DEFENSE.DEPT OF THE NAVY.NAVSUP.NAVSUP WEAPON SYSTEMS SUPPORT.NAVSUP WSS MECHANICSBURG.NAVSUP WEAPON SYSTEMS SUPPORT MECH",
+      "opportunity_count": 17
+    },
+    {
+      "name": "DEPT OF DEFENSE.DEPT OF THE AIR FORCE.AIR FORCE MATERIEL COMMAND.AIR FORCE RESEARCH LABORATORY.FA8750  AFRL RIK",
       "opportunity_count": 15
     },
     {
-      "name": "DEPT OF DEFENSE.DEFENSE LOGISTICS AGENCY.DLA AVIATION.DLA AVIATION PHILADELPHIA.DLA AVIATION AT PHILADELPHIA, PA",
+      "name": "DEPT OF DEFENSE.DEPT OF THE NAVY.NAVAIR.NAVAIR HQS.NAVAL AIR SYSTEMS COMMAND",
       "opportunity_count": 13
     },
     {
-      "name": "DEPT OF DEFENSE.DEPT OF THE ARMY.AMC.ACC.MISSION INSTALLATION CONTRACTING COMMAND.419TH CSB.W6QM MICC-FT DRUM",
+      "name": "DEPT OF DEFENSE.DEFENSE ADVANCED RESEARCH PROJECTS AGENCY  (DARPA).DEF ADVANCED RESEARCH PROJECTS AGCY",
       "opportunity_count": 8
     },
     {
-      "name": "NATIONAL AERONAUTICS AND SPACE ADMINISTRATION.NATIONAL AERONAUTICS AND SPACE ADMINISTRATION.NASA SHARED SERVICES CENTER",
-      "opportunity_count": 8
+      "name": "Department of Interior",
+      "opportunity_count": 7
+    },
+    {
+      "name": "DEPT OF DEFENSE.DEFENSE LOGISTICS AGENCY.DLA MARITIME.DLA MARITIME MECHANICSBURG.SPRMM1 DLA MECHANICSBURG",
+      "opportunity_count": 6
     },
     {
       "name": "HEALTH AND HUMAN SERVICES, DEPARTMENT OF.NATIONAL INSTITUTES OF HEALTH.ADVANCED RESEARCH PROJECTS AGENCY FOR HEALTH (ARPA-H)",
       "opportunity_count": 6
     },
     {
-      "name": "DEPT OF DEFENSE.DEPT OF THE ARMY.AMC.ACC.ACC-CTRS.ACC RSA.W6QK ACC-RSA",
+      "name": "DEPT OF DEFENSE.DEPT OF THE NAVY.NAVSEA.NAVSEA WARFARE CENTER.NSWC CRANE",
       "opportunity_count": 5
+    },
+    {
+      "name": "DEPT OF DEFENSE.DEFENSE LOGISTICS AGENCY.DLA AVIATION.DLA AVIATION PHILADELPHIA.DLA AVIATION AT PHILADELPHIA, PA",
+      "opportunity_count": 5
+    },
+    {
+      "name": "HEALTH AND HUMAN SERVICES, DEPARTMENT OF.NATIONAL INSTITUTES OF HEALTH.NATIONAL INSTITUTES OF HEALTH NIAID",
+      "opportunity_count": 5
+    },
+    {
+      "name": "DEPT OF DEFENSE.DEFENSE LOGISTICS AGENCY.DLA AVIATION.DLA AVIATION OGDEN.DLA  AVIATION AT OGDEN, UT",
+      "opportunity_count": 4
+    },
+    {
+      "name": "JUSTICE, DEPARTMENT OF.US MARSHALS SERVICE.DEPT OF JUSTICE  US MARSHAL SERVICE",
+      "opportunity_count": 4
+    },
+    {
+      "name": "DEPT OF DEFENSE.DEPT OF THE NAVY.ONR.ONR HQS.OFFICE OF NAVAL RESEARCH",
+      "opportunity_count": 4
+    },
+    {
+      "name": "HEALTH AND HUMAN SERVICES, DEPARTMENT OF.NATIONAL INSTITUTES OF HEALTH.NATIONAL INSTITUTES OF HEALTH NIDA",
+      "opportunity_count": 4
+    },
+    {
+      "name": "NATIONAL AERONAUTICS AND SPACE ADMINISTRATION.NATIONAL AERONAUTICS AND SPACE ADMINISTRATION.NASA SHARED SERVICES CENTER",
+      "opportunity_count": 3
+    },
+    {
+      "name": "DEPT OF DEFENSE.DEFENSE LOGISTICS AGENCY.TROOP SUPPORT CONSTRUCTION & EQUIPMENT.DLA TROOP SUPPORT",
+      "opportunity_count": 3
+    },
+    {
+      "name": "HOMELAND SECURITY, DEPARTMENT OF.US COAST GUARD.SFLC PROCUREMENT BRANCH 1(00080)",
+      "opportunity_count": 3
     },
     {
       "name": "DEPT OF DEFENSE.DEPT OF THE NAVY.NAVSEA.NAVSEA WARFARE CENTER.NUWC DIV NEWPORT",
-      "opportunity_count": 5
-    },
-    {
-      "name": "DEPT OF DEFENSE.DEFENSE LOGISTICS AGENCY.DLA MARITIME.DLA MARITIME MECHANICSBURG.SPRMM1 DLA MECHANICSBURG",
-      "opportunity_count": 5
-    },
-    {
-      "name": "DEPT OF DEFENSE.DEFENSE ADVANCED RESEARCH PROJECTS AGENCY  (DARPA).DEF ADVANCED RESEARCH PROJECTS AGCY",
-      "opportunity_count": 5
-    },
-    {
-      "name": "DEPT OF DEFENSE.DEPT OF THE AIR FORCE.AIR FORCE MATERIEL COMMAND.AIR FORCE RESEARCH LABORATORY.FA2377 USAF AFMC AFRL PZL AFRL RYKS",
-      "opportunity_count": 5
-    },
-    {
-      "name": "DEPT OF DEFENSE.DEPT OF THE AIR FORCE.AIR FORCE MATERIEL COMMAND.AIR FORCE SUSTAINMENT CENTER.FA8539  AFSC PZABA",
-      "opportunity_count": 4
-    },
-    {
-      "name": "DEPT OF DEFENSE.DEPT OF THE NAVY.NAVSEA.NAVSEA WARFARE CENTER.NSWC CRANE",
-      "opportunity_count": 4
-    },
-    {
-      "name": "Department of Interior",
-      "opportunity_count": 4
-    },
-    {
-      "name": "USDA / Forest",
-      "opportunity_count": 3
-    },
-    {
-      "name": "DEPT OF DEFENSE.DEFENSE LOGISTICS AGENCY.TROOP SUPPORT MEDICAL.DLA TROOP SUPPORT",
-      "opportunity_count": 3
-    },
-    {
-      "name": "DEPT OF DEFENSE.DEFENSE LOGISTICS AGENCY.DLA AVIATION.DLA AVIATION OGDEN.DLA AVIATION AT OGDEN, UT",
       "opportunity_count": 3
     },
     {
@@ -91,23 +95,31 @@
       "opportunity_count": 3
     },
     {
-      "name": "DEPT OF DEFENSE.DEFENSE LOGISTICS AGENCY.DLA AVIATION.DLA AVIATION OGDEN.DLA  AVIATION AT OGDEN, UT",
+      "name": "DEPT OF DEFENSE.DEFENSE LOGISTICS AGENCY.TROOP SUPPORT MEDICAL.DLA TROOP SUPPORT",
       "opportunity_count": 3
     },
     {
-      "name": "COMMERCE, DEPARTMENT OF.NATIONAL OCEANIC AND ATMOSPHERIC ADMINISTRATION.DEPT OF COMMERCE NOAA",
+      "name": "DEPT OF DEFENSE.DEPT OF THE NAVY.NAVAIR.NAVAIR NAWC AD.NAVAL AIR WARFARE CENTER AIR DIV",
       "opportunity_count": 3
     },
     {
-      "name": "DEPT OF DEFENSE.DEPT OF THE AIR FORCE.AIR FORCE MATERIEL COMMAND.AIR FORCE RESEARCH LABORATORY.FA8650  USAF AFMC AFRL PZL AFRL/PZL",
+      "name": "NATIONAL SCIENCE FOUNDATION.NATIONAL SCIENCE FOUNDATION.DIRECTORATE FOR TECHNOLOGY, INNOVATION, & PARTNERSHIPS",
       "opportunity_count": 3
     },
     {
-      "name": "VETERANS AFFAIRS, DEPARTMENT OF.VETERANS AFFAIRS, DEPARTMENT OF.VETERANS BENEFITS ADMIN (36C10D)",
+      "name": "DEPT OF DEFENSE.DEPT OF THE ARMY.AMC.ACC.MISSION INSTALLATION CONTRACTING COMMAND.419TH CSB.W6QM MICC-FT DRUM",
       "opportunity_count": 2
     },
     {
-      "name": "DEPT OF DEFENSE.DEFENSE LOGISTICS AGENCY.TROOP SUPPORT CONSTRUCTION & EQUIPMENT.DLA TROOP SUPPORT",
+      "name": "DEPT OF DEFENSE.DEPT OF THE NAVY.NAVAIR.NAVAIR NAWC WD.NAVAL AIR WARFARE CENTER",
+      "opportunity_count": 2
+    },
+    {
+      "name": "HOMELAND SECURITY, DEPARTMENT OF.US COAST GUARD.AVIATION LOGISTICS CENTER (ALC)(00038)",
+      "opportunity_count": 2
+    },
+    {
+      "name": "DEPT OF DEFENSE.DEPT OF THE ARMY.AMC.ACC.ACC-CTRS.ACC RSA.W6QK ACC-RSA",
       "opportunity_count": 2
     },
     {
@@ -115,11 +127,23 @@
       "opportunity_count": 2
     },
     {
-      "name": "HOMELAND SECURITY, DEPARTMENT OF.US COAST GUARD.SFLC PROCUREMENT BRANCH 3(00040)",
+      "name": "DEPT OF DEFENSE.DEPT OF THE NAVY.NAVSEA.NAVSEA WARFARE CENTER.NSWC PHILADELPHIA DIV",
       "opportunity_count": 2
     },
     {
-      "name": "DEPT OF DEFENSE.DEPT OF THE NAVY.NAVAIR.NAVAIR NAWC AD.NAVAL AIR WARFARE CENTER AIR DIV",
+      "name": "DEPT OF DEFENSE.DEFENSE LOGISTICS AGENCY.DLA AVIATION.DLA AVIATION HUNTSVILLE.DLA AVIATION AT HUNTSVILLE, AL",
+      "opportunity_count": 2
+    },
+    {
+      "name": "HOMELAND SECURITY, DEPARTMENT OF.US CUSTOMS AND BORDER PROTECTION.MISSION SUPPORT CONTRACTING DIVISION",
+      "opportunity_count": 2
+    },
+    {
+      "name": "COMMERCE, DEPARTMENT OF.NATIONAL OCEANIC AND ATMOSPHERIC ADMINISTRATION.DEPT OF COMMERCE NOAA",
+      "opportunity_count": 2
+    },
+    {
+      "name": "DEPT OF DEFENSE.DEPT OF THE NAVY.NAVSEA.NAVSEA WARFARE CENTER.NAVAL SURFACE WARFARE CENTER",
       "opportunity_count": 2
     },
     {
@@ -127,31 +151,15 @@
       "opportunity_count": 2
     },
     {
-      "name": "DEPT OF DEFENSE.DEPT OF THE NAVY.NAVSUP.NAVSUP GLOBAL LOGISTICS SUPPORT.NAVSUP FLC NORFOLK.NAVSUP FLT LOG CTR NORFOLK",
+      "name": "JUSTICE, DEPARTMENT OF.DRUG ENFORCEMENT ADMINISTRATION.HEADQUATERS",
       "opportunity_count": 2
     },
     {
-      "name": "DEPT OF DEFENSE.DEPT OF THE ARMY.AMC.ACC.ACC-CTRS.ACC-APG.W6QK ACC-APG",
+      "name": "HOMELAND SECURITY, DEPARTMENT OF.OFFICE OF PROCUREMENT OPERATIONS.SCI  TECH ACQ DIV",
       "opportunity_count": 2
     },
     {
-      "name": "HEALTH AND HUMAN SERVICES, DEPARTMENT OF.NATIONAL INSTITUTES OF HEALTH.NATIONAL INSTITUTES OF HEALTH NIAID",
-      "opportunity_count": 2
-    },
-    {
-      "name": "DEPT OF DEFENSE.WASHINGTON HEADQUARTERS SERVICES (WHS).WASHINGTON HEADQUARTERS SERVICES",
-      "opportunity_count": 2
-    },
-    {
-      "name": "HEALTH AND HUMAN SERVICES, DEPARTMENT OF.NATIONAL INSTITUTES OF HEALTH.NATIONAL INSTITUTES OF HEALTH NHLBI",
-      "opportunity_count": 2
-    },
-    {
-      "name": "DEPT OF DEFENSE.DEPT OF THE AIR FORCE.AIR FORCE MATERIEL COMMAND.AIR FORCE TEST CENTER.FA9300  AFTC PZR",
-      "opportunity_count": 2
-    },
-    {
-      "name": "DEPT OF DEFENSE.DEPT OF THE ARMY.US ARMY CORPS OF ENGINEERS.SCO ALEXANDRIA.ENGINEER RESEARCH AND DEVELOPMENT CENTER.W2R2 CONST ENGRG LAB",
+      "name": "TRANSPORTATION, DEPARTMENT OF.FEDERAL HIGHWAY ADMINISTRATION.693JJ3 ACQUISITION AND GRANTS MGT",
       "opportunity_count": 2
     },
     {
@@ -159,19 +167,39 @@
       "opportunity_count": 2
     },
     {
+      "name": "DEPT OF DEFENSE.DEPT OF THE AIR FORCE.AIR FORCE MATERIEL COMMAND.AIR FORCE RESEARCH LABORATORY.FA8650  USAF AFMC AFRL PZL AFRL/PZL",
+      "opportunity_count": 2
+    },
+    {
       "name": "HEALTH AND HUMAN SERVICES, DEPARTMENT OF.NATIONAL INSTITUTES OF HEALTH.NATIONAL INSTITUTES OF HEALTH NICHD",
       "opportunity_count": 2
     },
     {
-      "name": "DEPT OF DEFENSE.DEPT OF THE AIR FORCE.AIR FORCE MATERIEL COMMAND.AIR FORCE TEST CENTER.FA9304  AFTC PZZ",
+      "name": "DEPT OF DEFENSE.DEPT OF THE AIR FORCE.AIR FORCE MATERIEL COMMAND.AIR FORCE RESEARCH LABORATORY.FA9453  AFRL RVK",
       "opportunity_count": 2
     },
     {
-      "name": "DEPT OF DEFENSE.DEPT OF THE ARMY.NATIONAL GUARD BUREAU.JFHQ USPFO OR.USPFO OR PROCUREMENT.W7NW USPFO ACTIVITY OR ARNG",
+      "name": "HEALTH AND HUMAN SERVICES, DEPARTMENT OF.CENTERS FOR DISEASE CONTROL AND PREVENTION.CDC OFFICE OF ACQUISITION SERVICES",
+      "opportunity_count": 2
+    },
+    {
+      "name": "DEPT OF DEFENSE.DEPT OF THE AIR FORCE.AIR EDUCATION AND TRAINING COMMAND.FA4419   97 CONF  CC",
       "opportunity_count": 1
     },
     {
-      "name": "DEPT OF DEFENSE.DEPT OF THE ARMY.AMC.ACC.ACC-OO.409TH CSB.0409 AQ HQ     CONTRACT",
+      "name": "DEPT OF DEFENSE.DEPT OF THE AIR FORCE.AIR FORCE RESERVE COMMAND.FA6643  AF RESERVE CMD HQ AFRC PK",
+      "opportunity_count": 1
+    },
+    {
+      "name": "COMMERCE, DEPARTMENT OF.NATIONAL INSTITUTE OF STANDARDS AND TECHNOLOGY.DEPT OF COMMERCE NIST",
+      "opportunity_count": 1
+    },
+    {
+      "name": "DEPT OF DEFENSE.DEPT OF THE ARMY.AMC.ACC.MISSION INSTALLATION CONTRACTING COMMAND.418TH CSB.W6QM MICC-FT RILEY",
+      "opportunity_count": 1
+    },
+    {
+      "name": "DEPT OF DEFENSE.DEPT OF THE NAVY.NAVSEA.NAVSEA WARFARE CENTER.NSWC CARDEROCK",
       "opportunity_count": 1
     },
     {
@@ -179,7 +207,55 @@
       "opportunity_count": 1
     },
     {
-      "name": "DEPT OF DEFENSE.DEPT OF THE ARMY.AMC.ACC.ACC-OO.411TH CSB.0411 AQ HQ     CONTRACT AUG",
+      "name": "VETERANS AFFAIRS, DEPARTMENT OF.VETERANS AFFAIRS, DEPARTMENT OF.VETERANS BENEFITS ADMIN (36C10D)",
+      "opportunity_count": 1
+    },
+    {
+      "name": "USDA / Forest",
+      "opportunity_count": 1
+    },
+    {
+      "name": "DEPT OF DEFENSE.DEPT OF THE NAVY.SPAWAR.SPAWAR HQ.NAVAL INFORMATION WARFARE SYSTEMS",
+      "opportunity_count": 1
+    },
+    {
+      "name": "DEPT OF DEFENSE.DEPT OF THE NAVY.NAVSUP.NAVSUP GLOBAL LOGISTICS SUPPORT.NAVSUP FLC JACKSONVILLE.NAVSUP FLT LOG CTR JACKSONVILLE",
+      "opportunity_count": 1
+    },
+    {
+      "name": "STATE, DEPARTMENT OF.STATE, DEPARTMENT OF.AMERICAN EMBASSY BOGOTA - NAS",
+      "opportunity_count": 1
+    },
+    {
+      "name": "DEPT OF DEFENSE.DEPT OF THE AIR FORCE.AIR FORCE MATERIEL COMMAND.AIR FORCE SUSTAINMENT CENTER.FA8539  AFSC PZABA",
+      "opportunity_count": 1
+    },
+    {
+      "name": "DEPT OF DEFENSE.DEPT OF THE NAVY.NAVSEA.NAVSEA WARFARE CENTER.NSWC INDIAN HEAD DIVISION",
+      "opportunity_count": 1
+    },
+    {
+      "name": "DEPT OF DEFENSE.DEPT OF THE AIR FORCE.AIR FORCE GLOBAL STRIKE COMMAND.FA4613  90 CONS PK",
+      "opportunity_count": 1
+    },
+    {
+      "name": "DEPT OF DEFENSE.DEPT OF THE AIR FORCE.AIR EDUCATION AND TRAINING COMMAND.FA4887  56 CONS CC",
+      "opportunity_count": 1
+    },
+    {
+      "name": "DEPT OF DEFENSE.DEPT OF THE ARMY.NATIONAL GUARD BUREAU.JFHQ USPFO MI.USPFO MI PROCUREMENT.W7NF USPFO ACTIVITY MIANG 110",
+      "opportunity_count": 1
+    },
+    {
+      "name": "DEPT OF DEFENSE.DEPT OF THE AIR FORCE.AIR COMBAT COMMAND.FA4686 9 CONS PK",
+      "opportunity_count": 1
+    },
+    {
+      "name": "DEPT OF DEFENSE.DEPT OF THE NAVY.SPAWAR.SPAWAR LANT.NIWC ATLANTIC",
+      "opportunity_count": 1
+    },
+    {
+      "name": "DEPT OF DEFENSE.DEPT OF THE AIR FORCE.AIR FORCE GLOBAL STRIKE COMMAND.FA6800 AFICC 767 ESF",
       "opportunity_count": 1
     },
     {
@@ -187,79 +263,19 @@
       "opportunity_count": 1
     },
     {
-      "name": "NATIONAL AERONAUTICS AND SPACE ADMINISTRATION.NATIONAL AERONAUTICS AND SPACE ADMINISTRATION.NASA GODDARD SPACE FLIGHT CENTER",
-      "opportunity_count": 1
-    },
-    {
-      "name": "DEPT OF DEFENSE.DEPT OF THE AIR FORCE.AIR FORCE MATERIEL COMMAND.AIR FORCE LIFE CYCLE MANAGEMENT CENTER.ELECTRONIC SYSTEMS.FA2204 THTR BTTL CNTRL AFLCMC/HBD",
-      "opportunity_count": 1
-    },
-    {
-      "name": "DEPT OF DEFENSE.DEPT OF THE ARMY.US ARMY CORPS OF ENGINEERS.SCO ALEXANDRIA.ENGINEER RESEARCH AND DEVELOPMENT CENTER.W2R2 USA ENGR R & D CTR",
-      "opportunity_count": 1
-    },
-    {
-      "name": "TRANSPORTATION, DEPARTMENT OF.FEDERAL HIGHWAY ADMINISTRATION.690567 WESTERN FEDERAL LANDS DIV",
-      "opportunity_count": 1
-    },
-    {
-      "name": "DEPT OF DEFENSE.DEPT OF THE NAVY.NAVSEA.NAVSEA WARFARE CENTER.NSWC DAHLGREN",
-      "opportunity_count": 1
-    },
-    {
-      "name": "DEPT OF DEFENSE.DEPT OF THE NAVY.NAVSUP.NAVSUP GLOBAL LOGISTICS SUPPORT.NAVSUP FLC PUGET SOUND.NAVSUP FLT LOG CTR PUGET SOUND",
-      "opportunity_count": 1
-    },
-    {
-      "name": "DEPT OF DEFENSE.DEPT OF THE AIR FORCE.AIR EDUCATION AND TRAINING COMMAND.FA3020  82 CONS LGC",
-      "opportunity_count": 1
-    },
-    {
-      "name": "DEPT OF DEFENSE.DEPT OF THE AIR FORCE.AIR FORCE MATERIEL COMMAND.AIR FORCE LIFE CYCLE MANAGEMENT CENTER.FIGHTER AND ADVANCED AIRCRAFT.FA8505  AFLCMC WAQKB",
-      "opportunity_count": 1
-    },
-    {
-      "name": "DEPT OF DEFENSE.DEPT OF THE AIR FORCE.AIR COMBAT COMMAND.FA4877  355 CONS PK",
-      "opportunity_count": 1
-    },
-    {
-      "name": "DEPT OF DEFENSE.DEFENSE LOGISTICS AGENCY.DLA LAND.DLA LAND ALBANY.DLA  LAND AND MARITIME (ALBANY)",
-      "opportunity_count": 1
-    },
-    {
-      "name": "DEPT OF DEFENSE.DEPT OF THE AIR FORCE.AIR FORCE MATERIEL COMMAND.AIR FORCE LIFE CYCLE MANAGEMENT CENTER.ELECTRONIC SYSTEMS.FA2330 ARSPC MGNT SYSTMS AFLCMC/HBA",
-      "opportunity_count": 1
-    },
-    {
-      "name": "DEPT OF DEFENSE.DEPT OF THE NAVY.NAVSEA.NAVSEA WARFARE CENTER.NSWC PHILADELPHIA DIV",
-      "opportunity_count": 1
-    },
-    {
       "name": "HOMELAND SECURITY, DEPARTMENT OF.US COAST GUARD.LOG-9",
       "opportunity_count": 1
     },
     {
-      "name": "DEPT OF DEFENSE.DEPT OF THE ARMY.NATIONAL GUARD BUREAU.JFHQ USPFO WI.USPFO WI PROCUREMENT.W7N8 USPFO ACTIVITY WIANG 128",
+      "name": "DEPT OF DEFENSE.DEPT OF THE AIR FORCE.AIR EDUCATION AND TRAINING COMMAND.JOINT BASE SAN ANTONIO.FA3016  502 CONS CL",
       "opportunity_count": 1
     },
     {
-      "name": "HOMELAND SECURITY, DEPARTMENT OF.US COAST GUARD.AVIATION LOGISTICS CENTER (ALC)(00038)",
+      "name": "DEPT OF DEFENSE.DEFENSE LOGISTICS AGENCY.TROOP SUPPORT CLOTHING & TEXTILE.DLA TROOP SUPPORT",
       "opportunity_count": 1
     },
     {
-      "name": "DEPT OF DEFENSE.DEPT OF THE AIR FORCE.AIR FORCE MATERIEL COMMAND.AIR FORCE TEST CENTER.FA9101  AEDC PKP   PROCRMNT BR",
-      "opportunity_count": 1
-    },
-    {
-      "name": "DEPT OF DEFENSE.DEPT OF THE AIR FORCE.AIR FORCE MATERIEL COMMAND.AIR FORCE SUSTAINMENT CENTER.FA8136  AFSC PZIOB",
-      "opportunity_count": 1
-    },
-    {
-      "name": "DEPT OF DEFENSE.DEFENSE LOGISTICS AGENCY.DLA LAND.DLA LAND WARREN MICHIGAN.DLA LAND WARREN",
-      "opportunity_count": 1
-    },
-    {
-      "name": "DEPT OF DEFENSE.DEPT OF THE AIR FORCE.AIR EDUCATION AND TRAINING COMMAND.FA4419   97 CONF  CC",
+      "name": "NATIONAL AERONAUTICS AND SPACE ADMINISTRATION.NATIONAL AERONAUTICS AND SPACE ADMINISTRATION.NASA GODDARD SPACE FLIGHT CENTER",
       "opportunity_count": 1
     },
     {
@@ -267,35 +283,15 @@
       "opportunity_count": 1
     },
     {
-      "name": "HOMELAND SECURITY, DEPARTMENT OF.US CUSTOMS AND BORDER PROTECTION.AIR AND MARINE CONTRACTING DIVISION",
+      "name": "DEPT OF DEFENSE.DEFENSE LOGISTICS AGENCY.DLA LAND.DLA LAND WARREN MICHIGAN.DLA LAND WARREN",
       "opportunity_count": 1
     },
     {
-      "name": "DEPT OF DEFENSE.NATIONAL GEOSPATIAL-INTELLIGENCE AGENCY (NGA).ATTN: MS S84 - OCS",
+      "name": "DEPT OF DEFENSE.DEPT OF THE ARMY.US ARMY MEDICAL COMMAND.US ARMY HEALTH CONTRACTING ACTIVITY.W40M USA HCA",
       "opportunity_count": 1
     },
     {
-      "name": "DEPT OF DEFENSE.DEPT OF THE AIR FORCE.AIR FORCE MATERIEL COMMAND.AIR FORCE RESEARCH LABORATORY.FA9451  AFRL RDK",
-      "opportunity_count": 1
-    },
-    {
-      "name": "DEPT OF DEFENSE.DEPT OF THE AIR FORCE.FA8723  AFLCMC HBQK C BM",
-      "opportunity_count": 1
-    },
-    {
-      "name": "DEPT OF DEFENSE.DEPT OF THE AIR FORCE.AIR FORCE MATERIEL COMMAND.AIR FORCE RESEARCH LABORATORY.FA2384 USAF AFMC AFRL PZL AFRL RAKH",
-      "opportunity_count": 1
-    },
-    {
-      "name": "DEPT OF DEFENSE.DEPT OF THE AIR FORCE.FA8809 SDA AND CMBT PWR SSC/SZK-IK",
-      "opportunity_count": 1
-    },
-    {
-      "name": "DEPT OF DEFENSE.DEPT OF THE AIR FORCE.FA8819  SPECIAL PROGRAMS DIR SMC SP",
-      "opportunity_count": 1
-    },
-    {
-      "name": "NUCLEAR REGULATORY COMMISSION.NUCLEAR REGULATORY COMMISSION.NUCLEAR REGULATORY COMMISSION",
+      "name": "HOMELAND SECURITY, DEPARTMENT OF.US COAST GUARD.HQ CONTRACT OPERATIONS (CG-912)(000",
       "opportunity_count": 1
     },
     {
@@ -303,15 +299,35 @@
       "opportunity_count": 1
     },
     {
-      "name": "VETERANS AFFAIRS, DEPARTMENT OF.VETERANS AFFAIRS, DEPARTMENT OF.260-NETWORK CONTRACT OFFICE 20 (36C260)",
+      "name": "DEPT OF DEFENSE.DEPT OF THE AIR FORCE.FA8809 SDA AND CMBT PWR SSC/SZK-IK",
       "opportunity_count": 1
     },
     {
-      "name": "TRANSPORTATION, DEPARTMENT OF.NATIONAL HIGHWAY TRAFFIC SAFETY ADMINISTRATION.693JJ9 NHTSA OFFICE OF ACQUISTION",
+      "name": "DEPT OF DEFENSE.DEPT OF THE NAVY.ONR.ONR NRL.NAVAL RESEARCH LABORATORY",
       "opportunity_count": 1
     },
     {
-      "name": "DEPT OF DEFENSE.DEFENSE LOGISTICS AGENCY.DCSO.DCSO PHILADELPHIA.DCSO PHILADELPHIA",
+      "name": "DEPT OF DEFENSE.DEFENSE HEALTH AGENCY (DHA).DEFENSE HEALTH AGENCY",
+      "opportunity_count": 1
+    },
+    {
+      "name": "DEPT OF DEFENSE.DEPT OF THE ARMY.AMC.ACC.ACC-CTRS.ACC-APG.W6QK ACC-APG DURHAM",
+      "opportunity_count": 1
+    },
+    {
+      "name": "HEALTH AND HUMAN SERVICES, DEPARTMENT OF.NATIONAL INSTITUTES OF HEALTH.NATIONAL INSTITUTES OF HEALTH OLAO",
+      "opportunity_count": 1
+    },
+    {
+      "name": "DEPT OF DEFENSE.DEPT OF THE ARMY.AMC.ACC.ACC-CTRS.ACC-APG.W6QK ACC-APG",
+      "opportunity_count": 1
+    },
+    {
+      "name": "ENVIRONMENTAL PROTECTION AGENCY.ENVIRONMENTAL PROTECTION AGENCY.WATER, TRIBAL & SCIENCE DIVISION",
+      "opportunity_count": 1
+    },
+    {
+      "name": "DEPT OF DEFENSE.DEPT OF THE ARMY.AMC.ACC.ACC-CTRS.ACC-APG.W6QK ACC CCDC STTC",
       "opportunity_count": 1
     },
     {
@@ -319,27 +335,35 @@
       "opportunity_count": 1
     },
     {
-      "name": "NATIONAL AERONAUTICS AND SPACE ADMINISTRATION.NATIONAL AERONAUTICS AND SPACE ADMINISTRATION.NASA AMES RESEARCH CENTER",
+      "name": "DEPT OF DEFENSE.DEPT OF THE AIR FORCE.AIR FORCE MATERIEL COMMAND.AIR FORCE RESEARCH LABORATORY.FA2384 USAF AFMC AFRL PZL AFRL RAKH",
       "opportunity_count": 1
     },
     {
-      "name": "DEPT OF DEFENSE.DEPT OF THE AIR FORCE.AIR FORCE MATERIEL COMMAND.AIR FORCE RESEARCH LABORATORY.FA9453  AFRL RVK",
+      "name": "DEPT OF DEFENSE.DEFENSE LOGISTICS AGENCY.DCSO.DCSO PHILADELPHIA.DCSO PHILADELPHIA",
       "opportunity_count": 1
     },
     {
-      "name": "DEPT OF DEFENSE.DEFENSE INTELLIGENCE AGENCY (DIA).VIRGINIA CONTRACTING ACTIVITY",
+      "name": "DEPT OF DEFENSE.DEPT OF THE ARMY.AMC.ACC.ACC-CTRS.ACC-NJ.W6QK ACC-PICA",
       "opportunity_count": 1
     },
     {
-      "name": "DEPT OF DEFENSE.DEPT OF THE AIR FORCE.AIR COMBAT COMMAND.AMIC.FA4890  HQ ACC AMIC",
+      "name": "DEPT OF DEFENSE.DEFENSE HEALTH AGENCY (DHA).ARMY MED RES ACQ ACTIVITY",
       "opportunity_count": 1
     },
     {
-      "name": "DEPT OF DEFENSE.DEPT OF THE ARMY.AMC.ACC.ACC-CTRS.ACC RSA.W6QK AATD CONTR OFF",
+      "name": "DEPT OF DEFENSE.US SPECIAL OPERATIONS COMMAND (USSOCOM).HQ USSOCOM",
       "opportunity_count": 1
     },
     {
-      "name": "DEPT OF DEFENSE.NATIONAL GEOSPATIAL-INTELLIGENCE AGENCY (NGA).NATL GEOSPATIAL-INTELLIGENCE AGENCY",
+      "name": "DEPT OF DEFENSE.DEPT OF THE ARMY.AMC.ACC.ACC-OO.411TH CSB.0411 AQ HQ     CONTRACT AUG",
+      "opportunity_count": 1
+    },
+    {
+      "name": "DEPT OF DEFENSE.DEPT OF THE NAVY.NAVSUP.NAVSUP OTHER HCA.BUMED.NAVY MEDICINE WEST.NAVAL MEDICAL RESEARCH UNIT SOUTH",
+      "opportunity_count": 1
+    },
+    {
+      "name": "NUCLEAR REGULATORY COMMISSION.NUCLEAR REGULATORY COMMISSION.NUCLEAR REGULATORY COMMISSION",
       "opportunity_count": 1
     },
     {
@@ -347,22 +371,153 @@
       "opportunity_count": 1
     },
     {
+      "name": "DEPT OF DEFENSE.DEPT OF THE AIR FORCE.AIR FORCE MATERIEL COMMAND.AIR FORCE RESEARCH LABORATORY.FA2377 USAF AFMC AFRL PZL AFRL RYKS",
+      "opportunity_count": 1
+    },
+    {
+      "name": "DEPT OF DEFENSE.DEPT OF THE NAVY.NAVSUP.NAVSUP GLOBAL LOGISTICS SUPPORT.NAVSUP FLC NORFOLK.NAVSUP FLT LOG CTR NORFOLK",
+      "opportunity_count": 1
+    },
+    {
+      "name": "HEALTH AND HUMAN SERVICES, DEPARTMENT OF.NATIONAL INSTITUTES OF HEALTH.NATIONAL INSTITUTES OF HEALTH NHLBI",
+      "opportunity_count": 1
+    },
+    {
+      "name": "DEPT OF DEFENSE.DEPT OF THE AIR FORCE.FA8723  AFLCMC HBQK C BM",
+      "opportunity_count": 1
+    },
+    {
       "name": "DEPT OF DEFENSE.US TRANSPORTATION COMMAND (USTRANSCOM).USTRANSCOM-AQ",
       "opportunity_count": 1
     },
     {
-      "name": "HEALTH AND HUMAN SERVICES, DEPARTMENT OF.NATIONAL INSTITUTES OF HEALTH.NATIONAL INSTITUTES OF HEALTH OLAO",
+      "name": "DEPT OF DEFENSE.WASHINGTON HEADQUARTERS SERVICES (WHS).WASHINGTON HEADQUARTERS SERVICES",
+      "opportunity_count": 1
+    },
+    {
+      "name": "NATIONAL AERONAUTICS AND SPACE ADMINISTRATION.NATIONAL AERONAUTICS AND SPACE ADMINISTRATION.NASA GLENN RESEARCH CENTER",
+      "opportunity_count": 1
+    },
+    {
+      "name": "DEPT OF DEFENSE.DEPT OF THE ARMY.AMC.ACC.ACC-CTRS.ACC RSA.W6QK AATD CONTR OFF",
+      "opportunity_count": 1
+    },
+    {
+      "name": "DEPT OF DEFENSE.DEPT OF THE AIR FORCE.AIR FORCE MATERIEL COMMAND.AIR FORCE RESEARCH LABORATORY.FA9451  AFRL RDK",
       "opportunity_count": 1
     }
   ],
   "opportunities": [
     {
-      "notice_id": "876ad75cb1054125981b73c5e085a383",
-      "title": "Unmanned aerial surveillance drone ",
-      "agency": "DEPT OF DEFENSE.DEPT OF THE ARMY.AMC.ACC.MISSION INSTALLATION CONTRACTING COMMAND.419TH CSB.W6QM MICC-FT DRUM",
-      "department_bucket": "DEPT OF DEFENSE.DEPT OF THE ARMY.AMC.ACC.MISSION INSTALLATION CONTRACTING COMMAND.419TH CSB.W6QM MICC-FT DRUM",
-      "posted_date": "2026-04-14",
-      "response_deadline": "2026-04-21T11:00:00-06:00",
+      "notice_id": "d51788bcc98a4e9c8ecbe440e6e0e77e",
+      "title": "Drones",
+      "agency": "DEPT OF DEFENSE.DEPT OF THE ARMY.AMC.ACC.MISSION INSTALLATION CONTRACTING COMMAND.418TH CSB.W6QM MICC-FT RILEY",
+      "department_bucket": "DEPT OF DEFENSE.DEPT OF THE ARMY.AMC.ACC.MISSION INSTALLATION CONTRACTING COMMAND.418TH CSB.W6QM MICC-FT RILEY",
+      "posted_date": "2026-05-27",
+      "response_deadline": "2026-06-08T11:00:00-05:00",
+      "type": "Solicitation",
+      "set_aside": "Total Small Business Set-Aside (FAR 19.5)",
+      "match_analysis": {
+        "total_score": 10,
+        "match_level": "Medium",
+        "reasons": [
+          "Drone/DFR/delivery keyword",
+          "Target department/agency match",
+          "Surveillance/Reconnaissance mission match",
+          "Small Business set-aside"
+        ],
+        "detected_weights_kg": [],
+        "is_small_business": true
+      },
+      "sam_link": "https://sam.gov/workspace/contract/opp/d51788bcc98a4e9c8ecbe440e6e0e77e/view",
+      "full_description": "<p>15x&nbsp;unmanned aircraft systems (uas) drone build kits &ndash; modular, ndaa-compliant fpv drone kits for training, reconnaissance,<br />\nand operational use.</p>\n",
+      "raw_api_data": {
+        "noticeId": "d51788bcc98a4e9c8ecbe440e6e0e77e",
+        "title": "Drones",
+        "solicitationNumber": "W911RX26QA037",
+        "fullParentPathName": "DEPT OF DEFENSE.DEPT OF THE ARMY.AMC.ACC.MISSION INSTALLATION CONTRACTING COMMAND.418TH CSB.W6QM MICC-FT RILEY",
+        "fullParentPathCode": "021.2100.AMC.ACC.MICC.418TH CSB.W911RX",
+        "postedDate": "2026-05-27",
+        "type": "Solicitation",
+        "baseType": "Solicitation",
+        "archiveType": "auto15",
+        "archiveDate": "2026-06-23",
+        "typeOfSetAsideDescription": "Total Small Business Set-Aside (FAR 19.5)",
+        "typeOfSetAside": "SBA",
+        "responseDeadLine": "2026-06-08T11:00:00-05:00",
+        "naicsCode": "336411",
+        "naicsCodes": [
+          "336411"
+        ],
+        "classificationCode": "1550",
+        "active": "Yes",
+        "award": null,
+        "pointOfContact": [
+          {
+            "fax": "",
+            "type": "primary",
+            "email": "tiffany.r.white21.mil@army.mil",
+            "phone": "+1 571-588-7901",
+            "title": null,
+            "fullName": "Tiffany White"
+          },
+          {
+            "fax": "",
+            "type": "secondary",
+            "email": "shannon.s.campbell.civ@army.mil",
+            "phone": "5209440970",
+            "title": null,
+            "fullName": "Shannon S Campbell"
+          }
+        ],
+        "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=d51788bcc98a4e9c8ecbe440e6e0e77e",
+        "organizationType": "OFFICE",
+        "officeAddress": {
+          "zipcode": "66442-0248",
+          "city": "FORT RILEY",
+          "countryCode": "USA",
+          "state": "KS"
+        },
+        "placeOfPerformance": {
+          "city": {
+            "code": "35750",
+            "name": "Junction City"
+          },
+          "state": {
+            "code": "KS",
+            "name": "Kansas"
+          },
+          "zip": "66441",
+          "country": {
+            "code": "USA",
+            "name": "UNITED STATES"
+          }
+        },
+        "additionalInfoLink": null,
+        "uiLink": "https://sam.gov/workspace/contract/opp/d51788bcc98a4e9c8ecbe440e6e0e77e/view",
+        "links": [
+          {
+            "rel": "self",
+            "href": "https://api.sam.gov/prod/opportunities/v2/search?noticeid=d51788bcc98a4e9c8ecbe440e6e0e77e&limit=1"
+          }
+        ],
+        "resourceLinks": [
+          "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/38d348adfd334403945ea44727a16c0b/download",
+          "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/3f6a4abbce50486c9aeda54f9c8ae120/download",
+          "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/4347d84b1c724585b12c9e09622f08e4/download",
+          "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/47471ae936dc4061b5474337f7a2ea8e/download",
+          "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/694b230d7d914e19a976f19b1e04d456/download",
+          "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/ba2a07999960456db0fa752806963523/download"
+        ]
+      }
+    },
+    {
+      "notice_id": "b73d646a10034de495a0d707d75a3277",
+      "title": "58--SURVEILLANCE,THERMA",
+      "agency": "DEPT OF DEFENSE.DEFENSE LOGISTICS AGENCY.DLA AVIATION.DLA AV RICHMOND.DLA AVIATION",
+      "department_bucket": "DEPT OF DEFENSE.DEFENSE LOGISTICS AGENCY.DLA AVIATION.DLA AV RICHMOND.DLA AVIATION",
+      "posted_date": "2026-06-02",
+      "response_deadline": "2026-06-10",
       "type": "Combined Synopsis/Solicitation",
       "set_aside": "Total Small Business Set-Aside (FAR 19.5)",
       "match_analysis": {
@@ -377,291 +532,235 @@
         "detected_weights_kg": [],
         "is_small_business": true
       },
-      "sam_link": "https://sam.gov/workspace/contract/opp/876ad75cb1054125981b73c5e085a383/view",
+      "sam_link": "https://sam.gov/workspace/contract/opp/b73d646a10034de495a0d707d75a3277/view",
       "full_description": "",
       "raw_api_data": {
-        "noticeId": "876ad75cb1054125981b73c5e085a383",
-        "title": "Unmanned aerial surveillance drone ",
-        "solicitationNumber": "W911S226U3022",
-        "fullParentPathName": "DEPT OF DEFENSE.DEPT OF THE ARMY.AMC.ACC.MISSION INSTALLATION CONTRACTING COMMAND.419TH CSB.W6QM MICC-FT DRUM",
-        "fullParentPathCode": "021.2100.AMC.ACC.MICC.419TH CSB.W911S2",
-        "postedDate": "2026-04-14",
+        "noticeId": "b73d646a10034de495a0d707d75a3277",
+        "title": "58--SURVEILLANCE,THERMA",
+        "solicitationNumber": "SPE4A726T442P",
+        "fullParentPathName": "DEPT OF DEFENSE.DEFENSE LOGISTICS AGENCY.DLA AVIATION.DLA AV RICHMOND.DLA AVIATION",
+        "fullParentPathCode": "097.97AS.DLA AVIATION.DLA AV RICHMOND.SPE4A7",
+        "postedDate": "2026-06-02",
         "type": "Combined Synopsis/Solicitation",
         "baseType": "Combined Synopsis/Solicitation",
         "archiveType": "autocustom",
-        "archiveDate": "2027-04-14",
+        "archiveDate": "2026-07-10",
         "typeOfSetAsideDescription": "Total Small Business Set-Aside (FAR 19.5)",
         "typeOfSetAside": "SBA",
-        "responseDeadLine": "2026-04-21T11:00:00-06:00",
-        "naicsCode": "336411",
+        "responseDeadLine": "2026-06-10",
+        "naicsCode": "334511",
         "naicsCodes": [
-          "336411"
+          "334511"
         ],
-        "classificationCode": "1550",
+        "classificationCode": "58",
         "active": "Yes",
         "award": null,
         "pointOfContact": [
           {
-            "fax": "",
+            "fax": null,
             "type": "primary",
-            "email": "wayne.l.glessner.mil@army.mil",
-            "phone": "248-255-8098",
+            "email": "DibbsBSM@dla.mil",
+            "phone": null,
             "title": null,
-            "fullName": "Wayne Glessner"
+            "fullName": "Questions regarding this solicitation should be emailed to the buyer listed in block 5 of the solicitation document which can be found under the Additional Information link.\nIf the Additional Information link does not work, please go to https://www.dibbs.bsm.dla.mil/Solicitations/ and type the solicitation number in the Global Search box.\n"
           }
         ],
-        "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=876ad75cb1054125981b73c5e085a383",
+        "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=b73d646a10034de495a0d707d75a3277",
         "organizationType": "OFFICE",
         "officeAddress": {
-          "zipcode": "13602-5220",
-          "city": "FORT DRUM",
+          "zipcode": "23237",
+          "city": "RICHMOND",
           "countryCode": "USA",
-          "state": "NY"
+          "state": "VA"
         },
-        "placeOfPerformance": {
-          "streetAddress": "Fort Hood, TX. ",
-          "zip": "76522"
-        },
+        "placeOfPerformance": null,
         "additionalInfoLink": null,
-        "uiLink": "https://sam.gov/workspace/contract/opp/876ad75cb1054125981b73c5e085a383/view",
+        "uiLink": "https://sam.gov/workspace/contract/opp/b73d646a10034de495a0d707d75a3277/view",
         "links": [
           {
             "rel": "self",
-            "href": "https://api.sam.gov/prod/opportunities/v2/search?noticeid=876ad75cb1054125981b73c5e085a383&limit=1"
+            "href": "https://api.sam.gov/prod/opportunities/v2/search?noticeid=b73d646a10034de495a0d707d75a3277&limit=1"
           }
         ],
         "resourceLinks": null
       }
     },
     {
-      "notice_id": "e45eee819d1044cdbea1f41fc7d9bd5a",
-      "title": "DRONE",
-      "agency": "DEPT OF DEFENSE.DEPT OF THE ARMY.AMC.ACC.MISSION INSTALLATION CONTRACTING COMMAND.419TH CSB.W6QM MICC-FT DRUM",
-      "department_bucket": "DEPT OF DEFENSE.DEPT OF THE ARMY.AMC.ACC.MISSION INSTALLATION CONTRACTING COMMAND.419TH CSB.W6QM MICC-FT DRUM",
-      "posted_date": "2026-04-21",
-      "response_deadline": "2026-04-24T06:50:00-06:00",
-      "type": "Combined Synopsis/Solicitation",
-      "set_aside": "Total Small Business Set-Aside (FAR 19.5)",
-      "match_analysis": {
-        "total_score": 8,
-        "match_level": "Medium",
-        "reasons": [
-          "Drone/DFR/delivery keyword",
-          "Target department/agency match",
-          "Small Business set-aside"
-        ],
-        "detected_weights_kg": [],
-        "is_small_business": true
-      },
-      "sam_link": "https://sam.gov/workspace/contract/opp/e45eee819d1044cdbea1f41fc7d9bd5a/view",
-      "full_description": "",
-      "raw_api_data": {
-        "noticeId": "e45eee819d1044cdbea1f41fc7d9bd5a",
-        "title": "DRONE",
-        "solicitationNumber": "W911S226U3061",
-        "fullParentPathName": "DEPT OF DEFENSE.DEPT OF THE ARMY.AMC.ACC.MISSION INSTALLATION CONTRACTING COMMAND.419TH CSB.W6QM MICC-FT DRUM",
-        "fullParentPathCode": "021.2100.AMC.ACC.MICC.419TH CSB.W911S2",
-        "postedDate": "2026-04-21",
-        "type": "Combined Synopsis/Solicitation",
-        "baseType": "Combined Synopsis/Solicitation",
-        "archiveType": "autocustom",
-        "archiveDate": "2027-04-21",
-        "typeOfSetAsideDescription": "Total Small Business Set-Aside (FAR 19.5)",
-        "typeOfSetAside": "SBA",
-        "responseDeadLine": "2026-04-24T06:50:00-06:00",
-        "naicsCode": "336411",
-        "naicsCodes": [
-          "336411"
-        ],
-        "classificationCode": "1550",
-        "active": "Yes",
-        "award": null,
-        "pointOfContact": [
-          {
-            "fax": "",
-            "type": "primary",
-            "email": "omar.banda2.mil@army.mil",
-            "phone": "9033360351",
-            "title": null,
-            "fullName": "Omar Banda"
-          }
-        ],
-        "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=e45eee819d1044cdbea1f41fc7d9bd5a",
-        "organizationType": "OFFICE",
-        "officeAddress": {
-          "zipcode": "13602-5220",
-          "city": "FORT DRUM",
-          "countryCode": "USA",
-          "state": "NY"
-        },
-        "placeOfPerformance": {
-          "streetAddress": "FT HOOD, TX ",
-          "zip": "76549"
-        },
-        "additionalInfoLink": null,
-        "uiLink": "https://sam.gov/workspace/contract/opp/e45eee819d1044cdbea1f41fc7d9bd5a/view",
-        "links": [
-          {
-            "rel": "self",
-            "href": "https://api.sam.gov/prod/opportunities/v2/search?noticeid=e45eee819d1044cdbea1f41fc7d9bd5a&limit=1"
-          }
-        ],
-        "resourceLinks": null
-      }
-    },
-    {
-      "notice_id": "aac611a16140462186fa904c0332ce1b",
-      "title": "Drones",
-      "agency": "DEPT OF DEFENSE.DEPT OF THE ARMY.AMC.ACC.MISSION INSTALLATION CONTRACTING COMMAND.419TH CSB.W6QM MICC-FT DRUM",
-      "department_bucket": "DEPT OF DEFENSE.DEPT OF THE ARMY.AMC.ACC.MISSION INSTALLATION CONTRACTING COMMAND.419TH CSB.W6QM MICC-FT DRUM",
-      "posted_date": "2026-05-06",
-      "response_deadline": "2026-05-13T13:00:00-07:00",
-      "type": "Combined Synopsis/Solicitation",
-      "set_aside": "Total Small Business Set-Aside (FAR 19.5)",
-      "match_analysis": {
-        "total_score": 8,
-        "match_level": "Medium",
-        "reasons": [
-          "Drone/DFR/delivery keyword",
-          "Target department/agency match",
-          "Small Business set-aside"
-        ],
-        "detected_weights_kg": [],
-        "is_small_business": true
-      },
-      "sam_link": "https://sam.gov/workspace/contract/opp/aac611a16140462186fa904c0332ce1b/view",
-      "full_description": "",
-      "raw_api_data": {
-        "noticeId": "aac611a16140462186fa904c0332ce1b",
-        "title": "Drones",
-        "solicitationNumber": "W911S226U3183",
-        "fullParentPathName": "DEPT OF DEFENSE.DEPT OF THE ARMY.AMC.ACC.MISSION INSTALLATION CONTRACTING COMMAND.419TH CSB.W6QM MICC-FT DRUM",
-        "fullParentPathCode": "021.2100.AMC.ACC.MICC.419TH CSB.W911S2",
-        "postedDate": "2026-05-06",
-        "type": "Combined Synopsis/Solicitation",
-        "baseType": "Combined Synopsis/Solicitation",
-        "archiveType": "autocustom",
-        "archiveDate": "2027-05-06",
-        "typeOfSetAsideDescription": "Total Small Business Set-Aside (FAR 19.5)",
-        "typeOfSetAside": "SBA",
-        "responseDeadLine": "2026-05-13T13:00:00-07:00",
-        "naicsCode": "336411",
-        "naicsCodes": [
-          "336411"
-        ],
-        "classificationCode": "1550",
-        "active": "Yes",
-        "award": null,
-        "pointOfContact": [
-          {
-            "fax": "",
-            "type": "primary",
-            "email": "john.w.parkinson2.mil@army.mil",
-            "phone": "915-586-5300",
-            "title": null,
-            "fullName": "John Parkinson"
-          }
-        ],
-        "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=aac611a16140462186fa904c0332ce1b",
-        "organizationType": "OFFICE",
-        "officeAddress": {
-          "zipcode": "13602-5220",
-          "city": "FORT DRUM",
-          "countryCode": "USA",
-          "state": "NY"
-        },
-        "placeOfPerformance": {
-          "streetAddress": "W1J0 HQ 5TH AR (CATB)BLDG 2527 CHAFFEE RDFORT BLISS TX 79916-5000",
-          "zip": "79916"
-        },
-        "additionalInfoLink": null,
-        "uiLink": "https://sam.gov/workspace/contract/opp/aac611a16140462186fa904c0332ce1b/view",
-        "links": [
-          {
-            "rel": "self",
-            "href": "https://api.sam.gov/prod/opportunities/v2/search?noticeid=aac611a16140462186fa904c0332ce1b&limit=1"
-          }
-        ],
-        "resourceLinks": null
-      }
-    },
-    {
-      "notice_id": "1ae84253396340848943f71a741a1015",
-      "title": "Battalion Reconnaissance Uncrewed Aircraft Systems (UAS)",
-      "agency": "DEPT OF DEFENSE.DEPT OF THE ARMY.AMC.ACC.ACC-CTRS.ACC RSA.W6QK ACC-RSA",
-      "department_bucket": "DEPT OF DEFENSE.DEPT OF THE ARMY.AMC.ACC.ACC-CTRS.ACC RSA.W6QK ACC-RSA",
-      "posted_date": "2026-04-30",
-      "response_deadline": "2026-05-05T23:59:00-05:00",
+      "notice_id": "3ab4c404e0f94d81a599b4519d5d0948",
+      "title": "FY26 97 OSS DRONE HARDWARE AND PERPETUAL SOFTWARE",
+      "agency": "DEPT OF DEFENSE.DEPT OF THE AIR FORCE.AIR EDUCATION AND TRAINING COMMAND.FA4419   97 CONF  CC",
+      "department_bucket": "DEPT OF DEFENSE.DEPT OF THE AIR FORCE.AIR EDUCATION AND TRAINING COMMAND.FA4419   97 CONF  CC",
+      "posted_date": "2026-06-10",
+      "response_deadline": "2026-06-26T17:00:00-05:00",
       "type": "Solicitation",
-      "set_aside": null,
+      "set_aside": "Total Small Business Set-Aside (FAR 19.5)",
       "match_analysis": {
-        "total_score": 7,
+        "total_score": 10,
         "match_level": "Medium",
         "reasons": [
           "Drone/DFR/delivery keyword",
           "Target department/agency match",
+          "Brand name mentioned with 'or equal' — open to alternatives",
+          "Small Business set-aside"
+        ],
+        "detected_weights_kg": [],
+        "is_small_business": true
+      },
+      "sam_link": "https://sam.gov/workspace/contract/opp/3ab4c404e0f94d81a599b4519d5d0948/view",
+      "full_description": "<p><em>notice to offeror(s)/supplier(s): funds are not presently available for this effort. no award will be made under this solicitation until funds are available. the government reserves the right to cancel this solicitation, either before or after the closing date. in the event the government cancels this solicitation, the government has no obligation to reimburse an offeror for any costs.</em></p>\n\n<p>the 97th contracting flight, altus air force base, oklahoma, intends to issue a request for quote (rfq) for acquisition of drone hardware and perpetual software at altus afb, oklahoma. any questions shall be submitted via email to the below points of contacts by 19 june 2026 at 0700 cst (7:00 am cdt). this acquisition will fall under the north american industry classification system (naics) code 336411 &ndash; aircraft manufacturing. this is a 100% small business set aside.</p>\n\n<p>the following commercial items are requested in this solicitation:</p>\n\n<p>clin 0001 - skydio x10d starter solution (multi-band, ir) na + vt300-z mfn: skydio</p>\n\n<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;pn:dr4dsbn3iza1020na (or equal)</p>\n\n<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;(qty:1)</p>\n\n<p>clin 0002 - skydio spare propellers for x10 mfn: skydio (or equal)</p>\n\n<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;pn: dr4accprp (or equal)</p>\n\n<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;(qty: 2)</p>\n\n<p>clin 0003 - skydio nightsense with ir attachment for x10d mfn: skydio</p>\n\n<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;pn: dr4dattswnair (or equal)</p>\n\n<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;(qty: 1)</p>\n\n<p>clin 0004 - skydio battery (150w) for x10 mfn: skydio</p>\n\n<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;pn: dr4accbat (or equal)</p>\n\n<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;(qty: 2)</p>\n\n<p>clin 0005 - skydio dual charger for x10&nbsp; mfn: skydio</p>\n\n<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;pn: dr4accchrg2 (or equal)</p>\n\n<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;(qty: 1)</p>\n\n<p>clin 0006 - skydio 230w wall adapter, na mfn: skydio</p>\n\n<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;pn: dr4accwad230na (or equal)</p>\n\n<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;(qty: 1)</p>\n\n<p>prospective contractors must be registered in the system for award management database (sam) prior to submission of quotes. offerors are further advised that failure to register in the dod sam prior to submission of proposal will render your firm ineligible for award. recommend registering immediately in order to be eligible for timely award. any questions regarding this notice must be submitted in writing via email to a1c patricia bigornia, contract administrator, (580) 481-7251, patricia.bigornia.1@us.af.mil. alternate contact, scott e. swain, contracting officer, (580) 481-6210, scott.swain.2@us.af.mil. see attachments for full details.</p>\n",
+      "raw_api_data": {
+        "noticeId": "3ab4c404e0f94d81a599b4519d5d0948",
+        "title": "FY26 97 OSS DRONE HARDWARE AND PERPETUAL SOFTWARE",
+        "solicitationNumber": "FA441926Q0030",
+        "fullParentPathName": "DEPT OF DEFENSE.DEPT OF THE AIR FORCE.AIR EDUCATION AND TRAINING COMMAND.FA4419   97 CONF  CC",
+        "fullParentPathCode": "057.5700.AETC.FA4419",
+        "postedDate": "2026-06-10",
+        "type": "Solicitation",
+        "baseType": "Solicitation",
+        "archiveType": "auto15",
+        "archiveDate": "2026-07-11",
+        "typeOfSetAsideDescription": "Total Small Business Set-Aside (FAR 19.5)",
+        "typeOfSetAside": "SBA",
+        "responseDeadLine": "2026-06-26T17:00:00-05:00",
+        "naicsCode": "336411",
+        "naicsCodes": [
+          "336411"
+        ],
+        "classificationCode": "1550",
+        "active": "Yes",
+        "award": null,
+        "pointOfContact": [
+          {
+            "fax": "",
+            "type": "primary",
+            "email": "patricia.bigornia.1@us.af.mil",
+            "phone": "5804817251",
+            "title": null,
+            "fullName": "Patricia Bigornia"
+          },
+          {
+            "fax": "",
+            "type": "secondary",
+            "email": "scott.swain.2@us.af.mil",
+            "phone": "5804816210",
+            "title": null,
+            "fullName": "Scott Swain"
+          }
+        ],
+        "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=3ab4c404e0f94d81a599b4519d5d0948",
+        "organizationType": "OFFICE",
+        "officeAddress": {
+          "zipcode": "73523-5002",
+          "city": "ALTUS AFB",
+          "countryCode": "USA",
+          "state": "OK"
+        },
+        "placeOfPerformance": {
+          "state": {
+            "code": "OK",
+            "name": "Oklahoma"
+          },
+          "zip": "73523",
+          "country": {
+            "code": "USA",
+            "name": "UNITED STATES"
+          }
+        },
+        "additionalInfoLink": null,
+        "uiLink": "https://sam.gov/workspace/contract/opp/3ab4c404e0f94d81a599b4519d5d0948/view",
+        "links": [
+          {
+            "rel": "self",
+            "href": "https://api.sam.gov/prod/opportunities/v2/search?noticeid=3ab4c404e0f94d81a599b4519d5d0948&limit=1"
+          }
+        ],
+        "resourceLinks": [
+          "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/178c4ab6285848ff8f8e0dad3e321ab0/download",
+          "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/6b677153056f44aeb69b1238c8376384/download",
+          "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/c03cb909d9ec4dcdaf766e38980ec195/download",
+          "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/e757439c9ee646fdab9719706f12b10c/download",
+          "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/ef48c01064bd4225ab8db3b11c03fda9/download"
+        ]
+      }
+    },
+    {
+      "notice_id": "df7c9a9913ce4931b72ff48ca85b6d04",
+      "title": "DHS/CBP Commercial Solutions Opening - FINAL Solicitation Release -AUTONOMOUS GROUND SURVEILLANCE VEHICLES (AGSV) - CSOP-BP-GS-26-0002",
+      "agency": "HOMELAND SECURITY, DEPARTMENT OF.US CUSTOMS AND BORDER PROTECTION.MISSION SUPPORT CONTRACTING DIVISION",
+      "department_bucket": "HOMELAND SECURITY, DEPARTMENT OF.US CUSTOMS AND BORDER PROTECTION.MISSION SUPPORT CONTRACTING DIVISION",
+      "posted_date": "2026-06-08",
+      "response_deadline": "2026-06-24T15:00:00-04:00",
+      "type": "Solicitation",
+      "set_aside": "No Set aside used",
+      "match_analysis": {
+        "total_score": 9,
+        "match_level": "Medium",
+        "reasons": [
+          "Drone/DFR/delivery keyword",
+          "Target department/agency match",
+          "LTE / 900MHz / C2 communication cue",
           "Surveillance/Reconnaissance mission match"
         ],
         "detected_weights_kg": [],
         "is_small_business": false
       },
-      "sam_link": "https://sam.gov/workspace/contract/opp/1ae84253396340848943f71a741a1015/view",
-      "full_description": "",
+      "sam_link": "https://sam.gov/workspace/contract/opp/df7c9a9913ce4931b72ff48ca85b6d04/view",
+      "full_description": "<p><strong>important notice:</strong><br />\nthis posting announces the release of the&nbsp;<strong>final version</strong>&nbsp;of the commercial solutions opening (cso) solicitation for csop-bp-gs-26-0002 &ndash; autonomous ground surveillance vehicles (agsv). this solicitation is&nbsp;<strong>no longer a draft</strong>. all interested parties should refer to this final version for current requirements, instructions, and deadlines.</p>\n\n<p><strong>reference:</strong><br />\nthe previous draft version of this solicitation was posted under&nbsp;<strong>notice id: draft-csop-bp-gs-26-0002</strong>. offerors may reference the draft posting for historical context.</p>\n\n<p><strong>synopsis:</strong><br />\nthe department of homeland security (dhs) commercial solutions opening (cso) is a non-federal acquisition regulation (far) based solicitation authority for acquiring innovative and commercial solutions. section 880 of the national defense authorization act (ndaa) for fiscal year 2017 (pub. l. 114-328), as extended, authorizes dhs to implement a pilot program to competitively procure innovative commercial items, technologies, and services using cso procedures. the cso acquisition mechanism provides a streamlined, flexible process and simplified contract terms designed to maximize efficiency and minimize administrative burden for both the government and industry.</p>\n\n<p>dhs, u.s. customs and border protection (cbp), office of acquisition (oa) will use cso procedures to acquire innovative, commercial items, technologies, and services currently in the production/commercialization phase, as well as adaptations of existing commercial products. the cso procedures are described throughout the attached general solicitation document. this announcement invites prospective offerors to respond to the attached solicitation document.</p>\n\n<p>for purposes of this posting, &ldquo;innovative&rdquo; is defined as follows: any item that is&mdash;</p>\n\n<ul>\n\t<li>a new technology, process, or method as of the date of submission of a proposal; or</li>\n\t<li>a new application or adaptation of an existing technology, process, or method as of the date of submission of a proposal.</li>\n</ul>\n\n<p><strong>requirement overview:</strong><br />\ncbp is seeking innovative commercial technology solutions and/or mitigations to address capability gaps for autonomous ground surveillance vehicles (agsv). the overall technology objective is to discover autonomy that enables mobile ground domain awareness in urban and austere environments. cbp will assess the value of autonomy, specifically for ground surveillance vehicles, seeking autonomous ground systems capable of persistent, unattended operation in urban and austere environments, paired with intuitive mission planner (c2) software. all commercial autonomy ground vehicle categories are of interest, including bolt-on autonomy/self-driving stacks and integrated platforms. vehicle platforms must be production-ready and fieldable without significant hardware or software modification.</p>\n\n<p><strong>key updates and major changes from draft to final solicitation:</strong></p>\n\n<ul>\n\t<li>this solicitation supersedes all previous draft versions (<strong>draft notice id: draft-csop-bp-gs-26-0002</strong>).</li>\n\t<li>the deadline for submission of clarification questions is now&nbsp;<strong>june 12, 2026</strong>&nbsp;(previously june 11, 2026).</li>\n\t<li>any questions previously submitted in response to the draft will be consolidated with questions received under this final solicitation. responses will address both sets of questions.</li>\n\t<li>the solution brief page limit is now strictly&nbsp;<strong>10 pages</strong>.</li>\n\t<li>submission deadlines for questions and solution briefs have been updated.</li>\n\t<li>pricing constraints for option periods have been&nbsp;<strong>removed</strong>; there is no longer a cap on option pricing.</li>\n\t<li>additional edits and clarifications have been incorporated throughout the document, including updated far clauses, executive order compliance, and formatting corrections.</li>\n\t<li><strong>all new revisions and changes from the draft are highlighted in red in the attached final solicitation document for ease of identification.</strong></li>\n</ul>\n\n<p><strong>industry day / summit announcement (sam.gov notice id: ipop-fy26-0002):</strong></p>\n\n<p>u.s. customs and border protection (cbp), innovation team (invnt), intends to host a virtual industry day summit to foster discussion, share insights, and accelerate innovation regarding the use of autonomous and physical systems to enhance cbp&#39;s mission. this symposium will include discussions related to cbp invnt&rsquo;s upcoming commercial solutions opening (cso) pilot opening: csop-bp-gs-26-0002 - autonomous ground surveillance vehicles (agsv), among other topics.</p>\n\n<p><strong>date:</strong>&nbsp;june 18th, 2026<br />\n<strong>time:</strong>&nbsp;10:00 am edt &ndash; 1:00 pm edt<br />\n<strong>structure:</strong>&nbsp;virtual symposium featuring a keynote speaker, panel discussions, and lightning talks.</p>\n\n<p><strong>topic descriptions:</strong></p>\n\n<ul>\n\t<li>the future of autonomous systems in advancing the cbp mission</li>\n\t<li>accelerating autonomous ground surveillance solutions for border security</li>\n\t<li>navigating procurement and innovative pathways for emerging technologies</li>\n</ul>\n\n<p>prospective offerors are strongly encouraged to attend this event to gain a deeper understanding of cbp&#39;s requirements and this agsv cso initiative, as well as broader cbp innovation efforts. further details and registration information for the industry day summit can be found at:<br />\nhttps://sam.gov/workspace/contract/opp/2ab33a621eb649218ad832810e6bf863/view</p>\n\n<p><strong>procurement process:</strong><br />\nthe cso solicitation process will include a multi-phased solicitation and evaluation approach:</p>\n\n<ul>\n\t<li><strong>phase 1:</strong>&nbsp;submission and evaluation of the written solution brief (not to exceed 10 pages), which may also include an optional invitation for oral presentations/technical demonstrations.</li>\n\t<li><strong>phase 2:</strong>&nbsp;request for full proposal submission (not to exceed 25 pages).</li>\n</ul>\n\n<p><strong>important information for potential submitters:</strong></p>\n\n<ul>\n\t<li>the solicitation for solution briefs is not a guarantee that award and obligation of funds will be made.</li>\n\t<li>costs incurred by companies in the preparation and submission of their solution briefs in response to solicitations will not be paid by the government.</li>\n\t<li>submissions and proposals are evaluated on their individual merits rather than on a comparative basis, and the government has considerable latitude in determining which of the submitted proposals it will fund.</li>\n\t<li>all potential recipients of cso awards must be registered in the system for award management (sam) before the recipient is awarded the cso contract.</li>\n</ul>\n\n<p><strong>submission instructions:</strong></p>\n\n<ul>\n\t<li>\n\t<p>all questions or requests for clarifications regarding this solicitation must be electronically submitted in writing no later than&nbsp;<strong>3:00 pm eastern standard time, june 12, 2026</strong>&nbsp;to:</p>\n\n\t<ul>\n\t\t<li>aristide.horugavye@cbp.dhs.gov</li>\n\t\t<li>peter.a.giambone@cbp.dhs.gov</li>\n\t\t<li>joshua.bedregal@cbp.dhs.gov</li>\n\t\t<li>the subject of the e-mail must be titled &ldquo;request for clarifications re: csop-bp-gs-26-0002.&rdquo; requests, questions, or comments time-stamped after the question due date and time may not be accepted, nor receive a response from the government, in the sole discretion of the contracting officer (co).</li>\n\t</ul>\n\t</li>\n\t<li>\n\t<p>written solution briefs, as described in section 3.2 of the general solicitation document, must be submitted electronically by&nbsp;<strong>3:00 pm eastern standard time, june 24, 2026</strong>&nbsp;to the same e-mail addresses.</p>\n\t</li>\n</ul>\n\n<p><strong>attachments:</strong></p>\n\n<ul>\n\t<li>final general solicitation &ndash; csop-bp-gs-26-0002</li>\n</ul>\n",
       "raw_api_data": {
-        "noticeId": "1ae84253396340848943f71a741a1015",
-        "title": "Battalion Reconnaissance Uncrewed Aircraft Systems (UAS)",
-        "solicitationNumber": "W58RGZ-26-S-C001-003",
-        "fullParentPathName": "DEPT OF DEFENSE.DEPT OF THE ARMY.AMC.ACC.ACC-CTRS.ACC RSA.W6QK ACC-RSA",
-        "fullParentPathCode": "021.2100.AMC.ACC.ACC-CTRS.ACC RSA.W58RGZ",
-        "postedDate": "2026-04-30",
+        "noticeId": "df7c9a9913ce4931b72ff48ca85b6d04",
+        "title": "DHS/CBP Commercial Solutions Opening - FINAL Solicitation Release -AUTONOMOUS GROUND SURVEILLANCE VEHICLES (AGSV) - CSOP-BP-GS-26-0002",
+        "solicitationNumber": "CSOP-BP-GS-26-0002",
+        "fullParentPathName": "HOMELAND SECURITY, DEPARTMENT OF.US CUSTOMS AND BORDER PROTECTION.MISSION SUPPORT CONTRACTING DIVISION",
+        "fullParentPathCode": "070.7014.70B06C",
+        "postedDate": "2026-06-08",
         "type": "Solicitation",
-        "baseType": "Solicitation",
-        "archiveType": "auto15",
-        "archiveDate": "2026-05-20",
-        "typeOfSetAsideDescription": null,
-        "typeOfSetAside": null,
-        "responseDeadLine": "2026-05-05T23:59:00-05:00",
-        "naicsCode": "336411",
+        "baseType": "Presolicitation",
+        "archiveType": "autocustom",
+        "archiveDate": "2026-09-30",
+        "typeOfSetAsideDescription": "No Set aside used",
+        "typeOfSetAside": "NONE",
+        "responseDeadLine": "2026-06-24T15:00:00-04:00",
+        "naicsCode": "334511",
         "naicsCodes": [
-          "336411"
+          "334511"
         ],
-        "classificationCode": "1550",
+        "classificationCode": "6640",
         "active": "Yes",
         "award": null,
         "pointOfContact": [
           {
             "fax": "",
             "type": "primary",
-            "email": "Usarmy.redstone.acc.mbx.acc-rsa-uas-marketplace@army.mil",
+            "email": "peter.a.giambone@cbp.dhs.gov",
             "phone": "",
             "title": null,
-            "fullName": "Angela  Andrews"
+            "fullName": "Peter Giambone, Branch Chief"
           },
           {
             "fax": null,
             "type": "secondary",
-            "email": "Usarmy.redstone.acc.mbx.acc-rsa-uas-marketplace@army.mil",
+            "email": "ARISTIDE.HORUGAVYE@cbp.dhs.gov",
             "phone": null,
             "title": null,
-            "fullName": "MAJ David Butz"
+            "fullName": "ARISTIDE HORUGAVYE - Lead Contract Specialist"
           }
         ],
-        "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=1ae84253396340848943f71a741a1015",
+        "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=df7c9a9913ce4931b72ff48ca85b6d04",
         "organizationType": "OFFICE",
         "officeAddress": {
-          "zipcode": "35898-0000",
-          "city": "REDSTONE ARSENAL",
+          "zipcode": "20229",
+          "city": "WASHINGTON",
           "countryCode": "USA",
-          "state": "AL"
+          "state": "DC"
         },
         "placeOfPerformance": {
           "city": {
-            "code": "63912",
-            "name": "Redstone Arsenal"
+            "code": "50000",
+            "name": "Washington"
           },
           "state": {
-            "code": "AL",
-            "name": "Alabama"
+            "code": "DC",
+            "name": "District of Columbia"
           },
           "country": {
             "code": "USA",
@@ -669,58 +768,54 @@
           }
         },
         "additionalInfoLink": null,
-        "uiLink": "https://sam.gov/workspace/contract/opp/1ae84253396340848943f71a741a1015/view",
+        "uiLink": "https://sam.gov/workspace/contract/opp/df7c9a9913ce4931b72ff48ca85b6d04/view",
         "links": [
           {
             "rel": "self",
-            "href": "https://api.sam.gov/prod/opportunities/v2/search?noticeid=1ae84253396340848943f71a741a1015&limit=1"
+            "href": "https://api.sam.gov/prod/opportunities/v2/search?noticeid=df7c9a9913ce4931b72ff48ca85b6d04&limit=1"
           }
         ],
         "resourceLinks": [
-          "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/7437ca7b8f9142fab09b55dab34aae46/download",
-          "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/ac8ccf3a00d7484298ff142cc4f1aa87/download",
-          "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/b2a0ddca23224ce08e825727e5749f31/download"
+          "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/255588520f774b5caea7f7755551fcff/download"
         ]
       }
     },
     {
-      "notice_id": "77c669fc2fa6436b83669b933c8891fd",
-      "title": "DRAGANFLY HEAVY LIFT DRONE ",
+      "notice_id": "06b916f64ec64f5ebc146a1a627acc21",
+      "title": "HiDef Camera UAV",
       "agency": "DEPT OF DEFENSE.DEPT OF THE ARMY.AMC.ACC.MISSION INSTALLATION CONTRACTING COMMAND.419TH CSB.W6QM MICC-FT DRUM",
       "department_bucket": "DEPT OF DEFENSE.DEPT OF THE ARMY.AMC.ACC.MISSION INSTALLATION CONTRACTING COMMAND.419TH CSB.W6QM MICC-FT DRUM",
-      "posted_date": "2026-05-06",
-      "response_deadline": "2026-05-15T23:55:00-05:00",
+      "posted_date": "2026-05-12",
+      "response_deadline": "2026-05-19T13:00:00-07:00",
       "type": "Combined Synopsis/Solicitation",
       "set_aside": "Total Small Business Set-Aside (FAR 19.5)",
       "match_analysis": {
-        "total_score": 7,
+        "total_score": 8,
         "match_level": "Medium",
         "reasons": [
           "Drone/DFR/delivery keyword",
           "Target department/agency match",
-          "Generic Heavy Lift/Cargo keyword match",
-          "Specific brand required (no 'or equal') — penalty applied",
           "Small Business set-aside"
         ],
         "detected_weights_kg": [],
         "is_small_business": true
       },
-      "sam_link": "https://sam.gov/workspace/contract/opp/77c669fc2fa6436b83669b933c8891fd/view",
-      "full_description": "",
+      "sam_link": "https://sam.gov/workspace/contract/opp/06b916f64ec64f5ebc146a1a627acc21/view",
+      "full_description": "looking for two uavs.  one small and one nano.  must be able to withstand high winds, have gimbals for stabilization, must include storage cases and high definition 4k video and isr.  drone a: 55min flight time, less than 37dba at 25meters, operational temp -20 -45 degrees, 28 mile flight range, avoidance, gps denied flight, 1080p streaming, 3 -axis gimbal stabilizer, 3840x2160 dual sony 4k camera, operational at 30 kt wind, supports atak, watertight, dust proof case, 3x batteries, field swappable gimbal and repair bag w. tools, 320p isr drone b: gimbal stabilized 48mp 320p/640p ir, 36 min flight, 360 degree obstacle avoidance, gps denied control, unseen and inaudible at 30ft, 153g takeoff weight, nano sized, watertight dust proof transit case, 8000x6000px still imagery, 4k mpeg-4 video ",
       "raw_api_data": {
-        "noticeId": "77c669fc2fa6436b83669b933c8891fd",
-        "title": "DRAGANFLY HEAVY LIFT DRONE ",
-        "solicitationNumber": "W911S226U3194",
+        "noticeId": "06b916f64ec64f5ebc146a1a627acc21",
+        "title": "HiDef Camera UAV",
+        "solicitationNumber": "W911S226U3211",
         "fullParentPathName": "DEPT OF DEFENSE.DEPT OF THE ARMY.AMC.ACC.MISSION INSTALLATION CONTRACTING COMMAND.419TH CSB.W6QM MICC-FT DRUM",
         "fullParentPathCode": "021.2100.AMC.ACC.MICC.419TH CSB.W911S2",
-        "postedDate": "2026-05-06",
+        "postedDate": "2026-05-12",
         "type": "Combined Synopsis/Solicitation",
         "baseType": "Combined Synopsis/Solicitation",
         "archiveType": "autocustom",
-        "archiveDate": "2027-05-06",
+        "archiveDate": "2027-05-12",
         "typeOfSetAsideDescription": "Total Small Business Set-Aside (FAR 19.5)",
         "typeOfSetAside": "SBA",
-        "responseDeadLine": "2026-05-15T23:55:00-05:00",
+        "responseDeadLine": "2026-05-19T13:00:00-07:00",
         "naicsCode": "336411",
         "naicsCodes": [
           "336411"
@@ -732,13 +827,13 @@
           {
             "fax": "",
             "type": "primary",
-            "email": "tina.m.walker56.mil@army.mil",
-            "phone": "3157723423",
+            "email": "patrick.j.scott1.mil@army.mil",
+            "phone": "8083689109",
             "title": null,
-            "fullName": "Tina Walker"
+            "fullName": "Patrick Scott"
           }
         ],
-        "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=77c669fc2fa6436b83669b933c8891fd",
+        "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=06b916f64ec64f5ebc146a1a627acc21",
         "organizationType": "OFFICE",
         "officeAddress": {
           "zipcode": "13602-5220",
@@ -747,240 +842,49 @@
           "state": "NY"
         },
         "placeOfPerformance": {
-          "streetAddress": "FORT DRUM, NY ",
-          "zip": "13603"
+          "streetAddress": "Fort Carson, CO",
+          "zip": "80913"
         },
         "additionalInfoLink": null,
-        "uiLink": "https://sam.gov/workspace/contract/opp/77c669fc2fa6436b83669b933c8891fd/view",
+        "uiLink": "https://sam.gov/workspace/contract/opp/06b916f64ec64f5ebc146a1a627acc21/view",
         "links": [
           {
             "rel": "self",
-            "href": "https://api.sam.gov/prod/opportunities/v2/search?noticeid=77c669fc2fa6436b83669b933c8891fd&limit=1"
+            "href": "https://api.sam.gov/prod/opportunities/v2/search?noticeid=06b916f64ec64f5ebc146a1a627acc21&limit=1"
           }
         ],
         "resourceLinks": null
       }
     },
     {
-      "notice_id": "b8214aa8ae814a198055edc5b69f6be2",
-      "title": "South Korean S-UAS BPAs",
-      "agency": "DEPT OF DEFENSE.DEPT OF THE ARMY.AMC.ACC.ACC-OO.411TH CSB.0411 AQ HQ     CONTRACT AUG",
-      "department_bucket": "DEPT OF DEFENSE.DEPT OF THE ARMY.AMC.ACC.ACC-OO.411TH CSB.0411 AQ HQ     CONTRACT AUG",
-      "posted_date": "2026-04-10",
-      "response_deadline": "2026-06-10T10:00:00+09:00",
-      "type": "Solicitation",
-      "set_aside": "No Set aside used",
-      "match_analysis": {
-        "total_score": 5,
-        "match_level": "Low",
-        "reasons": [
-          "Drone/DFR/delivery keyword",
-          "Target department/agency match"
-        ],
-        "detected_weights_kg": [],
-        "is_small_business": false
-      },
-      "sam_link": "https://sam.gov/workspace/contract/opp/b8214aa8ae814a198055edc5b69f6be2/view",
-      "full_description": "",
-      "raw_api_data": {
-        "noticeId": "b8214aa8ae814a198055edc5b69f6be2",
-        "title": "South Korean S-UAS BPAs",
-        "solicitationNumber": "W91QVN26QA017",
-        "fullParentPathName": "DEPT OF DEFENSE.DEPT OF THE ARMY.AMC.ACC.ACC-OO.411TH CSB.0411 AQ HQ     CONTRACT AUG",
-        "fullParentPathCode": "021.2100.AMC.ACC.ACC-OO.411TH CSB.W91QVN",
-        "postedDate": "2026-04-10",
-        "type": "Solicitation",
-        "baseType": "Solicitation",
-        "archiveType": "auto15",
-        "archiveDate": "2026-06-25",
-        "typeOfSetAsideDescription": "No Set aside used",
-        "typeOfSetAside": "NONE",
-        "responseDeadLine": "2026-06-10T10:00:00+09:00",
-        "naicsCode": "336411",
-        "naicsCodes": [
-          "336411"
-        ],
-        "classificationCode": "1550",
-        "active": "Yes",
-        "award": null,
-        "pointOfContact": [
-          {
-            "fax": "",
-            "type": "primary",
-            "email": "miranda.l.harden.mil@army.mil",
-            "phone": "3157550629",
-            "title": null,
-            "fullName": "Miranda Harden"
-          },
-          {
-            "fax": "",
-            "type": "secondary",
-            "email": "junyu.tao.mil@army.mil",
-            "phone": "3157553307",
-            "title": null,
-            "fullName": "Tao, Junyu"
-          }
-        ],
-        "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=b8214aa8ae814a198055edc5b69f6be2",
-        "organizationType": "OFFICE",
-        "officeAddress": {
-          "zipcode": "96271-5289",
-          "city": "APO",
-          "countryCode": "USA",
-          "state": "AP"
-        },
-        "placeOfPerformance": {
-          "city": {
-            "code": "Camp Humphreys",
-            "name": "Camp Humphreys"
-          },
-          "state": {
-            "code": "KR-29",
-            "name": "Gwangju"
-          },
-          "country": {
-            "code": "KOR",
-            "name": "KOREA, SOUTH"
-          }
-        },
-        "additionalInfoLink": null,
-        "uiLink": "https://sam.gov/workspace/contract/opp/b8214aa8ae814a198055edc5b69f6be2/view",
-        "links": [
-          {
-            "rel": "self",
-            "href": "https://api.sam.gov/prod/opportunities/v2/search?noticeid=b8214aa8ae814a198055edc5b69f6be2&limit=1"
-          }
-        ],
-        "resourceLinks": [
-          "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/ef09cea58aed4030816490567e9253c6/download"
-        ]
-      }
-    },
-    {
-      "notice_id": "a1c5ab527bde44a5ad422b04ccccc1bb",
-      "title": "Call for Solutions for UAS Marketplace Onboarding of Group 1 and 2 Uncrewed Aircraft Systems (UAS) and Launched Effects (LE)",
-      "agency": "DEPT OF DEFENSE.DEPT OF THE ARMY.AMC.ACC.ACC-CTRS.ACC RSA.W6QK ACC-RSA",
-      "department_bucket": "DEPT OF DEFENSE.DEPT OF THE ARMY.AMC.ACC.ACC-CTRS.ACC RSA.W6QK ACC-RSA",
-      "posted_date": "2026-04-13",
-      "response_deadline": "2026-04-17T23:59:00-05:00",
-      "type": "Solicitation",
-      "set_aside": "No Set aside used",
-      "match_analysis": {
-        "total_score": 5,
-        "match_level": "Low",
-        "reasons": [
-          "Drone/DFR/delivery keyword",
-          "Target department/agency match"
-        ],
-        "detected_weights_kg": [],
-        "is_small_business": false
-      },
-      "sam_link": "https://sam.gov/workspace/contract/opp/a1c5ab527bde44a5ad422b04ccccc1bb/view",
-      "full_description": "",
-      "raw_api_data": {
-        "noticeId": "a1c5ab527bde44a5ad422b04ccccc1bb",
-        "title": "Call for Solutions for UAS Marketplace Onboarding of Group 1 and 2 Uncrewed Aircraft Systems (UAS) and Launched Effects (LE)",
-        "solicitationNumber": "W58RGZ-26-S-C001-0001",
-        "fullParentPathName": "DEPT OF DEFENSE.DEPT OF THE ARMY.AMC.ACC.ACC-CTRS.ACC RSA.W6QK ACC-RSA",
-        "fullParentPathCode": "021.2100.AMC.ACC.ACC-CTRS.ACC RSA.W58RGZ",
-        "postedDate": "2026-04-13",
-        "type": "Solicitation",
-        "baseType": "Solicitation",
-        "archiveType": "autocustom",
-        "archiveDate": "2046-03-26",
-        "typeOfSetAsideDescription": "No Set aside used",
-        "typeOfSetAside": "NONE",
-        "responseDeadLine": "2026-04-17T23:59:00-05:00",
-        "naicsCode": "336411",
-        "naicsCodes": [
-          "336411"
-        ],
-        "classificationCode": "1550",
-        "active": "Yes",
-        "award": null,
-        "pointOfContact": [
-          {
-            "fax": "",
-            "type": "primary",
-            "email": "usarmy.redstone.acc.mbx.acc-rsa-uas-marketplace@army.mil",
-            "phone": "(520) 725-7470",
-            "title": null,
-            "fullName": "Latoya Pryor, Contracting Officer"
-          },
-          {
-            "fax": "",
-            "type": "secondary",
-            "email": "usarmy.redstone.acc.mbx.acc-rsa-uas-marketplace@army.mil",
-            "phone": "(520) 674-8087",
-            "title": null,
-            "fullName": "Miguel Harris, Contract Specialist"
-          }
-        ],
-        "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=a1c5ab527bde44a5ad422b04ccccc1bb",
-        "organizationType": "OFFICE",
-        "officeAddress": {
-          "zipcode": "35898-0000",
-          "city": "REDSTONE ARSENAL",
-          "countryCode": "USA",
-          "state": "AL"
-        },
-        "placeOfPerformance": {
-          "city": {
-            "code": "63912",
-            "name": "Redstone Arsenal"
-          },
-          "state": {
-            "code": "AL",
-            "name": "Alabama"
-          },
-          "zip": "35898",
-          "country": {
-            "code": "USA",
-            "name": "UNITED STATES"
-          }
-        },
-        "additionalInfoLink": null,
-        "uiLink": "https://sam.gov/workspace/contract/opp/a1c5ab527bde44a5ad422b04ccccc1bb/view",
-        "links": [
-          {
-            "rel": "self",
-            "href": "https://api.sam.gov/prod/opportunities/v2/search?noticeid=a1c5ab527bde44a5ad422b04ccccc1bb&limit=1"
-          }
-        ],
-        "resourceLinks": [
-          "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/5812195c412348c095a87654c4ea3f15/download",
-          "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/d9671a44413e4cd982ebc913108d3494/download"
-        ]
-      }
-    },
-    {
-      "notice_id": "1db3f797829b4a16a8a4d1e3fbee1213",
+      "notice_id": "1c8c9fed25344fc98d7a723b1b418dd0",
       "title": "Platoon Level Small Uncrewed Aircraft System (SUAS)",
       "agency": "DEPT OF DEFENSE.DEPT OF THE ARMY.AMC.ACC.ACC-CTRS.ACC RSA.W6QK ACC-RSA",
       "department_bucket": "DEPT OF DEFENSE.DEPT OF THE ARMY.AMC.ACC.ACC-CTRS.ACC RSA.W6QK ACC-RSA",
-      "posted_date": "2026-04-28",
+      "posted_date": "2026-05-13",
       "response_deadline": "2026-05-15T17:00:00-05:00",
       "type": "Solicitation",
       "set_aside": null,
       "match_analysis": {
-        "total_score": 5,
-        "match_level": "Low",
+        "total_score": 8,
+        "match_level": "Medium",
         "reasons": [
           "Drone/DFR/delivery keyword",
-          "Target department/agency match"
+          "Target department/agency match",
+          "VTOL requirement match"
         ],
         "detected_weights_kg": [],
         "is_small_business": false
       },
-      "sam_link": "https://sam.gov/workspace/contract/opp/1db3f797829b4a16a8a4d1e3fbee1213/view",
-      "full_description": "",
+      "sam_link": "https://sam.gov/workspace/contract/opp/1c8c9fed25344fc98d7a723b1b418dd0/view",
+      "full_description": "<p>acc-rsa, in conjunction with pm-uas, is proud to announce the release of the&nbsp;<strong>platoon level small uncrewed aircraft system (suas) call for solutions (c4s) </strong>under the uncrewed aircraft systems (uas) marketplace commercial solution opening (cso) w58rgz-26-s-c001.&nbsp;this call will competitively acquire and/or onboard innovative commercial, vertical take-off and landing (vtol) uncrewed aircraft systems (uas) in the platoon level suas classification. the government reserves the<br />\nright to alter or cancel this call at any time.</p>\n\n<p>the purpose of this effort is to increase current capabilities in the field, advance the army&rsquo;s requirements and accelerate the integration of cutting-edge suas technologies while driving cost efficiencies. this effort aligns with the department of war&#39;s (dow) strategic objective of achieving drone dominance. through this call, the army ensures that industry remains informed of its changing needs, fostering ongoing investment and innovation in suas technologies to address future opportunities.</p>\n\n<p>please read the call and the attachments, in their entirety,&nbsp;for detailed submission information.</p>\n",
       "raw_api_data": {
-        "noticeId": "1db3f797829b4a16a8a4d1e3fbee1213",
+        "noticeId": "1c8c9fed25344fc98d7a723b1b418dd0",
         "title": "Platoon Level Small Uncrewed Aircraft System (SUAS)",
         "solicitationNumber": "W58RGZ-26-S-C001-0002",
         "fullParentPathName": "DEPT OF DEFENSE.DEPT OF THE ARMY.AMC.ACC.ACC-CTRS.ACC RSA.W6QK ACC-RSA",
         "fullParentPathCode": "021.2100.AMC.ACC.ACC-CTRS.ACC RSA.W58RGZ",
-        "postedDate": "2026-04-28",
+        "postedDate": "2026-05-13",
         "type": "Solicitation",
         "baseType": "Solicitation",
         "archiveType": "autocustom",
@@ -1013,7 +917,7 @@
             "fullName": "Benjamin May"
           }
         ],
-        "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=1db3f797829b4a16a8a4d1e3fbee1213",
+        "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=1c8c9fed25344fc98d7a723b1b418dd0",
         "organizationType": "OFFICE",
         "officeAddress": {
           "zipcode": "35898-0000",
@@ -1037,35 +941,36 @@
           }
         },
         "additionalInfoLink": null,
-        "uiLink": "https://sam.gov/workspace/contract/opp/1db3f797829b4a16a8a4d1e3fbee1213/view",
+        "uiLink": "https://sam.gov/workspace/contract/opp/1c8c9fed25344fc98d7a723b1b418dd0/view",
         "links": [
           {
             "rel": "self",
-            "href": "https://api.sam.gov/prod/opportunities/v2/search?noticeid=1db3f797829b4a16a8a4d1e3fbee1213&limit=1"
+            "href": "https://api.sam.gov/prod/opportunities/v2/search?noticeid=1c8c9fed25344fc98d7a723b1b418dd0&limit=1"
           }
         ],
         "resourceLinks": [
           "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/172e7e6f5d0b4eed8514fb3a21195729/download",
+          "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/48da6fb5b9dd4eedaa402d7d9bc7aaa3/download",
           "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/6264930b9126483882ef11e85f9020d3/download",
           "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/7fdf8b4f9522477c8d63031e8ef55889/download",
+          "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/fc80638ed41b4d07a2b28bf817d0d621/download",
           "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/fde7d0175b34461787a0fdf970f6ebe4/download"
         ]
       }
     },
     {
-      "notice_id": "dd958c88cf5a43a3adcdfff9a9e552f1",
-      "title": "UAS Components",
+      "notice_id": "35c60592208847d1b6b5dcb5db02d281",
+      "title": "Drone Game Elements, Registrations, and Trophies",
       "agency": "DEPT OF DEFENSE.DEPT OF THE ARMY.AMC.ACC.MISSION INSTALLATION CONTRACTING COMMAND.419TH CSB.W6QM MICC-FT DRUM",
       "department_bucket": "DEPT OF DEFENSE.DEPT OF THE ARMY.AMC.ACC.MISSION INSTALLATION CONTRACTING COMMAND.419TH CSB.W6QM MICC-FT DRUM",
-      "posted_date": "2026-04-29",
-      "response_deadline": "2026-05-06T09:00:00-05:00",
+      "posted_date": "2026-06-02",
+      "response_deadline": "2026-06-09T06:00:00-04:00",
       "type": "Combined Synopsis/Solicitation",
       "set_aside": "Total Small Business Set-Aside (FAR 19.5)",
       "match_analysis": {
-        "total_score": 5,
-        "match_level": "Low",
+        "total_score": 8,
+        "match_level": "Medium",
         "reasons": [
-          "Title suggests components/parts only, not a complete system",
           "Drone/DFR/delivery keyword",
           "Target department/agency match",
           "Small Business set-aside"
@@ -1073,22 +978,22 @@
         "detected_weights_kg": [],
         "is_small_business": true
       },
-      "sam_link": "https://sam.gov/workspace/contract/opp/dd958c88cf5a43a3adcdfff9a9e552f1/view",
-      "full_description": "",
+      "sam_link": "https://sam.gov/workspace/contract/opp/35c60592208847d1b6b5dcb5db02d281/view",
+      "full_description": "drone game elements, registrations and trophies ",
       "raw_api_data": {
-        "noticeId": "dd958c88cf5a43a3adcdfff9a9e552f1",
-        "title": "UAS Components",
-        "solicitationNumber": "W911S226U3129",
+        "noticeId": "35c60592208847d1b6b5dcb5db02d281",
+        "title": "Drone Game Elements, Registrations, and Trophies",
+        "solicitationNumber": "W911S226U3361",
         "fullParentPathName": "DEPT OF DEFENSE.DEPT OF THE ARMY.AMC.ACC.MISSION INSTALLATION CONTRACTING COMMAND.419TH CSB.W6QM MICC-FT DRUM",
         "fullParentPathCode": "021.2100.AMC.ACC.MICC.419TH CSB.W911S2",
-        "postedDate": "2026-04-29",
+        "postedDate": "2026-06-02",
         "type": "Combined Synopsis/Solicitation",
         "baseType": "Combined Synopsis/Solicitation",
         "archiveType": "autocustom",
-        "archiveDate": "2027-04-29",
+        "archiveDate": "2027-06-02",
         "typeOfSetAsideDescription": "Total Small Business Set-Aside (FAR 19.5)",
         "typeOfSetAside": "SBA",
-        "responseDeadLine": "2026-05-06T09:00:00-05:00",
+        "responseDeadLine": "2026-06-09T06:00:00-04:00",
         "naicsCode": "336411",
         "naicsCodes": [
           "336411"
@@ -1100,13 +1005,13 @@
           {
             "fax": "",
             "type": "primary",
-            "email": "LOUIS.J.STERGAR.MIL@ARMY.MIL",
-            "phone": "2165754933",
+            "email": "jason.g.bochert.civ@army.mil",
+            "phone": "5026244188",
             "title": null,
-            "fullName": "Louis Stergar"
+            "fullName": "Jason Bochert"
           }
         ],
-        "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=dd958c88cf5a43a3adcdfff9a9e552f1",
+        "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=35c60592208847d1b6b5dcb5db02d281",
         "organizationType": "OFFICE",
         "officeAddress": {
           "zipcode": "13602-5220",
@@ -1115,125 +1020,33 @@
           "state": "NY"
         },
         "placeOfPerformance": {
-          "streetAddress": "FT Hood, TX",
-          "zip": "76544"
+          "streetAddress": "Joint Base Lewis-McChord",
+          "zip": "98433"
         },
         "additionalInfoLink": null,
-        "uiLink": "https://sam.gov/workspace/contract/opp/dd958c88cf5a43a3adcdfff9a9e552f1/view",
+        "uiLink": "https://sam.gov/workspace/contract/opp/35c60592208847d1b6b5dcb5db02d281/view",
         "links": [
           {
             "rel": "self",
-            "href": "https://api.sam.gov/prod/opportunities/v2/search?noticeid=dd958c88cf5a43a3adcdfff9a9e552f1&limit=1"
+            "href": "https://api.sam.gov/prod/opportunities/v2/search?noticeid=35c60592208847d1b6b5dcb5db02d281&limit=1"
           }
         ],
         "resourceLinks": null
       }
     },
     {
-      "notice_id": "b38a5e9a7c7c44afa609bc6eb475e88a",
-      "title": "UAVs, Thermal Cameras & Training for Bosnia",
-      "agency": "DEPT OF DEFENSE.DEPT OF THE ARMY.AMC.ACC.ACC-OO.409TH CSB.0409 AQ HQ     CONTRACT",
-      "department_bucket": "DEPT OF DEFENSE.DEPT OF THE ARMY.AMC.ACC.ACC-OO.409TH CSB.0409 AQ HQ     CONTRACT",
-      "posted_date": "2026-04-30",
-      "response_deadline": "2026-05-11T12:00:00+02:00",
-      "type": "Combined Synopsis/Solicitation",
-      "set_aside": "No Set aside used",
-      "match_analysis": {
-        "total_score": 5,
-        "match_level": "Low",
-        "reasons": [
-          "Drone/DFR/delivery keyword",
-          "Target department/agency match"
-        ],
-        "detected_weights_kg": [],
-        "is_small_business": false
-      },
-      "sam_link": "https://sam.gov/workspace/contract/opp/b38a5e9a7c7c44afa609bc6eb475e88a/view",
-      "full_description": "",
-      "raw_api_data": {
-        "noticeId": "b38a5e9a7c7c44afa609bc6eb475e88a",
-        "title": "UAVs, Thermal Cameras & Training for Bosnia",
-        "solicitationNumber": "W564KV26QA034",
-        "fullParentPathName": "DEPT OF DEFENSE.DEPT OF THE ARMY.AMC.ACC.ACC-OO.409TH CSB.0409 AQ HQ     CONTRACT",
-        "fullParentPathCode": "021.2100.AMC.ACC.ACC-OO.409TH CSB.W564KV",
-        "postedDate": "2026-04-30",
-        "type": "Combined Synopsis/Solicitation",
-        "baseType": "Combined Synopsis/Solicitation",
-        "archiveType": "auto15",
-        "archiveDate": "2026-05-26",
-        "typeOfSetAsideDescription": "No Set aside used",
-        "typeOfSetAside": "NONE",
-        "responseDeadLine": "2026-05-11T12:00:00+02:00",
-        "naicsCode": "336411",
-        "naicsCodes": [
-          "336411"
-        ],
-        "classificationCode": "1550",
-        "active": "Yes",
-        "award": null,
-        "pointOfContact": [
-          {
-            "fax": "",
-            "type": "primary",
-            "email": "kwaku.opoku.mil@army.mil",
-            "phone": "4906111435426826",
-            "title": null,
-            "fullName": "Kwaku Opoku"
-          },
-          {
-            "fax": "",
-            "type": "secondary",
-            "email": "brandon.m.donalson.civ@army.mil",
-            "phone": "06111435426809",
-            "title": null,
-            "fullName": "Brandon Donalson"
-          }
-        ],
-        "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=b38a5e9a7c7c44afa609bc6eb475e88a",
-        "organizationType": "OFFICE",
-        "officeAddress": {
-          "zipcode": "09227",
-          "city": "APO",
-          "countryCode": "USA",
-          "state": "AE"
-        },
-        "placeOfPerformance": {
-          "country": {
-            "code": "BIH",
-            "name": "BOSNIA AND HERZEGOVINA"
-          }
-        },
-        "additionalInfoLink": null,
-        "uiLink": "https://sam.gov/workspace/contract/opp/b38a5e9a7c7c44afa609bc6eb475e88a/view",
-        "links": [
-          {
-            "rel": "self",
-            "href": "https://api.sam.gov/prod/opportunities/v2/search?noticeid=b38a5e9a7c7c44afa609bc6eb475e88a&limit=1"
-          }
-        ],
-        "resourceLinks": [
-          "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/54bc503aa89d4a95990f9679a32be9f5/download",
-          "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/990f0682083d4074b6f5dfb6698afbf9/download",
-          "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/9b8947d706504df5b8cd7bfc20c95400/download",
-          "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/bb5b34eac3e840cabe74727c40fd8033/download",
-          "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/c84ff51ce9f34c37864f01ae10c16754/download"
-        ]
-      }
-    },
-    {
-      "notice_id": "6b07c8f9ddbd47c1b85f3afd1e04db5e",
-      "title": "C-SUAS Equipment",
-      "agency": "DEPT OF DEFENSE.DEPT OF THE AIR FORCE.AIR EDUCATION AND TRAINING COMMAND.FA4419   97 CONF  CC",
-      "department_bucket": "DEPT OF DEFENSE.DEPT OF THE AIR FORCE.AIR EDUCATION AND TRAINING COMMAND.FA4419   97 CONF  CC",
-      "posted_date": "2026-04-21",
-      "response_deadline": "2026-05-06T11:00:00-05:00",
+      "notice_id": "afbc7131c87942e987b6eae31d83a721",
+      "title": "BCANGB - Handheld C-UAS",
+      "agency": "DEPT OF DEFENSE.DEPT OF THE ARMY.NATIONAL GUARD BUREAU.JFHQ USPFO MI.USPFO MI PROCUREMENT.W7NF USPFO ACTIVITY MIANG 110",
+      "department_bucket": "DEPT OF DEFENSE.DEPT OF THE ARMY.NATIONAL GUARD BUREAU.JFHQ USPFO MI.USPFO MI PROCUREMENT.W7NF USPFO ACTIVITY MIANG 110",
+      "posted_date": "2026-06-02",
+      "response_deadline": "2026-07-02T14:00:00-04:00",
       "type": "Combined Synopsis/Solicitation",
       "set_aside": "Total Small Business Set-Aside (FAR 19.5)",
       "match_analysis": {
-        "total_score": 3,
-        "match_level": "Low",
+        "total_score": 8,
+        "match_level": "Medium",
         "reasons": [
-          "Negative keyword (counter-UAS / parts / 3D print) - penalty",
           "Drone/DFR/delivery keyword",
           "Target department/agency match",
           "Small Business set-aside"
@@ -1241,124 +1054,22 @@
         "detected_weights_kg": [],
         "is_small_business": true
       },
-      "sam_link": "https://sam.gov/workspace/contract/opp/6b07c8f9ddbd47c1b85f3afd1e04db5e/view",
+      "sam_link": "https://sam.gov/workspace/contract/opp/afbc7131c87942e987b6eae31d83a721/view",
       "full_description": "",
       "raw_api_data": {
-        "noticeId": "6b07c8f9ddbd47c1b85f3afd1e04db5e",
-        "title": "C-SUAS Equipment",
-        "solicitationNumber": "FA4419-26-Q-0017",
-        "fullParentPathName": "DEPT OF DEFENSE.DEPT OF THE AIR FORCE.AIR EDUCATION AND TRAINING COMMAND.FA4419   97 CONF  CC",
-        "fullParentPathCode": "057.5700.AETC.FA4419",
-        "postedDate": "2026-04-21",
+        "noticeId": "afbc7131c87942e987b6eae31d83a721",
+        "title": "BCANGB - Handheld C-UAS",
+        "solicitationNumber": "W50S8426Q0003",
+        "fullParentPathName": "DEPT OF DEFENSE.DEPT OF THE ARMY.NATIONAL GUARD BUREAU.JFHQ USPFO MI.USPFO MI PROCUREMENT.W7NF USPFO ACTIVITY MIANG 110",
+        "fullParentPathCode": "021.2100.NGB.JFHQ USPFO MI.USPFO MI PROC.W50S84",
+        "postedDate": "2026-06-02",
         "type": "Combined Synopsis/Solicitation",
-        "baseType": "Combined Synopsis/Solicitation",
+        "baseType": "Sources Sought",
         "archiveType": "auto15",
-        "archiveDate": "2026-05-21",
+        "archiveDate": "2026-07-17",
         "typeOfSetAsideDescription": "Total Small Business Set-Aside (FAR 19.5)",
         "typeOfSetAside": "SBA",
-        "responseDeadLine": "2026-05-06T11:00:00-05:00",
-        "naicsCode": "334511",
-        "naicsCodes": [
-          "334511"
-        ],
-        "classificationCode": "5840",
-        "active": "Yes",
-        "award": null,
-        "pointOfContact": [
-          {
-            "fax": "",
-            "type": "primary",
-            "email": "jarrod.ford@us.af.mil",
-            "phone": "5804817085",
-            "title": null,
-            "fullName": "Jarrod Ford"
-          },
-          {
-            "fax": "",
-            "type": "secondary",
-            "email": "scott.swain.2@us.af.mil",
-            "phone": "5804816210",
-            "title": null,
-            "fullName": "Scott Swain"
-          }
-        ],
-        "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=6b07c8f9ddbd47c1b85f3afd1e04db5e",
-        "organizationType": "OFFICE",
-        "officeAddress": {
-          "zipcode": "73523-5002",
-          "city": "ALTUS AFB",
-          "countryCode": "USA",
-          "state": "OK"
-        },
-        "placeOfPerformance": {
-          "city": {
-            "code": "1700",
-            "name": "Altus"
-          },
-          "state": {
-            "code": "OK",
-            "name": "Oklahoma"
-          },
-          "zip": "73521",
-          "country": {
-            "code": "USA",
-            "name": "UNITED STATES"
-          }
-        },
-        "additionalInfoLink": null,
-        "uiLink": "https://sam.gov/workspace/contract/opp/6b07c8f9ddbd47c1b85f3afd1e04db5e/view",
-        "links": [
-          {
-            "rel": "self",
-            "href": "https://api.sam.gov/prod/opportunities/v2/search?noticeid=6b07c8f9ddbd47c1b85f3afd1e04db5e&limit=1"
-          }
-        ],
-        "resourceLinks": [
-          "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/55a9ab079ba0417dbc9a87d697a7a5f2/download",
-          "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/68ef9c61d9294ebcac23ab3c57c5fe43/download",
-          "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/7e7db1cbfd444001ab1e54cabee7624f/download",
-          "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/f738df63d460439380bead439d72e866/download",
-          "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/fc3059b4102a43348383937b111d0d66/download"
-        ]
-      }
-    },
-    {
-      "notice_id": "5133e24d31a543198e409d191b0a2c66",
-      "title": "82 SFS Drone Shield",
-      "agency": "DEPT OF DEFENSE.DEPT OF THE AIR FORCE.AIR EDUCATION AND TRAINING COMMAND.FA3020  82 CONS LGC",
-      "department_bucket": "DEPT OF DEFENSE.DEPT OF THE AIR FORCE.AIR EDUCATION AND TRAINING COMMAND.FA3020  82 CONS LGC",
-      "posted_date": "2026-05-04",
-      "response_deadline": "2026-05-07T12:30:00-05:00",
-      "type": "Combined Synopsis/Solicitation",
-      "set_aside": "Total Small Business Set-Aside (FAR 19.5)",
-      "match_analysis": {
-        "total_score": 3,
-        "match_level": "Low",
-        "reasons": [
-          "Negative keyword (counter-UAS / parts / 3D print) - penalty",
-          "Drone/DFR/delivery keyword",
-          "Target department/agency match",
-          "Small Business set-aside"
-        ],
-        "detected_weights_kg": [],
-        "is_small_business": true
-      },
-      "sam_link": "https://sam.gov/workspace/contract/opp/5133e24d31a543198e409d191b0a2c66/view",
-      "full_description": "",
-      "raw_api_data": {
-        "noticeId": "5133e24d31a543198e409d191b0a2c66",
-        "title": "82 SFS Drone Shield",
-        "solicitationNumber": "FA302026Q0045",
-        "fullParentPathName": "DEPT OF DEFENSE.DEPT OF THE AIR FORCE.AIR EDUCATION AND TRAINING COMMAND.FA3020  82 CONS LGC",
-        "fullParentPathCode": "057.5700.AETC.FA3020",
-        "postedDate": "2026-05-04",
-        "type": "Combined Synopsis/Solicitation",
-        "baseType": "Combined Synopsis/Solicitation",
-        "archiveType": "auto15",
-        "archiveDate": "2026-05-22",
-        "typeOfSetAsideDescription": "Total Small Business Set-Aside (FAR 19.5)",
-        "typeOfSetAside": "SBA",
-        "responseDeadLine": "2026-05-07T12:30:00-05:00",
+        "responseDeadLine": "2026-07-02T14:00:00-04:00",
         "naicsCode": "334511",
         "naicsCodes": [
           "334511"
@@ -1370,25 +1081,651 @@
           {
             "fax": "",
             "type": "primary",
-            "email": "jayden.jordan.1@us.af.mil",
-            "phone": "9406761605",
+            "email": "joseph.bryant.14@us.af.mil",
+            "phone": "2699693363",
             "title": null,
-            "fullName": "Jayden R Jordan"
+            "fullName": "TSgt Joseph Bryant"
           },
           {
             "fax": "",
             "type": "secondary",
-            "email": "kimberly.rico@us.af.mil",
-            "phone": "9406765193",
+            "email": "michael.solo.4@us.af.mil",
+            "phone": "2699693259",
             "title": null,
-            "fullName": "Kimberly Rico"
+            "fullName": "MSgt Michael Solo"
           }
         ],
-        "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=5133e24d31a543198e409d191b0a2c66",
+        "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=afbc7131c87942e987b6eae31d83a721",
         "organizationType": "OFFICE",
         "officeAddress": {
-          "zipcode": "76311-2743",
-          "city": "SHEPPARD AFB",
+          "zipcode": "49015-5515",
+          "city": "BATTLE CREEK",
+          "countryCode": "USA",
+          "state": "MI"
+        },
+        "placeOfPerformance": {
+          "city": {
+            "code": "5920",
+            "name": "Battle Creek"
+          },
+          "state": {
+            "code": "MI",
+            "name": "Michigan"
+          },
+          "zip": "49037",
+          "country": {
+            "code": "USA",
+            "name": "UNITED STATES"
+          }
+        },
+        "additionalInfoLink": null,
+        "uiLink": "https://sam.gov/workspace/contract/opp/afbc7131c87942e987b6eae31d83a721/view",
+        "links": [
+          {
+            "rel": "self",
+            "href": "https://api.sam.gov/prod/opportunities/v2/search?noticeid=afbc7131c87942e987b6eae31d83a721&limit=1"
+          }
+        ],
+        "resourceLinks": [
+          "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/113d904e2a8e4ea7b0a4452c28d951b3/download",
+          "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/b6a0cee16d2c40d78e1f990f211f33fe/download",
+          "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/c50b190e613945a6a19efe43dac39d9a/download"
+        ]
+      }
+    },
+    {
+      "notice_id": "8f724db889d3447ba8329009fc83c2a9",
+      "title": "FY25 Long Range Broad Agency Announcement (BAA) for Navy and Marine Corps Science and Technology",
+      "agency": "DEPT OF DEFENSE.DEPT OF THE NAVY.ONR.ONR HQS.OFFICE OF NAVAL RESEARCH",
+      "department_bucket": "DEPT OF DEFENSE.DEPT OF THE NAVY.ONR.ONR HQS.OFFICE OF NAVAL RESEARCH",
+      "posted_date": "2026-05-14",
+      "response_deadline": "2026-09-30T00:00:00-04:00",
+      "type": "Solicitation",
+      "set_aside": null,
+      "match_analysis": {
+        "total_score": 7,
+        "match_level": "Medium",
+        "reasons": [
+          "Drone/DFR/delivery keyword",
+          "Target department/agency match",
+          "BVLOS / Long-range capability match"
+        ],
+        "detected_weights_kg": [],
+        "is_small_business": false
+      },
+      "sam_link": "https://sam.gov/workspace/contract/opp/8f724db889d3447ba8329009fc83c2a9/view",
+      "full_description": "",
+      "raw_api_data": {
+        "noticeId": "8f724db889d3447ba8329009fc83c2a9",
+        "title": "FY25 Long Range Broad Agency Announcement (BAA) for Navy and Marine Corps Science and Technology",
+        "solicitationNumber": "N0001425SB001",
+        "fullParentPathName": "DEPT OF DEFENSE.DEPT OF THE NAVY.ONR.ONR HQS.OFFICE OF NAVAL RESEARCH",
+        "fullParentPathCode": "017.1700.ONR.ONR HQS.N00014",
+        "postedDate": "2026-05-14",
+        "type": "Solicitation",
+        "baseType": "Solicitation",
+        "archiveType": "auto15",
+        "archiveDate": "2026-10-15",
+        "typeOfSetAsideDescription": null,
+        "typeOfSetAside": null,
+        "responseDeadLine": "2026-09-30T00:00:00-04:00",
+        "naicsCode": "541715",
+        "naicsCodes": [
+          "541715"
+        ],
+        "classificationCode": "AC12",
+        "active": "Yes",
+        "award": null,
+        "pointOfContact": [
+          {
+            "fax": "",
+            "type": "primary",
+            "email": "matthew.murray18.civ@us.navy.mil",
+            "phone": "",
+            "title": null,
+            "fullName": "MATTHEW MURRAY"
+          }
+        ],
+        "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=8f724db889d3447ba8329009fc83c2a9",
+        "organizationType": "OFFICE",
+        "officeAddress": {
+          "zipcode": "22203-1995",
+          "city": "ARLINGTON",
+          "countryCode": "USA",
+          "state": "VA"
+        },
+        "placeOfPerformance": null,
+        "additionalInfoLink": null,
+        "uiLink": "https://sam.gov/workspace/contract/opp/8f724db889d3447ba8329009fc83c2a9/view",
+        "links": [
+          {
+            "rel": "self",
+            "href": "https://api.sam.gov/prod/opportunities/v2/search?noticeid=8f724db889d3447ba8329009fc83c2a9&limit=1"
+          }
+        ],
+        "resourceLinks": [
+          "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/1d84e8f5f4e7416f8ca22c76923be146/download",
+          "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/3f3c8f41ba214acc8a4b75d4873ba896/download",
+          "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/51811814d46849f596a66d5fa97c9c03/download",
+          "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/8a27b56ac641418eaa5f72ff6b19f7ca/download",
+          "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/b0f4ea4ddaaa45658daea608517e61b9/download",
+          "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/c3aca26672f34bb9806a1a6ba5059f6d/download",
+          "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/d68d2fb8febf444992154d3f822aebd4/download",
+          "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/e9535c191e644d81b947d0e7e866c10c/download",
+          "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/f78b09a6efa34638b04d6cf4c9d32c8f/download"
+        ]
+      }
+    },
+    {
+      "notice_id": "8dcaab1447eb4b6295b0209130969a4d",
+      "title": "AI-powered Mosquito Surveillance System (MSS)",
+      "agency": "DEPT OF DEFENSE.DEPT OF THE ARMY.AMC.ACC.ACC-OO.411TH CSB.0411 AQ HQ     CONTRACT AUG",
+      "department_bucket": "DEPT OF DEFENSE.DEPT OF THE ARMY.AMC.ACC.ACC-OO.411TH CSB.0411 AQ HQ     CONTRACT AUG",
+      "posted_date": "2026-05-29",
+      "response_deadline": "2026-06-10T23:59:00+09:00",
+      "type": "Solicitation",
+      "set_aside": null,
+      "match_analysis": {
+        "total_score": 7,
+        "match_level": "Medium",
+        "reasons": [
+          "Drone/DFR/delivery keyword",
+          "Target department/agency match",
+          "Surveillance/Reconnaissance mission match"
+        ],
+        "detected_weights_kg": [],
+        "is_small_business": false
+      },
+      "sam_link": "https://sam.gov/workspace/contract/opp/8dcaab1447eb4b6295b0209130969a4d/view",
+      "full_description": "",
+      "raw_api_data": {
+        "noticeId": "8dcaab1447eb4b6295b0209130969a4d",
+        "title": "AI-powered Mosquito Surveillance System (MSS)",
+        "solicitationNumber": "W91QVN26QA029",
+        "fullParentPathName": "DEPT OF DEFENSE.DEPT OF THE ARMY.AMC.ACC.ACC-OO.411TH CSB.0411 AQ HQ     CONTRACT AUG",
+        "fullParentPathCode": "021.2100.AMC.ACC.ACC-OO.411TH CSB.W91QVN",
+        "postedDate": "2026-05-29",
+        "type": "Solicitation",
+        "baseType": "Solicitation",
+        "archiveType": "autocustom",
+        "archiveDate": "2027-05-29",
+        "typeOfSetAsideDescription": null,
+        "typeOfSetAside": null,
+        "responseDeadLine": "2026-06-10T23:59:00+09:00",
+        "naicsCode": "541715",
+        "naicsCodes": [
+          "541715"
+        ],
+        "classificationCode": "S207",
+        "active": "Yes",
+        "award": null,
+        "pointOfContact": [
+          {
+            "fax": "",
+            "type": "primary",
+            "email": "junyu.tao.mil@army.mil",
+            "phone": "DSN: 3147553307",
+            "title": null,
+            "fullName": "Junyu Tao"
+          },
+          {
+            "fax": "",
+            "type": "secondary",
+            "email": "miranda.l.harden.mil@army.mil",
+            "phone": "DSN: 315-755-0629",
+            "title": null,
+            "fullName": "Harden, Miranda "
+          }
+        ],
+        "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=8dcaab1447eb4b6295b0209130969a4d",
+        "organizationType": "OFFICE",
+        "officeAddress": {
+          "zipcode": "96271-5289",
+          "city": "APO",
+          "countryCode": "USA",
+          "state": "AP"
+        },
+        "placeOfPerformance": {
+          "streetAddress": "South Korea",
+          "zip": ""
+        },
+        "additionalInfoLink": null,
+        "uiLink": "https://sam.gov/workspace/contract/opp/8dcaab1447eb4b6295b0209130969a4d/view",
+        "links": [
+          {
+            "rel": "self",
+            "href": "https://api.sam.gov/prod/opportunities/v2/search?noticeid=8dcaab1447eb4b6295b0209130969a4d&limit=1"
+          }
+        ],
+        "resourceLinks": [
+          "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/617c7ea9e29f4b2ca8efe23754784ab8/download",
+          "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/f8d02fcef1154af79a554c6e2694e9b1/download"
+        ]
+      }
+    },
+    {
+      "notice_id": "88df7077c59440e09d46b812fd41c5a9",
+      "title": "DHS/CBP Commercial Solutions Opening - DRAFT Solicitation Release -AUTONOMOUS GROUND SURVEILLANCE VEHICLES (AGSV) - CSOP-BP-GS-26-0002",
+      "agency": "HOMELAND SECURITY, DEPARTMENT OF.US CUSTOMS AND BORDER PROTECTION.MISSION SUPPORT CONTRACTING DIVISION",
+      "department_bucket": "HOMELAND SECURITY, DEPARTMENT OF.US CUSTOMS AND BORDER PROTECTION.MISSION SUPPORT CONTRACTING DIVISION",
+      "posted_date": "2026-06-03",
+      "response_deadline": "2026-06-24T15:00:00-04:00",
+      "type": "Presolicitation",
+      "set_aside": "No Set aside used",
+      "match_analysis": {
+        "total_score": 7,
+        "match_level": "Medium",
+        "reasons": [
+          "Drone/DFR/delivery keyword",
+          "Target department/agency match",
+          "Surveillance/Reconnaissance mission match"
+        ],
+        "detected_weights_kg": [],
+        "is_small_business": false
+      },
+      "sam_link": "https://sam.gov/workspace/contract/opp/88df7077c59440e09d46b812fd41c5a9/view",
+      "full_description": "",
+      "raw_api_data": {
+        "noticeId": "88df7077c59440e09d46b812fd41c5a9",
+        "title": "DHS/CBP Commercial Solutions Opening - DRAFT Solicitation Release -AUTONOMOUS GROUND SURVEILLANCE VEHICLES (AGSV) - CSOP-BP-GS-26-0002",
+        "solicitationNumber": "DRAFT-CSOP-BP-GS-26-0002",
+        "fullParentPathName": "HOMELAND SECURITY, DEPARTMENT OF.US CUSTOMS AND BORDER PROTECTION.MISSION SUPPORT CONTRACTING DIVISION",
+        "fullParentPathCode": "070.7014.70B06C",
+        "postedDate": "2026-06-03",
+        "type": "Presolicitation",
+        "baseType": "Presolicitation",
+        "archiveType": "auto15",
+        "archiveDate": "2026-07-09",
+        "typeOfSetAsideDescription": "No Set aside used",
+        "typeOfSetAside": "NONE",
+        "responseDeadLine": "2026-06-24T15:00:00-04:00",
+        "naicsCode": "334511",
+        "naicsCodes": [
+          "334511"
+        ],
+        "classificationCode": "6640",
+        "active": "Yes",
+        "award": null,
+        "pointOfContact": [
+          {
+            "fax": "",
+            "type": "primary",
+            "email": "peter.a.giambone@cbp.dhs.gov",
+            "phone": "",
+            "title": null,
+            "fullName": "Peter Giambone, Branch Chief"
+          },
+          {
+            "fax": null,
+            "type": "secondary",
+            "email": "ARISTIDE.HORUGAVYE@cbp.dhs.gov",
+            "phone": null,
+            "title": null,
+            "fullName": "ARISTIDE HORUGAVYE - Lead Contract Specialist"
+          }
+        ],
+        "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=88df7077c59440e09d46b812fd41c5a9",
+        "organizationType": "OFFICE",
+        "officeAddress": {
+          "zipcode": "20229",
+          "city": "WASHINGTON",
+          "countryCode": "USA",
+          "state": "DC"
+        },
+        "placeOfPerformance": {
+          "city": {
+            "code": "50000",
+            "name": "Washington"
+          },
+          "state": {
+            "code": "DC",
+            "name": "District of Columbia"
+          },
+          "country": {
+            "code": "USA",
+            "name": "UNITED STATES"
+          }
+        },
+        "additionalInfoLink": null,
+        "uiLink": "https://sam.gov/workspace/contract/opp/88df7077c59440e09d46b812fd41c5a9/view",
+        "links": [
+          {
+            "rel": "self",
+            "href": "https://api.sam.gov/prod/opportunities/v2/search?noticeid=88df7077c59440e09d46b812fd41c5a9&limit=1"
+          }
+        ],
+        "resourceLinks": [
+          "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/6757368926034a7c9a684ae7f09e9980/download"
+        ]
+      }
+    },
+    {
+      "notice_id": "1a8ad238316249858c5d83b85b601a40",
+      "title": "Next Generation Surveillance Array (NGSA) ",
+      "agency": "DEPT OF DEFENSE.DEPT OF THE NAVY.SPAWAR.SPAWAR HQ.NAVAL INFORMATION WARFARE SYSTEMS",
+      "department_bucket": "DEPT OF DEFENSE.DEPT OF THE NAVY.SPAWAR.SPAWAR HQ.NAVAL INFORMATION WARFARE SYSTEMS",
+      "posted_date": "2026-06-10",
+      "response_deadline": "2026-08-21T14:00:00-07:00",
+      "type": "Solicitation",
+      "set_aside": null,
+      "match_analysis": {
+        "total_score": 7,
+        "match_level": "Medium",
+        "reasons": [
+          "Drone/DFR/delivery keyword",
+          "Target department/agency match",
+          "Surveillance/Reconnaissance mission match"
+        ],
+        "detected_weights_kg": [],
+        "is_small_business": false
+      },
+      "sam_link": "https://sam.gov/workspace/contract/opp/1a8ad238316249858c5d83b85b601a40/view",
+      "full_description": "next generation surveillance array (ngsa) development, low-rate initial production and full-rate production. the ngsa is a passive towed twin-line acoustic sensor tailored for use within the surveillance towed array sensor system (surtass) program. the proposed ngsa contract will leverage a government-developed design that utilizes open architecture telemetry (oat) to produce a replacement multi-line array for fielding on auxiliary general ocean surveillance (t-agos) ships and other surtass host platforms. the full version of this request for proposal (rfp) includes both controlled unclassified information (cui) and controlled technical information (cti) and will not be made publicly available. to request access to the full rfp, the following documents shall be submitted via email to donica.l.ryder.civ@us.navy.mil with a copy to lindsay.l.roa.civ@us.navy.mil.1.\ta signed non-disclosure agreement (nda) by each individual, and no more than two individuals per company, requiring access to the non-public documents; and2.\ta current, valid military critical technical data agreement (dd form 2345) for each company (including team members and subcontractors) requiring access to the non-public documents.navwar, at its discretion, may limit the number of individuals approved for access to the cti contained in the full version of this rfp. only individuals granted access within a particular company may review cti. to minimize the volume of e-mails, only one poc from the each respondent shall submit the ndas and dd forms 2345 on behalf of the respondent?s team (including team members and subcontractors). upon receipt and verification of the signed ndas and current dd forms 2345, navwar will securely transmit the full rfp to authorized individuals. ",
+      "raw_api_data": {
+        "noticeId": "1a8ad238316249858c5d83b85b601a40",
+        "title": "Next Generation Surveillance Array (NGSA) ",
+        "solicitationNumber": "N0003926RE017",
+        "fullParentPathName": "DEPT OF DEFENSE.DEPT OF THE NAVY.SPAWAR.SPAWAR HQ.NAVAL INFORMATION WARFARE SYSTEMS",
+        "fullParentPathCode": "017.1700.SPAWAR.SPAWAR HQ.N00039",
+        "postedDate": "2026-06-10",
+        "type": "Solicitation",
+        "baseType": "Solicitation",
+        "archiveType": "autocustom",
+        "archiveDate": "2027-06-10",
+        "typeOfSetAsideDescription": null,
+        "typeOfSetAside": null,
+        "responseDeadLine": "2026-08-21T14:00:00-07:00",
+        "naicsCode": "334511",
+        "naicsCodes": [
+          "334511"
+        ],
+        "classificationCode": "5845",
+        "active": "Yes",
+        "award": null,
+        "pointOfContact": [
+          {
+            "fax": "",
+            "type": "primary",
+            "email": "donica.l.ryder.civ@us.navy.mil",
+            "phone": "6192033944",
+            "title": null,
+            "fullName": "Donica Ryder"
+          }
+        ],
+        "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=1a8ad238316249858c5d83b85b601a40",
+        "organizationType": "OFFICE",
+        "officeAddress": {
+          "zipcode": "92110-3127",
+          "city": "SAN DIEGO",
+          "countryCode": "USA",
+          "state": "CA"
+        },
+        "placeOfPerformance": {
+          "streetAddress": "",
+          "zip": ""
+        },
+        "additionalInfoLink": null,
+        "uiLink": "https://sam.gov/workspace/contract/opp/1a8ad238316249858c5d83b85b601a40/view",
+        "links": [
+          {
+            "rel": "self",
+            "href": "https://api.sam.gov/prod/opportunities/v2/search?noticeid=1a8ad238316249858c5d83b85b601a40&limit=1"
+          }
+        ],
+        "resourceLinks": null
+      }
+    },
+    {
+      "notice_id": "25e605a7ba4e44028ade4abc0a706965",
+      "title": "Skydio UAV",
+      "agency": "DEPT OF DEFENSE.DEPT OF THE NAVY.NAVSEA.NAVSEA WARFARE CENTER.NSWC CARDEROCK",
+      "department_bucket": "DEPT OF DEFENSE.DEPT OF THE NAVY.NAVSEA.NAVSEA WARFARE CENTER.NSWC CARDEROCK",
+      "posted_date": "2026-05-20",
+      "response_deadline": "2026-05-28T12:00:00-04:00",
+      "type": "Combined Synopsis/Solicitation",
+      "set_aside": "Total Small Business Set-Aside (FAR 19.5)",
+      "match_analysis": {
+        "total_score": 5,
+        "match_level": "Low",
+        "reasons": [
+          "Drone/DFR/delivery keyword",
+          "Target department/agency match",
+          "Specific brand required (no 'or equal') — penalty applied",
+          "Small Business set-aside"
+        ],
+        "detected_weights_kg": [],
+        "is_small_business": true
+      },
+      "sam_link": "https://sam.gov/workspace/contract/opp/25e605a7ba4e44028ade4abc0a706965/view",
+      "full_description": "<p><u><strong>amendment n0016726q10990001 </strong></u>is issued to extend the solicitation period to may 28, 2026 at 12pm, edt.</p>\n\n<p>naval surface warfare center carderock division intends to award a firm fixed price for the procurement of skydio x10d starter solution and skydio nightsense ir attachement on a brand name basis.</p>\n",
+      "raw_api_data": {
+        "noticeId": "25e605a7ba4e44028ade4abc0a706965",
+        "title": "Skydio UAV",
+        "solicitationNumber": "N0016726Q1099",
+        "fullParentPathName": "DEPT OF DEFENSE.DEPT OF THE NAVY.NAVSEA.NAVSEA WARFARE CENTER.NSWC CARDEROCK",
+        "fullParentPathCode": "017.1700.NAVSEA.NAVSEA WARFARE CTR.N00167",
+        "postedDate": "2026-05-20",
+        "type": "Combined Synopsis/Solicitation",
+        "baseType": "Combined Synopsis/Solicitation",
+        "archiveType": "auto15",
+        "archiveDate": "2026-06-12",
+        "typeOfSetAsideDescription": "Total Small Business Set-Aside (FAR 19.5)",
+        "typeOfSetAside": "SBA",
+        "responseDeadLine": "2026-05-28T12:00:00-04:00",
+        "naicsCode": "336411",
+        "naicsCodes": [
+          "336411"
+        ],
+        "classificationCode": "1550",
+        "active": "Yes",
+        "award": null,
+        "pointOfContact": [
+          {
+            "fax": "",
+            "type": "primary",
+            "email": "arnel.a.ngo.civ@us.navy.mil",
+            "phone": "7574782013",
+            "title": null,
+            "fullName": "Arnel Ngo"
+          },
+          {
+            "fax": "",
+            "type": "secondary",
+            "email": "kristen.m.duhaime.civ@us.navy.mil",
+            "phone": "3012197629",
+            "title": null,
+            "fullName": "KRISTEN DUHAIME"
+          }
+        ],
+        "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=25e605a7ba4e44028ade4abc0a706965",
+        "organizationType": "OFFICE",
+        "officeAddress": {
+          "zipcode": "20817-5700",
+          "city": "BETHESDA",
+          "countryCode": "USA",
+          "state": "MD"
+        },
+        "placeOfPerformance": {
+          "city": {
+            "code": "7125",
+            "name": "Bethesda"
+          },
+          "state": {
+            "code": "MD",
+            "name": "Maryland"
+          },
+          "zip": "20817",
+          "country": {
+            "code": "USA",
+            "name": "UNITED STATES"
+          }
+        },
+        "additionalInfoLink": null,
+        "uiLink": "https://sam.gov/workspace/contract/opp/25e605a7ba4e44028ade4abc0a706965/view",
+        "links": [
+          {
+            "rel": "self",
+            "href": "https://api.sam.gov/prod/opportunities/v2/search?noticeid=25e605a7ba4e44028ade4abc0a706965&limit=1"
+          }
+        ],
+        "resourceLinks": [
+          "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/695ea365975240d3b1af4d983f361a13/download",
+          "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/9a25e2afe9994d8fb2ca47af0678a973/download",
+          "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/e4e1972ee38e4097a1618f3ab65c7970/download"
+        ]
+      }
+    },
+    {
+      "notice_id": "b36be2c41929484491aa870a2bcf1e68",
+      "title": "Multi-Domain Force Applications and Traffic Management for Unmanned Aircraft Systems (M-FAT)",
+      "agency": "DEPT OF DEFENSE.DEPT OF THE AIR FORCE.AIR FORCE MATERIEL COMMAND.AIR FORCE RESEARCH LABORATORY.FA8750  AFRL RIK",
+      "department_bucket": "DEPT OF DEFENSE.DEPT OF THE AIR FORCE.AIR FORCE MATERIEL COMMAND.AIR FORCE RESEARCH LABORATORY.FA8750  AFRL RIK",
+      "posted_date": "2026-05-28",
+      "response_deadline": null,
+      "type": "Presolicitation",
+      "set_aside": null,
+      "match_analysis": {
+        "total_score": 5,
+        "match_level": "Low",
+        "reasons": [
+          "Drone/DFR/delivery keyword",
+          "Target department/agency match"
+        ],
+        "detected_weights_kg": [],
+        "is_small_business": false
+      },
+      "sam_link": "https://sam.gov/workspace/contract/opp/b36be2c41929484491aa870a2bcf1e68/view",
+      "full_description": "",
+      "raw_api_data": {
+        "noticeId": "b36be2c41929484491aa870a2bcf1e68",
+        "title": "Multi-Domain Force Applications and Traffic Management for Unmanned Aircraft Systems (M-FAT)",
+        "solicitationNumber": "FA8750-25-S-7004",
+        "fullParentPathName": "DEPT OF DEFENSE.DEPT OF THE AIR FORCE.AIR FORCE MATERIEL COMMAND.AIR FORCE RESEARCH LABORATORY.FA8750  AFRL RIK",
+        "fullParentPathCode": "057.5700.AFMC.AFRL.FA8750",
+        "postedDate": "2026-05-28",
+        "type": "Presolicitation",
+        "baseType": "Presolicitation",
+        "archiveType": "autocustom",
+        "archiveDate": "2030-08-06",
+        "typeOfSetAsideDescription": null,
+        "typeOfSetAside": null,
+        "responseDeadLine": null,
+        "naicsCode": "541715",
+        "naicsCodes": [
+          "541715"
+        ],
+        "classificationCode": "AC12",
+        "active": "Yes",
+        "award": null,
+        "pointOfContact": [
+          {
+            "fax": null,
+            "type": "primary",
+            "email": "tristen.carrig@us.af.mil",
+            "phone": "315-330-2558",
+            "title": null,
+            "fullName": "Tristen Carrig"
+          },
+          {
+            "fax": "",
+            "type": "secondary",
+            "email": "amber.buckley@us.af.mil",
+            "phone": "",
+            "title": null,
+            "fullName": "Amber Buckley"
+          }
+        ],
+        "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=b36be2c41929484491aa870a2bcf1e68",
+        "organizationType": "OFFICE",
+        "officeAddress": {
+          "zipcode": "13441-4514",
+          "city": "ROME",
+          "countryCode": "USA",
+          "state": "NY"
+        },
+        "placeOfPerformance": null,
+        "additionalInfoLink": null,
+        "uiLink": "https://sam.gov/workspace/contract/opp/b36be2c41929484491aa870a2bcf1e68/view",
+        "links": [
+          {
+            "rel": "self",
+            "href": "https://api.sam.gov/prod/opportunities/v2/search?noticeid=b36be2c41929484491aa870a2bcf1e68&limit=1"
+          }
+        ],
+        "resourceLinks": [
+          "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/5dfbb5ba1a224303996c3fd5c054731d/download",
+          "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/940344c3c1724c67a95b11281a25581a/download",
+          "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/c3c5fa0b7cfa422483258bb194938a26/download"
+        ]
+      }
+    },
+    {
+      "notice_id": "7de7fcd9d3b641e8adfb657530c3d920",
+      "title": "DroneShield Immediate Response Kit (IRK) LAK FSH",
+      "agency": "DEPT OF DEFENSE.DEPT OF THE AIR FORCE.AIR EDUCATION AND TRAINING COMMAND.JOINT BASE SAN ANTONIO.FA3016  502 CONS CL",
+      "department_bucket": "DEPT OF DEFENSE.DEPT OF THE AIR FORCE.AIR EDUCATION AND TRAINING COMMAND.JOINT BASE SAN ANTONIO.FA3016  502 CONS CL",
+      "posted_date": "2026-05-20",
+      "response_deadline": "2026-05-27T12:00:00-05:00",
+      "type": "Combined Synopsis/Solicitation",
+      "set_aside": "Total Small Business Set-Aside (FAR 19.5)",
+      "match_analysis": {
+        "total_score": 3,
+        "match_level": "Low",
+        "reasons": [
+          "Negative keyword (counter-UAS / parts / 3D print) - penalty",
+          "Drone/DFR/delivery keyword",
+          "Target department/agency match",
+          "Small Business set-aside"
+        ],
+        "detected_weights_kg": [],
+        "is_small_business": true
+      },
+      "sam_link": "https://sam.gov/workspace/contract/opp/7de7fcd9d3b641e8adfb657530c3d920/view",
+      "full_description": "",
+      "raw_api_data": {
+        "noticeId": "7de7fcd9d3b641e8adfb657530c3d920",
+        "title": "DroneShield Immediate Response Kit (IRK) LAK FSH",
+        "solicitationNumber": "FA301626Q7081",
+        "fullParentPathName": "DEPT OF DEFENSE.DEPT OF THE AIR FORCE.AIR EDUCATION AND TRAINING COMMAND.JOINT BASE SAN ANTONIO.FA3016  502 CONS CL",
+        "fullParentPathCode": "057.5700.AETC.JBSA.FA3016",
+        "postedDate": "2026-05-20",
+        "type": "Combined Synopsis/Solicitation",
+        "baseType": "Combined Synopsis/Solicitation",
+        "archiveType": "auto15",
+        "archiveDate": "2026-06-11",
+        "typeOfSetAsideDescription": "Total Small Business Set-Aside (FAR 19.5)",
+        "typeOfSetAside": "SBA",
+        "responseDeadLine": "2026-05-27T12:00:00-05:00",
+        "naicsCode": "334511",
+        "naicsCodes": [
+          "334511"
+        ],
+        "classificationCode": "5841",
+        "active": "Yes",
+        "award": null,
+        "pointOfContact": [
+          {
+            "fax": "",
+            "type": "primary",
+            "email": "kailah.kraus@us.af.mil",
+            "phone": "",
+            "title": null,
+            "fullName": "Kailah Kraus"
+          },
+          {
+            "fax": "",
+            "type": "secondary",
+            "email": "emily.deck_sanders@us.af.mil",
+            "phone": "",
+            "title": null,
+            "fullName": "Emily Deck Sanders"
+          }
+        ],
+        "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=7de7fcd9d3b641e8adfb657530c3d920",
+        "organizationType": "OFFICE",
+        "officeAddress": {
+          "zipcode": "78236-5286",
+          "city": "JBSA LACKLAND",
           "countryCode": "USA",
           "state": "TX"
         },
@@ -1401,123 +1738,42 @@
             "code": "TX",
             "name": "Texas"
           },
-          "zip": "76311",
+          "zip": "78150",
           "country": {
             "code": "USA",
             "name": "UNITED STATES"
           }
         },
         "additionalInfoLink": null,
-        "uiLink": "https://sam.gov/workspace/contract/opp/5133e24d31a543198e409d191b0a2c66/view",
+        "uiLink": "https://sam.gov/workspace/contract/opp/7de7fcd9d3b641e8adfb657530c3d920/view",
         "links": [
           {
             "rel": "self",
-            "href": "https://api.sam.gov/prod/opportunities/v2/search?noticeid=5133e24d31a543198e409d191b0a2c66&limit=1"
+            "href": "https://api.sam.gov/prod/opportunities/v2/search?noticeid=7de7fcd9d3b641e8adfb657530c3d920&limit=1"
           }
         ],
         "resourceLinks": [
-          "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/016ffd3810284a2193b8ac7d23e04baa/download",
-          "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/b273dd558acb43a7bc306e8402a757bd/download",
-          "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/e1a89a7a31e34905987019db825ea83b/download"
+          "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/49e74d7d60d74993b737b25b7205e351/download",
+          "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/593cd56490e94943b5c9a7222bafec12/download",
+          "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/609e9ba8dff64284ab8b70465a0ac800/download",
+          "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/c16e5de2df884e08b0690074cb683d66/download"
         ]
       }
     },
     {
-      "notice_id": "f6673f1748674560907bcabc3a6048f0",
-      "title": "24 Small UAS kits and 3D print files",
-      "agency": "DEPT OF DEFENSE.DEPT OF THE ARMY.NATIONAL GUARD BUREAU.JFHQ USPFO OR.USPFO OR PROCUREMENT.W7NW USPFO ACTIVITY OR ARNG",
-      "department_bucket": "DEPT OF DEFENSE.DEPT OF THE ARMY.NATIONAL GUARD BUREAU.JFHQ USPFO OR.USPFO OR PROCUREMENT.W7NW USPFO ACTIVITY OR ARNG",
-      "posted_date": "2026-05-05",
-      "response_deadline": "2026-05-19T11:00:00-07:00",
-      "type": "Solicitation",
-      "set_aside": "Total Small Business Set-Aside (FAR 19.5)",
-      "match_analysis": {
-        "total_score": 0,
-        "match_level": "Low",
-        "reasons": [
-          "Negative keyword (counter-UAS / parts / 3D print) - penalty",
-          "Title suggests components/parts only, not a complete system",
-          "Drone/DFR/delivery keyword",
-          "Target department/agency match",
-          "Small Business set-aside"
-        ],
-        "detected_weights_kg": [],
-        "is_small_business": true
-      },
-      "sam_link": "https://sam.gov/workspace/contract/opp/f6673f1748674560907bcabc3a6048f0/view",
-      "full_description": "",
-      "raw_api_data": {
-        "noticeId": "f6673f1748674560907bcabc3a6048f0",
-        "title": "24 Small UAS kits and 3D print files",
-        "solicitationNumber": "W912JV26QA011",
-        "fullParentPathName": "DEPT OF DEFENSE.DEPT OF THE ARMY.NATIONAL GUARD BUREAU.JFHQ USPFO OR.USPFO OR PROCUREMENT.W7NW USPFO ACTIVITY OR ARNG",
-        "fullParentPathCode": "021.2100.NGB.JFHQ USPFO OR.USPFO OR PROC.W912JV",
-        "postedDate": "2026-05-05",
-        "type": "Solicitation",
-        "baseType": "Solicitation",
-        "archiveType": "autocustom",
-        "archiveDate": "2026-06-30",
-        "typeOfSetAsideDescription": "Total Small Business Set-Aside (FAR 19.5)",
-        "typeOfSetAside": "SBA",
-        "responseDeadLine": "2026-05-19T11:00:00-07:00",
-        "naicsCode": "336411",
-        "naicsCodes": [
-          "336411"
-        ],
-        "classificationCode": "1550",
-        "active": "Yes",
-        "award": null,
-        "pointOfContact": [
-          {
-            "fax": "",
-            "type": "primary",
-            "email": "robert.c.bates26.civ@army.mil",
-            "phone": "9713554213",
-            "title": null,
-            "fullName": "Robert Bates"
-          }
-        ],
-        "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=f6673f1748674560907bcabc3a6048f0",
-        "organizationType": "OFFICE",
-        "officeAddress": {
-          "zipcode": "97303-0000",
-          "city": "KEIZER",
-          "countryCode": "USA",
-          "state": "OR"
-        },
-        "placeOfPerformance": {
-          "streetAddress": "HQ 249TH REGT (RTI), 78080 ORDNANCE ROAD, HERMISTON OR 97838-9544",
-          "zip": "97838"
-        },
-        "additionalInfoLink": null,
-        "uiLink": "https://sam.gov/workspace/contract/opp/f6673f1748674560907bcabc3a6048f0/view",
-        "links": [
-          {
-            "rel": "self",
-            "href": "https://api.sam.gov/prod/opportunities/v2/search?noticeid=f6673f1748674560907bcabc3a6048f0&limit=1"
-          }
-        ],
-        "resourceLinks": [
-          "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/1b8d42d8fc2d4233afca17a8d4ee3dfb/download",
-          "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/6929f65e0d104a339a78d3e4d1a4caf9/download"
-        ]
-      }
-    },
-    {
-      "notice_id": "bb27a197a0c64d55876f53eb9b7eae97",
-      "title": "UAS components / 3D printers",
-      "agency": "DEPT OF DEFENSE.DEPT OF THE ARMY.AMC.ACC.MISSION INSTALLATION CONTRACTING COMMAND.419TH CSB.W6QM MICC-FT DRUM",
-      "department_bucket": "DEPT OF DEFENSE.DEPT OF THE ARMY.AMC.ACC.MISSION INSTALLATION CONTRACTING COMMAND.419TH CSB.W6QM MICC-FT DRUM",
-      "posted_date": "2026-05-05",
-      "response_deadline": "2026-05-08T10:40:00+05:00",
+      "notice_id": "bd3e1a72e2b8459eb427dc588b1a7d8f",
+      "title": "PKBB DroneShield DroneGun (Commodity)",
+      "agency": "DEPT OF DEFENSE.DEPT OF THE AIR FORCE.AIR FORCE GLOBAL STRIKE COMMAND.FA4613  90 CONS PK",
+      "department_bucket": "DEPT OF DEFENSE.DEPT OF THE AIR FORCE.AIR FORCE GLOBAL STRIKE COMMAND.FA4613  90 CONS PK",
+      "posted_date": "2026-06-03",
+      "response_deadline": "2026-06-11T14:00:00-06:00",
       "type": "Combined Synopsis/Solicitation",
       "set_aside": "Total Small Business Set-Aside (FAR 19.5)",
       "match_analysis": {
-        "total_score": 0,
+        "total_score": 3,
         "match_level": "Low",
         "reasons": [
           "Negative keyword (counter-UAS / parts / 3D print) - penalty",
-          "Title suggests components/parts only, not a complete system",
           "Drone/DFR/delivery keyword",
           "Target department/agency match",
           "Small Business set-aside"
@@ -1525,60 +1781,86 @@
         "detected_weights_kg": [],
         "is_small_business": true
       },
-      "sam_link": "https://sam.gov/workspace/contract/opp/bb27a197a0c64d55876f53eb9b7eae97/view",
+      "sam_link": "https://sam.gov/workspace/contract/opp/bd3e1a72e2b8459eb427dc588b1a7d8f/view",
       "full_description": "",
       "raw_api_data": {
-        "noticeId": "bb27a197a0c64d55876f53eb9b7eae97",
-        "title": "UAS components / 3D printers",
-        "solicitationNumber": "W911S226U3100",
-        "fullParentPathName": "DEPT OF DEFENSE.DEPT OF THE ARMY.AMC.ACC.MISSION INSTALLATION CONTRACTING COMMAND.419TH CSB.W6QM MICC-FT DRUM",
-        "fullParentPathCode": "021.2100.AMC.ACC.MICC.419TH CSB.W911S2",
-        "postedDate": "2026-05-05",
+        "noticeId": "bd3e1a72e2b8459eb427dc588b1a7d8f",
+        "title": "PKBB DroneShield DroneGun (Commodity)",
+        "solicitationNumber": "FA461326Q1033",
+        "fullParentPathName": "DEPT OF DEFENSE.DEPT OF THE AIR FORCE.AIR FORCE GLOBAL STRIKE COMMAND.FA4613  90 CONS PK",
+        "fullParentPathCode": "057.5700.AFGSC.FA4613",
+        "postedDate": "2026-06-03",
         "type": "Combined Synopsis/Solicitation",
         "baseType": "Combined Synopsis/Solicitation",
-        "archiveType": "autocustom",
-        "archiveDate": "2027-05-05",
+        "archiveType": "auto15",
+        "archiveDate": "2026-06-26",
         "typeOfSetAsideDescription": "Total Small Business Set-Aside (FAR 19.5)",
         "typeOfSetAside": "SBA",
-        "responseDeadLine": "2026-05-08T10:40:00+05:00",
-        "naicsCode": "336411",
+        "responseDeadLine": "2026-06-11T14:00:00-06:00",
+        "naicsCode": "334511",
         "naicsCodes": [
-          "336411"
+          "334511"
         ],
-        "classificationCode": "1550",
+        "classificationCode": "5865",
         "active": "Yes",
         "award": null,
         "pointOfContact": [
           {
             "fax": "",
             "type": "primary",
-            "email": "eduardo.moralesrodriguez.mil@socom.mil",
-            "phone": "9109074219",
+            "email": "katie.nieft@us.af.mil",
+            "phone": "",
             "title": null,
-            "fullName": "Eduardo Moralesrodriguez"
+            "fullName": "Katie Nieft"
+          },
+          {
+            "fax": "",
+            "type": "secondary",
+            "email": "patrick.enriquez.4@us.af.mil",
+            "phone": "",
+            "title": null,
+            "fullName": "Mr. Patrick Enriquez"
           }
         ],
-        "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=bb27a197a0c64d55876f53eb9b7eae97",
+        "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=bd3e1a72e2b8459eb427dc588b1a7d8f",
         "organizationType": "OFFICE",
         "officeAddress": {
-          "zipcode": "13602-5220",
-          "city": "FORT DRUM",
+          "zipcode": "82005-2860",
+          "city": "FE WARREN AFB",
           "countryCode": "USA",
-          "state": "NY"
+          "state": "WY"
         },
         "placeOfPerformance": {
-          "streetAddress": "Bldg. H-3014 Psywar Lane Fort Bragg, North Carolina 28310",
-          "zip": "28310"
+          "city": {
+            "code": "WY-02",
+            "name": "FE Warren AFB"
+          },
+          "state": {
+            "code": "WY",
+            "name": "Wyoming"
+          },
+          "zip": "82005",
+          "country": {
+            "code": "USA",
+            "name": "UNITED STATES"
+          }
         },
         "additionalInfoLink": null,
-        "uiLink": "https://sam.gov/workspace/contract/opp/bb27a197a0c64d55876f53eb9b7eae97/view",
+        "uiLink": "https://sam.gov/workspace/contract/opp/bd3e1a72e2b8459eb427dc588b1a7d8f/view",
         "links": [
           {
             "rel": "self",
-            "href": "https://api.sam.gov/prod/opportunities/v2/search?noticeid=bb27a197a0c64d55876f53eb9b7eae97&limit=1"
+            "href": "https://api.sam.gov/prod/opportunities/v2/search?noticeid=bd3e1a72e2b8459eb427dc588b1a7d8f&limit=1"
           }
         ],
-        "resourceLinks": null
+        "resourceLinks": [
+          "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/0ff54a522bdf4a0a9f72a5f04e3e473a/download",
+          "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/2b96559e7ac54b87b4e275872daab904/download",
+          "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/5909fe795684498aaa8ca2b7566abbea/download",
+          "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/88709231a5c840fa8f4bbe1fb44720b6/download",
+          "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/a317ea9118514694abe2cb688557fd2b/download",
+          "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/d1572e6c2c1a4a1d926c848a0e9b8af1/download"
+        ]
       }
     }
   ]

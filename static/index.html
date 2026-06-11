@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drone Opportunity Analyzer</title>
+    <link rel="stylesheet" href="/static/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="app-container">
+        <header class="glass-panel">
+            <div class="header-content">
+                <div>
+                    <h1>Drone Opportunity Analyzer</h1>
+                    <p class="subtitle" id="last-updated">Загрузка данных...</p>
+                </div>
+                <button id="refresh-btn" class="primary-btn">
+                    <span class="btn-text">Загрузить новые</span>
+                    <div class="loader hidden"></div>
+                </button>
+            </div>
+        </header>
+
+        <!-- Confirmation Dialog -->
+        <div id="confirm-dialog" class="dialog-overlay hidden">
+            <div class="dialog glass-panel">
+                <h3>Подтверждение</h3>
+                <p>Вы уверены, что хотите запустить скрипт? SAM.gov разрешает только 1-2 запроса в день, частые запросы могут привести к блокировке.</p>
+                <div class="dialog-actions">
+                    <button id="cancel-btn" class="secondary-btn">Отмена</button>
+                    <button id="confirm-btn" class="primary-btn">Да, запустить</button>
+                </div>
+            </div>
+        </div>
+
+        <main>
+            <div class="tabs">
+                <button class="tab-btn active" data-target="matched-list">Подходящие заказы</button>
+                <button class="tab-btn" data-target="excluded-list">Отклоненные заказы</button>
+            </div>
+
+            <div id="matched-list" class="tab-content active list-container">
+                <div class="cards-grid" id="matched-cards">
+                    <!-- Cards will be injected here -->
+                </div>
+            </div>
+
+            <div id="excluded-list" class="tab-content list-container">
+                <div class="cards-grid" id="excluded-cards">
+                    <!-- Cards will be injected here -->
+                </div>
+            </div>
+        </main>
+    </div>
+    <script src="/static/app.js"></script>
+</body>
+</html>
