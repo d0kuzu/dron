@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Drone Opportunity Analyzer</title>
+    <meta name="description" content="SAM.gov drone opportunity analyzer with configurable parameters">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <style>
 :root {
@@ -16,8 +17,12 @@
     --accent-hover: #2563eb;
     --danger-color: #ef4444;
     --success-color: #10b981;
+    --warning-color: #f59e0b;
     --card-bg: rgba(30, 41, 59, 0.5);
     --card-hover: rgba(30, 41, 59, 0.9);
+    --input-bg: rgba(15, 23, 42, 0.6);
+    --input-border: rgba(255, 255, 255, 0.15);
+    --input-focus: rgba(59, 130, 246, 0.5);
 }
 
 * {
@@ -117,6 +122,40 @@ button {
     background-color: rgba(255, 255, 255, 0.05);
 }
 
+.success-btn {
+    background: linear-gradient(135deg, #10b981, #059669);
+    color: white;
+    padding: 0.75rem 1.5rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    box-shadow: 0 4px 14px 0 rgba(16, 185, 129, 0.35);
+}
+
+.success-btn:hover:not(:disabled) {
+    transform: translateY(-1px);
+    box-shadow: 0 6px 20px rgba(16, 185, 129, 0.4);
+}
+
+.success-btn:disabled {
+    opacity: 0.7;
+    cursor: not-allowed;
+}
+
+.warning-btn {
+    background: rgba(245, 158, 11, 0.15);
+    color: var(--warning-color);
+    border: 1px solid rgba(245, 158, 11, 0.3);
+    padding: 0.75rem 1.5rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.warning-btn:hover {
+    background: rgba(245, 158, 11, 0.25);
+}
+
 .loader {
     width: 20px;
     height: 20px;
@@ -139,6 +178,7 @@ button {
     display: flex;
     gap: 1rem;
     margin-bottom: 1.5rem;
+    flex-wrap: wrap;
 }
 
 .tab-btn {
@@ -322,6 +362,465 @@ button {
     justify-content: center;
     gap: 1rem;
 }
+
+/* ===================== SETTINGS PANEL ===================== */
+.settings-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.settings-section {
+    background: var(--card-bg);
+    border: 1px solid var(--panel-border);
+    border-radius: 14px;
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+
+.settings-section:hover {
+    border-color: rgba(255, 255, 255, 0.18);
+}
+
+.section-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.2rem 1.5rem;
+    cursor: pointer;
+    user-select: none;
+    transition: background 0.2s;
+}
+
+.section-header:hover {
+    background: rgba(255, 255, 255, 0.03);
+}
+
+.section-header-left {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+}
+
+.section-icon {
+    font-size: 1.3rem;
+    width: 36px;
+    height: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(59, 130, 246, 0.12);
+    border-radius: 10px;
+}
+
+.section-title {
+    font-size: 1.05rem;
+    font-weight: 600;
+    color: var(--text-primary);
+}
+
+.section-subtitle {
+    font-size: 0.8rem;
+    color: var(--text-secondary);
+    margin-top: 0.15rem;
+}
+
+.section-chevron {
+    font-size: 1.2rem;
+    color: var(--text-secondary);
+    transition: transform 0.3s ease;
+}
+
+.section-chevron.open {
+    transform: rotate(180deg);
+}
+
+.section-body {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s ease, padding 0.3s ease;
+}
+
+.section-body.open {
+    max-height: 2000px;
+    padding: 0 1.5rem 1.5rem;
+}
+
+.field-group {
+    margin-bottom: 1.2rem;
+}
+
+.field-group:last-child {
+    margin-bottom: 0;
+}
+
+.field-label {
+    display: block;
+    font-size: 0.85rem;
+    font-weight: 500;
+    color: var(--text-secondary);
+    margin-bottom: 0.5rem;
+    letter-spacing: 0.02em;
+}
+
+.field-input {
+    width: 100%;
+    padding: 0.65rem 0.9rem;
+    background: var(--input-bg);
+    border: 1px solid var(--input-border);
+    border-radius: 8px;
+    color: var(--text-primary);
+    font-family: inherit;
+    font-size: 0.9rem;
+    transition: all 0.2s ease;
+    outline: none;
+}
+
+.field-input:focus {
+    border-color: var(--accent-color);
+    box-shadow: 0 0 0 3px var(--input-focus);
+}
+
+.field-input::placeholder {
+    color: rgba(148, 163, 184, 0.5);
+}
+
+/* Number input with inline label */
+.number-field {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+}
+
+.number-field .field-input {
+    width: 100px;
+    text-align: center;
+}
+
+.number-field .field-unit {
+    color: var(--text-secondary);
+    font-size: 0.85rem;
+}
+
+/* Tag input */
+.tag-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    padding: 0.6rem;
+    background: var(--input-bg);
+    border: 1px solid var(--input-border);
+    border-radius: 10px;
+    min-height: 44px;
+    align-items: center;
+    transition: all 0.2s ease;
+}
+
+.tag-container:focus-within {
+    border-color: var(--accent-color);
+    box-shadow: 0 0 0 3px var(--input-focus);
+}
+
+.tag {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.35rem;
+    padding: 0.3rem 0.6rem;
+    background: rgba(59, 130, 246, 0.15);
+    border: 1px solid rgba(59, 130, 246, 0.25);
+    border-radius: 6px;
+    font-size: 0.82rem;
+    color: #93c5fd;
+    white-space: nowrap;
+    animation: tagIn 0.2s ease;
+}
+
+@keyframes tagIn {
+    from { opacity: 0; transform: scale(0.85); }
+    to { opacity: 1; transform: scale(1); }
+}
+
+.tag-remove {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background: rgba(239, 68, 68, 0.2);
+    color: #f87171;
+    font-size: 0.7rem;
+    cursor: pointer;
+    transition: all 0.15s ease;
+    border: none;
+    padding: 0;
+    line-height: 1;
+}
+
+.tag-remove:hover {
+    background: rgba(239, 68, 68, 0.5);
+    color: white;
+}
+
+.tag-input {
+    border: none;
+    background: transparent;
+    color: var(--text-primary);
+    font-family: inherit;
+    font-size: 0.85rem;
+    outline: none;
+    min-width: 120px;
+    flex: 1;
+}
+
+.tag-input::placeholder {
+    color: rgba(148, 163, 184, 0.4);
+}
+
+/* Scoring weight sliders */
+.weight-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 1rem;
+}
+
+.weight-item {
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+    padding: 0.9rem;
+    background: rgba(15, 23, 42, 0.4);
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.weight-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.weight-name {
+    font-size: 0.82rem;
+    color: var(--text-secondary);
+    font-weight: 500;
+}
+
+.weight-value {
+    font-size: 0.9rem;
+    font-weight: 700;
+    min-width: 28px;
+    text-align: right;
+}
+
+.weight-value.positive { color: var(--success-color); }
+.weight-value.negative { color: var(--danger-color); }
+.weight-value.zero { color: var(--text-secondary); }
+
+.weight-slider {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 100%;
+    height: 6px;
+    border-radius: 3px;
+    background: rgba(255, 255, 255, 0.1);
+    outline: none;
+    transition: background 0.2s;
+}
+
+.weight-slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    background: var(--accent-color);
+    cursor: pointer;
+    box-shadow: 0 2px 8px rgba(59, 130, 246, 0.4);
+    transition: transform 0.15s;
+}
+
+.weight-slider::-webkit-slider-thumb:hover {
+    transform: scale(1.2);
+}
+
+.weight-slider::-moz-range-thumb {
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    background: var(--accent-color);
+    cursor: pointer;
+    border: none;
+    box-shadow: 0 2px 8px rgba(59, 130, 246, 0.4);
+}
+
+/* Settings actions bar */
+.settings-actions {
+    display: flex;
+    gap: 1rem;
+    justify-content: flex-end;
+    padding: 1.5rem 0;
+    position: sticky;
+    bottom: 0;
+    z-index: 10;
+}
+
+.settings-actions::before {
+    content: '';
+    position: absolute;
+    inset: -20px 0 0 0;
+    background: linear-gradient(to bottom, transparent, var(--bg-color) 30%);
+    z-index: -1;
+    pointer-events: none;
+}
+
+/* Toast notification */
+.toast-container {
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+    z-index: 9999;
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+
+.toast {
+    padding: 0.9rem 1.4rem;
+    border-radius: 10px;
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: white;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.4);
+    animation: toastIn 0.35s ease, toastOut 0.35s ease 2.8s forwards;
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+    backdrop-filter: blur(8px);
+}
+
+.toast.success {
+    background: rgba(16, 185, 129, 0.9);
+    border: 1px solid rgba(16, 185, 129, 0.5);
+}
+
+.toast.error {
+    background: rgba(239, 68, 68, 0.9);
+    border: 1px solid rgba(239, 68, 68, 0.5);
+}
+
+.toast.info {
+    background: rgba(59, 130, 246, 0.9);
+    border: 1px solid rgba(59, 130, 246, 0.5);
+}
+
+@keyframes toastIn {
+    from { opacity: 0; transform: translateX(40px); }
+    to { opacity: 1; transform: translateX(0); }
+}
+
+@keyframes toastOut {
+    from { opacity: 1; transform: translateX(0); }
+    to { opacity: 0; transform: translateX(40px); }
+}
+
+/* Threshold fields */
+.threshold-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 1rem;
+}
+
+.threshold-item {
+    padding: 1rem;
+    background: rgba(15, 23, 42, 0.4);
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.threshold-item label {
+    display: block;
+    font-size: 0.82rem;
+    color: var(--text-secondary);
+    font-weight: 500;
+    margin-bottom: 0.5rem;
+}
+
+.threshold-item .field-input {
+    width: 100%;
+}
+
+/* SAM URLs field */
+.url-list {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.url-row {
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+}
+
+.url-row .field-input {
+    flex: 1;
+}
+
+.url-remove-btn {
+    width: 32px;
+    height: 32px;
+    border-radius: 6px;
+    background: rgba(239, 68, 68, 0.15);
+    color: #f87171;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.1rem;
+    transition: all 0.15s;
+    border: none;
+    cursor: pointer;
+    flex-shrink: 0;
+}
+
+.url-remove-btn:hover {
+    background: rgba(239, 68, 68, 0.35);
+}
+
+.add-url-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    padding: 0.5rem 1rem;
+    border-radius: 6px;
+    background: rgba(59, 130, 246, 0.1);
+    color: #60a5fa;
+    border: 1px dashed rgba(59, 130, 246, 0.3);
+    font-size: 0.85rem;
+    cursor: pointer;
+    transition: all 0.15s;
+    width: fit-content;
+    margin-top: 0.25rem;
+}
+
+.add-url-btn:hover {
+    background: rgba(59, 130, 246, 0.2);
+}
+
+/* Unsaved changes indicator */
+.unsaved-dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: var(--warning-color);
+    display: inline-block;
+    animation: pulse 1.5s ease-in-out infinite;
+}
+
+@keyframes pulse {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.4; }
+}
     </style>
 </head>
 <body>
@@ -351,10 +850,14 @@ button {
             </div>
         </div>
 
+        <!-- Toast container -->
+        <div id="toast-container" class="toast-container"></div>
+
         <main>
             <div class="tabs">
                 <button class="tab-btn active" data-target="matched-list">Подходящие заказы</button>
                 <button class="tab-btn" data-target="excluded-list">Отклоненные заказы</button>
+                <button class="tab-btn" data-target="settings-panel">⚙️ Настройки дрона</button>
             </div>
 
             <div id="matched-list" class="tab-content active list-container">
@@ -368,10 +871,26 @@ button {
                     <!-- Cards will be injected here -->
                 </div>
             </div>
+
+            <div id="settings-panel" class="tab-content">
+                <div class="settings-container" id="settings-container">
+                    <!-- Settings sections will be injected here -->
+                </div>
+                <div class="settings-actions">
+                    <button id="reset-config-btn" class="warning-btn">
+                        ↩️ Сбросить к дефолтным
+                    </button>
+                    <button id="save-config-btn" class="success-btn">
+                        <span class="save-text">💾 Сохранить настройки</span>
+                        <div class="loader hidden"></div>
+                    </button>
+                </div>
+            </div>
         </main>
     </div>
     <script>
 document.addEventListener('DOMContentLoaded', () => {
+    // ===================== ELEMENT REFS =====================
     const refreshBtn = document.getElementById('refresh-btn');
     const btnText = refreshBtn.querySelector('.btn-text');
     const loader = refreshBtn.querySelector('.loader');
@@ -387,7 +906,26 @@ document.addEventListener('DOMContentLoaded', () => {
     const tabBtns = document.querySelectorAll('.tab-btn');
     const tabContents = document.querySelectorAll('.tab-content');
 
-    // Tabs logic
+    const settingsContainer = document.getElementById('settings-container');
+    const saveConfigBtn = document.getElementById('save-config-btn');
+    const resetConfigBtn = document.getElementById('reset-config-btn');
+
+    let currentConfig = null;
+    let defaultConfig = null;
+    let hasUnsavedChanges = false;
+
+    // ===================== TOAST SYSTEM =====================
+    function showToast(message, type = 'info') {
+        const container = document.getElementById('toast-container');
+        const icons = { success: '✓', error: '✕', info: 'ℹ' };
+        const toast = document.createElement('div');
+        toast.className = `toast ${type}`;
+        toast.innerHTML = `<span>${icons[type] || ''}</span> ${message}`;
+        container.appendChild(toast);
+        setTimeout(() => { if (toast.parentNode) toast.remove(); }, 3200);
+    }
+
+    // ===================== TABS =====================
     tabBtns.forEach(btn => {
         btn.addEventListener('click', () => {
             tabBtns.forEach(b => b.classList.remove('active'));
@@ -395,10 +933,15 @@ document.addEventListener('DOMContentLoaded', () => {
             
             btn.classList.add('active');
             document.getElementById(btn.dataset.target).classList.add('active');
+
+            // Load config when settings tab is opened
+            if (btn.dataset.target === 'settings-panel' && !currentConfig) {
+                loadConfig();
+            }
         });
     });
 
-    // Formatting date
+    // ===================== DATE FORMAT =====================
     function formatDate(isoString) {
         if (!isoString) return 'Неизвестно';
         const date = new Date(isoString);
@@ -408,7 +951,7 @@ document.addEventListener('DOMContentLoaded', () => {
         }).format(date);
     }
 
-    // Creating Card HTML
+    // ===================== CARD =====================
     function createCard(item) {
         const score = item.match_analysis?.total_score ?? 0;
         const reasons = item.match_analysis?.reasons || [];
@@ -444,7 +987,7 @@ document.addEventListener('DOMContentLoaded', () => {
         `;
     }
 
-    // Render data
+    // ===================== RENDER DATA =====================
     function renderData(data) {
         const matched = data.matched?.opportunities || [];
         const excluded = data.excluded?.opportunities || [];
@@ -463,7 +1006,7 @@ document.addEventListener('DOMContentLoaded', () => {
             : '<p class="subtitle">Нет отклоненных заказов</p>';
     }
 
-    // Fetch initial data
+    // ===================== LOAD DATA =====================
     async function loadData() {
         try {
             const base = window.location.pathname.endsWith('/') ? window.location.pathname : window.location.pathname + '/';
@@ -481,7 +1024,7 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     }
 
-    // Refresh action
+    // ===================== REFRESH =====================
     refreshBtn.addEventListener('click', () => {
         confirmDialog.classList.remove('hidden');
     });
@@ -493,7 +1036,6 @@ document.addEventListener('DOMContentLoaded', () => {
     confirmBtn.addEventListener('click', async () => {
         confirmDialog.classList.add('hidden');
         
-        // UI loading state
         refreshBtn.disabled = true;
         btnText.textContent = 'Обработка...';
         loader.classList.remove('hidden');
@@ -519,7 +1061,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 lastUpdatedEl.style.color = 'var(--danger-color)';
             } else {
                 alert(`Произошла ошибка: ${error.message}`);
-                await loadData(); // Revert to old data
+                await loadData();
             }
         } finally {
             refreshBtn.disabled = false;
@@ -528,7 +1070,586 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 
-    // Init
+    // ===================== SETTINGS CONFIG =====================
+    const WEIGHT_LABELS = {
+        topic_keyword: 'Ключевое слово темы',
+        target_department: 'Целевой департамент',
+        ideal_payload_match: 'Идеальное совпадение нагрузки',
+        payload_partial_match: 'Частичное совпадение нагрузки',
+        generic_heavy_lift: 'Общий тяжёлый груз',
+        winch_delivery: 'Лебёдка / система доставки',
+        parachute: 'Парашют',
+        comms: 'Связь (LTE/900MHz/C2)',
+        brand_or_equal: 'Бренд с "или аналог"',
+        brand_exclusive_penalty: 'Штраф за конкретный бренд',
+        vtol: 'VTOL',
+        bvlos: 'BVLOS / Дальний радиус',
+        surveillance: 'Наблюдение / Разведка',
+        small_business: 'Малый бизнес',
+        negative_keyword_penalty: 'Штраф: негативное слово',
+        components_only_penalty: 'Штраф: только компоненты',
+    };
+
+    const THRESHOLD_LABELS = {
+        high_min_score: 'Мин. баллы для High',
+        medium_min_score: 'Мин. баллы для Medium',
+        likely_relevant_min_score: 'Мин. баллы релевантности',
+    };
+
+    const SECTION_DEFS = [
+        {
+            key: 'drone_specs',
+            icon: '🛩️',
+            title: 'Характеристики дрона',
+            subtitle: 'Грузоподъёмность и технические параметры',
+            render: renderDroneSpecs,
+            collect: collectDroneSpecs,
+        },
+        {
+            key: 'search',
+            icon: '🔍',
+            title: 'Параметры поиска',
+            subtitle: 'NAICS коды, типы закупок, URL-адреса SAM',
+            render: renderSearch,
+            collect: collectSearch,
+        },
+        {
+            key: 'keywords',
+            icon: '🏷️',
+            title: 'Ключевые слова',
+            subtitle: 'Департаменты, темы RFP, негативные, компоненты',
+            render: renderKeywords,
+            collect: collectKeywords,
+        },
+        {
+            key: 'competitors',
+            icon: '🏢',
+            title: 'Конкуренты',
+            subtitle: 'Бренды-конкуренты и паттерны "или аналог"',
+            render: renderCompetitors,
+            collect: collectCompetitors,
+        },
+        {
+            key: 'patterns',
+            icon: '🔤',
+            title: 'Regex-паттерны',
+            subtitle: 'Payload, Winch, Parachute, Comms',
+            render: renderPatterns,
+            collect: collectPatterns,
+        },
+        {
+            key: 'scoring_weights',
+            icon: '⚖️',
+            title: 'Весовые коэффициенты',
+            subtitle: 'Баллы за каждый критерий скоринга',
+            render: renderWeights,
+            collect: collectWeights,
+        },
+        {
+            key: 'thresholds',
+            icon: '📊',
+            title: 'Пороги совпадений',
+            subtitle: 'Минимальные баллы для уровней High / Medium',
+            render: renderThresholds,
+            collect: collectThresholds,
+        },
+        {
+            key: 'small_biz',
+            icon: '🏛️',
+            title: 'Коды Small Business',
+            subtitle: 'Коды SBA set-aside',
+            render: renderSmallBiz,
+            collect: collectSmallBiz,
+        },
+    ];
+
+    // ===================== LOAD CONFIG =====================
+    async function loadConfig() {
+        try {
+            const base = window.location.pathname.endsWith('/') ? window.location.pathname : window.location.pathname + '/';
+            const res = await fetch(base + 'drone-config');
+            if (!res.ok) throw new Error(`HTTP ${res.status}`);
+            const data = await res.json();
+            currentConfig = data.config;
+            defaultConfig = data.defaults;
+            renderSettings();
+        } catch (err) {
+            console.error('Ошибка загрузки конфига:', err);
+            showToast('Не удалось загрузить настройки: ' + err.message, 'error');
+        }
+    }
+
+    // ===================== RENDER SETTINGS =====================
+    function renderSettings() {
+        settingsContainer.innerHTML = '';
+        SECTION_DEFS.forEach(sec => {
+            const section = document.createElement('div');
+            section.className = 'settings-section';
+            section.innerHTML = `
+                <div class="section-header" data-section="${sec.key}">
+                    <div class="section-header-left">
+                        <div class="section-icon">${sec.icon}</div>
+                        <div>
+                            <div class="section-title">${sec.title}</div>
+                            <div class="section-subtitle">${sec.subtitle}</div>
+                        </div>
+                    </div>
+                    <span class="section-chevron">▼</span>
+                </div>
+                <div class="section-body" id="section-body-${sec.key}"></div>
+            `;
+            settingsContainer.appendChild(section);
+
+            const header = section.querySelector('.section-header');
+            const body = section.querySelector('.section-body');
+            const chevron = section.querySelector('.section-chevron');
+
+            header.addEventListener('click', () => {
+                body.classList.toggle('open');
+                chevron.classList.toggle('open');
+            });
+
+            sec.render(body, currentConfig);
+        });
+    }
+
+    // ===================== TAG INPUT HELPER =====================
+    function createTagInput(container, tags, placeholder = 'Введите и нажмите Enter...') {
+        const wrapper = document.createElement('div');
+        wrapper.className = 'tag-container';
+        
+        const renderTags = () => {
+            wrapper.querySelectorAll('.tag').forEach(t => t.remove());
+            const input = wrapper.querySelector('.tag-input');
+            tags.forEach((tag, i) => {
+                const el = document.createElement('span');
+                el.className = 'tag';
+                el.innerHTML = `<span class="tag-text">${escapeHtml(tag)}</span><button class="tag-remove" data-index="${i}">×</button>`;
+                wrapper.insertBefore(el, input);
+            });
+        };
+
+        const input = document.createElement('input');
+        input.type = 'text';
+        input.className = 'tag-input';
+        input.placeholder = placeholder;
+        
+        input.addEventListener('keydown', (e) => {
+            if (e.key === 'Enter' && input.value.trim()) {
+                e.preventDefault();
+                tags.push(input.value.trim());
+                input.value = '';
+                renderTags();
+                markUnsaved();
+            }
+            if (e.key === 'Backspace' && !input.value && tags.length > 0) {
+                tags.pop();
+                renderTags();
+                markUnsaved();
+            }
+        });
+
+        wrapper.addEventListener('click', (e) => {
+            if (e.target.classList.contains('tag-remove')) {
+                const idx = parseInt(e.target.dataset.index);
+                tags.splice(idx, 1);
+                renderTags();
+                markUnsaved();
+            }
+            input.focus();
+        });
+
+        wrapper.appendChild(input);
+        renderTags();
+        container.appendChild(wrapper);
+        return { tags, wrapper };
+    }
+
+    function escapeHtml(text) {
+        const d = document.createElement('div');
+        d.textContent = text;
+        return d.innerHTML;
+    }
+
+    function markUnsaved() {
+        hasUnsavedChanges = true;
+    }
+
+    // ===================== SECTION RENDERERS =====================
+
+    // --- Drone Specs ---
+    function renderDroneSpecs(body, cfg) {
+        body.innerHTML = `
+            <div class="field-group">
+                <label class="field-label">Максимальная грузоподъёмность</label>
+                <div class="number-field">
+                    <input type="number" class="field-input" id="cfg-max-payload"
+                        value="${cfg.drone_specs.max_payload_kg}" step="0.1" min="0" max="100">
+                    <span class="field-unit">кг</span>
+                </div>
+            </div>
+        `;
+        body.querySelector('#cfg-max-payload').addEventListener('input', markUnsaved);
+    }
+
+    function collectDroneSpecs() {
+        return {
+            max_payload_kg: parseFloat(document.getElementById('cfg-max-payload').value) || 10.5
+        };
+    }
+
+    // --- Search ---
+    function renderSearch(body, cfg) {
+        body.innerHTML = `
+            <div class="field-group">
+                <label class="field-label">NAICS коды (через запятую)</label>
+                <input type="text" class="field-input" id="cfg-naics"
+                    value="${cfg.search.naics_codes}" placeholder="336411,334511,...">
+            </div>
+            <div class="field-group">
+                <label class="field-label">Типы закупок</label>
+                <div id="cfg-ptypes-tags"></div>
+            </div>
+            <div class="field-group">
+                <label class="field-label">URL-адреса SAM API</label>
+                <div id="cfg-sam-urls" class="url-list"></div>
+                <button class="add-url-btn" id="add-url-btn">+ Добавить URL</button>
+            </div>
+        `;
+
+        body.querySelector('#cfg-naics').addEventListener('input', markUnsaved);
+
+        // Procurement types as tags
+        const ptypesArr = [...cfg.search.procurement_types];
+        createTagInput(body.querySelector('#cfg-ptypes-tags'), ptypesArr, 'Добавить тип (p/o/k)...');
+        body._ptypes = ptypesArr;
+
+        // SAM URLs
+        const urlsContainer = body.querySelector('#cfg-sam-urls');
+        const samUrls = [...cfg.search.sam_search_urls];
+        body._samUrls = samUrls;
+
+        function renderUrls() {
+            urlsContainer.innerHTML = '';
+            samUrls.forEach((url, i) => {
+                const row = document.createElement('div');
+                row.className = 'url-row';
+                row.innerHTML = `
+                    <input type="text" class="field-input" value="${escapeHtml(url)}" data-url-idx="${i}">
+                    <button class="url-remove-btn" data-url-idx="${i}">×</button>
+                `;
+                urlsContainer.appendChild(row);
+            });
+
+            urlsContainer.querySelectorAll('.field-input').forEach(inp => {
+                inp.addEventListener('input', (e) => {
+                    samUrls[parseInt(e.target.dataset.urlIdx)] = e.target.value;
+                    markUnsaved();
+                });
+            });
+
+            urlsContainer.querySelectorAll('.url-remove-btn').forEach(btn => {
+                btn.addEventListener('click', (e) => {
+                    samUrls.splice(parseInt(e.target.dataset.urlIdx), 1);
+                    renderUrls();
+                    markUnsaved();
+                });
+            });
+        }
+
+        renderUrls();
+
+        body.querySelector('#add-url-btn').addEventListener('click', () => {
+            samUrls.push('');
+            renderUrls();
+            markUnsaved();
+            const inputs = urlsContainer.querySelectorAll('.field-input');
+            if (inputs.length) inputs[inputs.length - 1].focus();
+        });
+    }
+
+    function collectSearch() {
+        const body = document.getElementById('section-body-search');
+        return {
+            naics_codes: document.getElementById('cfg-naics').value.trim(),
+            procurement_types: body._ptypes,
+            sam_search_urls: body._samUrls.filter(u => u.trim()),
+        };
+    }
+
+    // --- Keywords ---
+    function renderKeywords(body, cfg) {
+        body.innerHTML = `
+            <div class="field-group">
+                <label class="field-label">Целевые департаменты</label>
+                <div id="cfg-kw-departments"></div>
+            </div>
+            <div class="field-group">
+                <label class="field-label">Темы RFP / Ключевые слова дрона</label>
+                <div id="cfg-kw-topics"></div>
+            </div>
+            <div class="field-group">
+                <label class="field-label">Негативные ключевые слова (исключения)</label>
+                <div id="cfg-kw-negative"></div>
+            </div>
+            <div class="field-group">
+                <label class="field-label">Компоненты (только если без "system"/"complete")</label>
+                <div id="cfg-kw-components"></div>
+            </div>
+        `;
+
+        const depts = [...cfg.keywords.target_departments];
+        const topics = [...cfg.keywords.rfp_topics];
+        const neg = [...cfg.keywords.negative];
+        const comp = [...cfg.keywords.components_only];
+
+        createTagInput(body.querySelector('#cfg-kw-departments'), depts);
+        createTagInput(body.querySelector('#cfg-kw-topics'), topics);
+        createTagInput(body.querySelector('#cfg-kw-negative'), neg);
+        createTagInput(body.querySelector('#cfg-kw-components'), comp);
+
+        body._depts = depts;
+        body._topics = topics;
+        body._neg = neg;
+        body._comp = comp;
+    }
+
+    function collectKeywords() {
+        const body = document.getElementById('section-body-keywords');
+        return {
+            target_departments: body._depts,
+            rfp_topics: body._topics,
+            negative: body._neg,
+            components_only: body._comp,
+        };
+    }
+
+    // --- Competitors ---
+    function renderCompetitors(body, cfg) {
+        body.innerHTML = `
+            <div class="field-group">
+                <label class="field-label">Бренды-конкуренты</label>
+                <div id="cfg-comp-brands"></div>
+            </div>
+            <div class="field-group">
+                <label class="field-label">Паттерны "или аналог" (regex)</label>
+                <div id="cfg-comp-orequal"></div>
+            </div>
+        `;
+
+        const brands = [...cfg.competitors.brands];
+        const oreq = [...cfg.competitors.or_equal_patterns];
+
+        createTagInput(body.querySelector('#cfg-comp-brands'), brands);
+        createTagInput(body.querySelector('#cfg-comp-orequal'), oreq, 'Regex паттерн...');
+
+        body._brands = brands;
+        body._oreq = oreq;
+    }
+
+    function collectCompetitors() {
+        const body = document.getElementById('section-body-competitors');
+        return {
+            brands: body._brands,
+            or_equal_patterns: body._oreq,
+        };
+    }
+
+    // --- Patterns ---
+    function renderPatterns(body, cfg) {
+        body.innerHTML = `
+            <div class="field-group">
+                <label class="field-label">Payload паттерны</label>
+                <div id="cfg-pat-payload"></div>
+            </div>
+            <div class="field-group">
+                <label class="field-label">Winch паттерны</label>
+                <div id="cfg-pat-winch"></div>
+            </div>
+            <div class="field-group">
+                <label class="field-label">Parachute паттерны</label>
+                <div id="cfg-pat-parachute"></div>
+            </div>
+            <div class="field-group">
+                <label class="field-label">Comms паттерны</label>
+                <div id="cfg-pat-comms"></div>
+            </div>
+        `;
+
+        const pl = [...cfg.patterns.payload];
+        const wn = [...cfg.patterns.winch];
+        const pa = [...cfg.patterns.parachute];
+        const cm = [...cfg.patterns.comms];
+
+        createTagInput(body.querySelector('#cfg-pat-payload'), pl, 'Regex...');
+        createTagInput(body.querySelector('#cfg-pat-winch'), wn, 'Regex...');
+        createTagInput(body.querySelector('#cfg-pat-parachute'), pa, 'Regex...');
+        createTagInput(body.querySelector('#cfg-pat-comms'), cm, 'Regex...');
+
+        body._pl = pl;
+        body._wn = wn;
+        body._pa = pa;
+        body._cm = cm;
+    }
+
+    function collectPatterns() {
+        const body = document.getElementById('section-body-patterns');
+        return {
+            payload: body._pl,
+            winch: body._wn,
+            parachute: body._pa,
+            comms: body._cm,
+        };
+    }
+
+    // --- Scoring Weights ---
+    function renderWeights(body, cfg) {
+        let html = '<div class="weight-grid">';
+        for (const [key, val] of Object.entries(cfg.scoring_weights)) {
+            const label = WEIGHT_LABELS[key] || key;
+            const cls = val > 0 ? 'positive' : val < 0 ? 'negative' : 'zero';
+            html += `
+                <div class="weight-item">
+                    <div class="weight-header">
+                        <span class="weight-name">${label}</span>
+                        <span class="weight-value ${cls}" id="wv-${key}">${val}</span>
+                    </div>
+                    <input type="range" class="weight-slider" id="ws-${key}"
+                        min="-10" max="10" step="1" value="${val}" data-key="${key}">
+                </div>
+            `;
+        }
+        html += '</div>';
+        body.innerHTML = html;
+
+        body.querySelectorAll('.weight-slider').forEach(slider => {
+            slider.addEventListener('input', (e) => {
+                const v = parseInt(e.target.value);
+                const display = document.getElementById(`wv-${e.target.dataset.key}`);
+                display.textContent = v;
+                display.className = 'weight-value ' + (v > 0 ? 'positive' : v < 0 ? 'negative' : 'zero');
+                markUnsaved();
+            });
+        });
+    }
+
+    function collectWeights() {
+        const weights = {};
+        document.querySelectorAll('.weight-slider').forEach(slider => {
+            weights[slider.dataset.key] = parseInt(slider.value);
+        });
+        return weights;
+    }
+
+    // --- Thresholds ---
+    function renderThresholds(body, cfg) {
+        let html = '<div class="threshold-grid">';
+        for (const [key, val] of Object.entries(cfg.match_thresholds)) {
+            const label = THRESHOLD_LABELS[key] || key;
+            html += `
+                <div class="threshold-item">
+                    <label>${label}</label>
+                    <input type="number" class="field-input" id="cfg-th-${key}"
+                        value="${val}" min="0" max="50" step="1" data-key="${key}">
+                </div>
+            `;
+        }
+        html += '</div>';
+        body.innerHTML = html;
+
+        body.querySelectorAll('.field-input').forEach(inp => {
+            inp.addEventListener('input', markUnsaved);
+        });
+    }
+
+    function collectThresholds() {
+        const thresholds = {};
+        document.querySelectorAll('[id^="cfg-th-"]').forEach(inp => {
+            thresholds[inp.dataset.key] = parseInt(inp.value) || 0;
+        });
+        return thresholds;
+    }
+
+    // --- Small Biz Codes ---
+    function renderSmallBiz(body, cfg) {
+        body.innerHTML = `
+            <div class="field-group">
+                <label class="field-label">Коды set-aside (SBA, 8A, WOSB и т.д.)</label>
+                <div id="cfg-sbc-tags"></div>
+            </div>
+        `;
+
+        const codes = [...cfg.small_biz_codes];
+        createTagInput(body.querySelector('#cfg-sbc-tags'), codes, 'Добавить код...');
+        body._codes = codes;
+    }
+
+    function collectSmallBiz() {
+        const body = document.getElementById('section-body-small_biz');
+        return body._codes;
+    }
+
+    // ===================== SAVE CONFIG =====================
+    saveConfigBtn.addEventListener('click', async () => {
+        const newConfig = {
+            drone_specs: collectDroneSpecs(),
+            search: collectSearch(),
+            keywords: collectKeywords(),
+            competitors: collectCompetitors(),
+            patterns: collectPatterns(),
+            scoring_weights: collectWeights(),
+            small_biz_codes: collectSmallBiz(),
+            match_thresholds: collectThresholds(),
+        };
+
+        const saveText = saveConfigBtn.querySelector('.save-text');
+        const saveLoader = saveConfigBtn.querySelector('.loader');
+        saveConfigBtn.disabled = true;
+        saveText.textContent = 'Сохранение...';
+        saveLoader.classList.remove('hidden');
+
+        try {
+            const base = window.location.pathname.endsWith('/') ? window.location.pathname : window.location.pathname + '/';
+            const res = await fetch(base + 'drone-config', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({ config: newConfig }),
+            });
+
+            if (!res.ok) {
+                const err = await res.json();
+                throw new Error(err.detail || 'Ошибка сохранения');
+            }
+
+            const data = await res.json();
+            currentConfig = data.config;
+            hasUnsavedChanges = false;
+            showToast('Настройки успешно сохранены!', 'success');
+        } catch (err) {
+            console.error('Ошибка сохранения:', err);
+            showToast('Ошибка сохранения: ' + err.message, 'error');
+        } finally {
+            saveConfigBtn.disabled = false;
+            saveText.textContent = '💾 Сохранить настройки';
+            saveLoader.classList.add('hidden');
+        }
+    });
+
+    // ===================== RESET CONFIG =====================
+    resetConfigBtn.addEventListener('click', () => {
+        if (!defaultConfig) {
+            showToast('Дефолтный конфиг не загружен', 'error');
+            return;
+        }
+        if (!confirm('Вы уверены? Все настройки будут сброшены к значениям по умолчанию.')) return;
+        
+        currentConfig = JSON.parse(JSON.stringify(defaultConfig));
+        renderSettings();
+        markUnsaved();
+        showToast('Настройки сброшены. Нажмите "Сохранить" для применения.', 'info');
+    });
+
+    // ===================== INIT =====================
     loadData();
 });
     </script>

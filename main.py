@@ -14,6 +14,7 @@ Features:
 from __future__ import annotations
 
 import argparse
+import copy
 import datetime as dt
 import json
 import os
@@ -24,116 +25,149 @@ import urllib.parse
 import urllib.request
 from typing import Any, Dict, Iterable, List, Tuple
 
-# Docs list both URLs; routing varies — we try defaults then optional override.
-SAM_SEARCH_URL_DEFAULTS: Tuple[str, ...] = (
-    "https://api.sam.gov/opportunities/v2/search",
-    "https://api.sam.gov/prod/opportunities/v2/search",
-)
+# ---------------------------------------------------------------------------
+# Configuration system
+# ---------------------------------------------------------------------------
+CONFIG_PATH = os.path.join(os.path.dirname(os.path.abspath(__file__)), "drone_config.json")
 
-# Procurement types:
-# p = Presolicitation, o = Solicitation, k = Combined Synopsis/Solicitation
-DEFAULT_PTYPES = ("p", "o", "k")
-
-TARGET_DEPARTMENT_KEYWORDS = [
-    "ncdot",
-    "department of transportation",
-    " dot ",
-    "usda forest service",
-    "forest service",
-    "department of interior",
-    "bureau of land management",
-    "national park service",
-    "police",
-    "fire department",
-    "public safety",
-    "first responder",
-    # Improvement #2: Added military/defense departments — largest drone buyers
-    "dept of defense",
-    "army",
-    "navy",
-    "air force",
-    "marine corps",
-    "homeland security",
-    "dhs",
-]
-
-RFP_TOPIC_KEYWORDS = [
-    "drone",
-    "uav",
-    "uas",
-    "unmanned aircraft",
-    "drone as first responder",
-    "dfr",
-    "drone delivery",
-    "last mile",
-    "payload delivery",
-    "forest",
-    "wildfire",
-    "inspection",
-    # Improvement #3: Keywords matching AIRIS 3 capabilities
-    "vtol",
-    "vertical take-off",
-    "surveillance",
-    "reconnaissance",
-    "bvlos",
-    "beyond visual line of sight",
-    "long range",
-    "suas",
-]
-
-# Improvement #4 & #5: Brand-name detection
-KNOWN_COMPETITOR_BRANDS = [
-    "skydio", "dji", "draganfly", "autel", "parrot",
-    "freefly", "wingtra", "sensfly", "ebee", "matrice",
-    "mavic", "phantom", "inspire", "agras",
-]
-OR_EQUAL_PATTERNS = [r"\bor equal\b", r"\bor equivalent\b", r"\bor similar\b"]
-
-# Negative keywords: these indicate the opportunity is NOT about buying a drone
-# Counter-UAS = systems to fight drones, not drones themselves
-# Components/kits = spare parts, not complete drone systems
-NEGATIVE_KEYWORDS = [
-    "c-suas", "counter-uas", "counter uas", "counter-unmanned",
-    "anti-drone", "anti drone", "drone shield", "droneshield",
-    "defeat uas", "detect and defeat",
-    "3d print", "3d printer",
-    "repair parts", "spare parts", "replacement parts",
-]
-# Softer penalty: title says "components" or "parts" without "system"/"complete"
-COMPONENTS_ONLY_KEYWORDS = ["components", "parts", "accessories", "kits"]
-
-# AIRIS 3 matching cues (broadened for general heavy lift/delivery)
-PAYLOAD_PATTERNS = [
-    r"\b\d{1,3}\s?kg\b",
-    r"\b\d{1,3}\s?lb(s)?\b",
-    r"heavy\s?lift",
-    r"delivery\s?box",
-    r"cargo\s?capacity",
-    r"payload\s?capacity",
-]
-WINCH_PATTERNS = [r"\bwinch\b", r"\bgravity release\b", r"\bdrop( system)?\b"]
-PARACHUTE_PATTERNS = [r"\bparachute\b", r"\brecovery system\b"]
-COMMS_PATTERNS = [r"\blte\b", r"\b900\s?mhz\b", r"\bcommand and control\b", r"\bc2\b"]
-
-# Improvement #1: Multiple NAICS codes for broader search
-# 336411 = Aircraft Manufacturing, 334511 = Search/Detection/Navigation,
-# 541715 = R&D Engineering, 423860 = Transportation Equipment
-DEFAULT_NAICS_CODES = "336411,334511,541715,423860"
-
-SMALL_BIZ_CODES = {
-    "SBA",
-    "SBP",
-    "8A",
-    "8AN",
-    "HZC",
-    "HZS",
-    "SDVOSBC",
-    "SDVOSBS",
-    "WOSB",
-    "WOSBSS",
-    "EDWOSB",
-    "EDWOSBSS",
+DEFAULT_CONFIG: Dict[str, Any] = {
+    "drone_specs": {
+        "max_payload_kg": 10.5,
+    },
+    "search": {
+        "naics_codes": "336411,334511,541715,423860",
+        "procurement_types": ["p", "o", "k"],
+        "sam_search_urls": [
+            "https://api.sam.gov/opportunities/v2/search",
+            "https://api.sam.gov/prod/opportunities/v2/search",
+        ],
+    },
+    "keywords": {
+        "target_departments": [
+            "ncdot", "department of transportation", " dot ",
+            "usda forest service", "forest service",
+            "department of interior", "bureau of land management",
+            "national park service", "police", "fire department",
+            "public safety", "first responder",
+            "dept of defense", "army", "navy", "air force",
+            "marine corps", "homeland security", "dhs",
+        ],
+        "rfp_topics": [
+            "drone", "uav", "uas", "unmanned aircraft",
+            "drone as first responder", "dfr", "drone delivery",
+            "last mile", "payload delivery", "forest", "wildfire",
+            "inspection", "vtol", "vertical take-off", "surveillance",
+            "reconnaissance", "bvlos", "beyond visual line of sight",
+            "long range", "suas",
+        ],
+        "negative": [
+            "c-suas", "counter-uas", "counter uas", "counter-unmanned",
+            "anti-drone", "anti drone", "drone shield", "droneshield",
+            "defeat uas", "detect and defeat",
+            "3d print", "3d printer",
+            "repair parts", "spare parts", "replacement parts",
+        ],
+        "components_only": ["components", "parts", "accessories", "kits"],
+    },
+    "competitors": {
+        "brands": [
+            "skydio", "dji", "draganfly", "autel", "parrot",
+            "freefly", "wingtra", "sensfly", "ebee", "matrice",
+            "mavic", "phantom", "inspire", "agras",
+        ],
+        "or_equal_patterns": [r"\bor equal\b", r"\bor equivalent\b", r"\bor similar\b"],
+    },
+    "patterns": {
+        "payload": [
+            r"\b\d{1,3}\s?kg\b", r"\b\d{1,3}\s?lb(s)?\b",
+            r"heavy\s?lift", r"delivery\s?box",
+            r"cargo\s?capacity", r"payload\s?capacity",
+        ],
+        "winch": [r"\bwinch\b", r"\bgravity release\b", r"\bdrop( system)?\b"],
+        "parachute": [r"\bparachute\b", r"\brecovery system\b"],
+        "comms": [r"\blte\b", r"\b900\s?mhz\b", r"\bcommand and control\b", r"\bc2\b"],
+    },
+    "scoring_weights": {
+        "topic_keyword": 2,
+        "target_department": 3,
+        "ideal_payload_match": 5,
+        "payload_partial_match": 2,
+        "generic_heavy_lift": 2,
+        "winch_delivery": 3,
+        "parachute": 4,
+        "comms": 2,
+        "brand_or_equal": 2,
+        "brand_exclusive_penalty": -3,
+        "vtol": 3,
+        "bvlos": 2,
+        "surveillance": 2,
+        "small_business": 3,
+        "negative_keyword_penalty": -5,
+        "components_only_penalty": -3,
+    },
+    "small_biz_codes": [
+        "SBA", "SBP", "8A", "8AN", "HZC", "HZS",
+        "SDVOSBC", "SDVOSBS", "WOSB", "WOSBSS",
+        "EDWOSB", "EDWOSBSS",
+    ],
+    "match_thresholds": {
+        "high_min_score": 8,
+        "medium_min_score": 7,
+        "likely_relevant_min_score": 7,
+    },
 }
+
+
+def _deep_merge(base: Dict, override: Dict) -> Dict:
+    """Recursively merge *override* into a copy of *base*."""
+    result = copy.deepcopy(base)
+    for key, val in override.items():
+        if key in result and isinstance(result[key], dict) and isinstance(val, dict):
+            result[key] = _deep_merge(result[key], val)
+        else:
+            result[key] = copy.deepcopy(val)
+    return result
+
+
+def load_config(path: str | None = None) -> Dict[str, Any]:
+    """Load config from *path* (default: ``CONFIG_PATH``), merging over defaults."""
+    path = path or CONFIG_PATH
+    if os.path.isfile(path):
+        try:
+            with open(path, "r", encoding="utf-8") as f:
+                user_cfg = json.load(f)
+            return _deep_merge(DEFAULT_CONFIG, user_cfg)
+        except Exception as exc:
+            print(f"Warning: failed to load {path}, using defaults: {exc}", file=sys.stderr)
+    return copy.deepcopy(DEFAULT_CONFIG)
+
+
+# Load config at module level so every function can access it.
+_CFG = load_config()
+
+# ---------------------------------------------------------------------------
+# Convenience accessors (kept as module-level for minimal diff to the rest of the code)
+# ---------------------------------------------------------------------------
+SAM_SEARCH_URL_DEFAULTS: Tuple[str, ...] = tuple(_CFG["search"]["sam_search_urls"])
+DEFAULT_PTYPES = tuple(_CFG["search"]["procurement_types"])
+
+TARGET_DEPARTMENT_KEYWORDS = _CFG["keywords"]["target_departments"]
+RFP_TOPIC_KEYWORDS = _CFG["keywords"]["rfp_topics"]
+
+KNOWN_COMPETITOR_BRANDS = _CFG["competitors"]["brands"]
+OR_EQUAL_PATTERNS = _CFG["competitors"]["or_equal_patterns"]
+
+NEGATIVE_KEYWORDS = _CFG["keywords"]["negative"]
+COMPONENTS_ONLY_KEYWORDS = _CFG["keywords"]["components_only"]
+
+PAYLOAD_PATTERNS = _CFG["patterns"]["payload"]
+WINCH_PATTERNS = _CFG["patterns"]["winch"]
+PARACHUTE_PATTERNS = _CFG["patterns"]["parachute"]
+COMMS_PATTERNS = _CFG["patterns"]["comms"]
+
+DEFAULT_NAICS_CODES = _CFG["search"]["naics_codes"]
+
+SMALL_BIZ_CODES = set(_CFG["small_biz_codes"])
 
 
 def read_json(path: str) -> Dict[str, Any]:
@@ -264,27 +298,29 @@ def score_record(record: Dict[str, Any], full_description: str = "") -> Dict[str
     if full_description:
         text = f"{text} | {full_description}"
 
+    sw = _CFG["scoring_weights"]
+    thresholds = _CFG["match_thresholds"]
     reasons: List[str] = []
     score = 0
 
     # Negative keyword check (counter-drone, spare parts, etc.)
     if any(neg in text for neg in NEGATIVE_KEYWORDS):
-        score -= 5
+        score += sw["negative_keyword_penalty"]
         reasons.append("Negative keyword (counter-UAS / parts / 3D print) - penalty")
 
     # Softer penalty for "components only" orders
     title_lower = normalize_text(record.get("title"))
     if any(kw in title_lower for kw in COMPONENTS_ONLY_KEYWORDS):
         if not any(pos in title_lower for pos in ["system", "complete", "drone", "aircraft"]):
-            score -= 3
+            score += sw["components_only_penalty"]
             reasons.append("Title suggests components/parts only, not a complete system")
 
     if has_topic_keyword(text):
-        score += 2
+        score += sw["topic_keyword"]
         reasons.append("Drone/DFR/delivery keyword")
 
     if has_target_department(text):
-        score += 3
+        score += sw["target_department"]
         reasons.append("Target department/agency match")
 
     # 3. Payload analysis (Advanced logic)
@@ -296,35 +332,35 @@ def score_record(record: Dict[str, Any], full_description: str = "") -> Dict[str
     for match in re.finditer(r"\b(\d+(?:\.\d+)?)\s?lb(s)?\b", text):
         found_weights_kg.append(float(match.group(1)) * 0.453)
 
+    max_drone_cap = _CFG["drone_specs"]["max_payload_kg"]
     if found_weights_kg:
-        max_drone_cap = 10.5 # Giving a tiny bit of wiggle room for 23lb cases
         has_fit = any(w <= max_drone_cap for w in found_weights_kg)
         has_exceed = any(w > max_drone_cap for w in found_weights_kg)
 
         if has_fit:
             if has_exceed:
-                score += 2
-                reasons.append(f"Payload match found (<=10kg), but also found requirements exceeding capacity (Penalty applied)")
+                score += sw["payload_partial_match"]
+                reasons.append(f"Payload match found (<={max_drone_cap}kg), but also found requirements exceeding capacity (Penalty applied)")
             else:
-                score += 5
-                reasons.append("Ideal Payload match (<=10kg)")
+                score += sw["ideal_payload_match"]
+                reasons.append(f"Ideal Payload match (<={max_drone_cap}kg)")
         # If ONLY exceed, we don't add points (handled by default score=0)
     elif "heavy lift" in text or "cargo" in text:
         # Fallback for generic terms without numbers
-        score += 2
+        score += sw["generic_heavy_lift"]
         reasons.append("Generic Heavy Lift/Cargo keyword match")
 
     if contains_any_regex(text, WINCH_PATTERNS) or "delivery box" in text:
-        score += 3
+        score += sw["winch_delivery"]
         reasons.append("Winch / delivery system requirement")
 
     parachute = contains_any_regex(text, PARACHUTE_PATTERNS)
     if parachute:
-        score += 4
+        score += sw["parachute"]
         reasons.append("Parachute requirement (High Match cue)")
 
     if contains_any_regex(text, COMMS_PATTERNS):
-        score += 2
+        score += sw["comms"]
         reasons.append("LTE / 900MHz / C2 communication cue")
 
     # Brand-name and 'or equal' analysis
@@ -332,25 +368,23 @@ def score_record(record: Dict[str, Any], full_description: str = "") -> Dict[str
     has_or_equal = contains_any_regex(text, OR_EQUAL_PATTERNS)
     if has_brand:
         if has_or_equal:
-            # Improvement #5: "or equal" bonus — we CAN compete
-            score += 2
+            score += sw["brand_or_equal"]
             reasons.append("Brand name mentioned with 'or equal' — open to alternatives")
         else:
-            # Specific brand only — we likely can't compete
-            score -= 3
+            score += sw["brand_exclusive_penalty"]
             reasons.append("Specific brand required (no 'or equal') — penalty applied")
 
     # Technical Capability Matching (AIRIS 3 Strengths)
     if "vtol" in text or "vertical take-off" in text:
-        score += 3
+        score += sw["vtol"]
         reasons.append("VTOL requirement match")
     
     if any(kw in text for kw in ["bvlos", "beyond visual line of sight", "long range"]):
-        score += 2
+        score += sw["bvlos"]
         reasons.append("BVLOS / Long-range capability match")
 
     if any(kw in text for kw in ["surveillance", "reconnaissance", "rsta", "monitoring"]):
-        score += 2
+        score += sw["surveillance"]
         reasons.append("Surveillance/Reconnaissance mission match")
 
     set_aside_code = normalize_text(record.get("typeOfSetAside"))
@@ -361,18 +395,18 @@ def score_record(record: Dict[str, Any], full_description: str = "") -> Dict[str
         or "set-aside" in set_aside_desc
     )
     if small_biz:
-        score += 3
+        score += sw["small_business"]
         reasons.append("Small Business set-aside")
 
     match_level = "Low"
-    if parachute and score >= 8:
+    if parachute and score >= thresholds["high_min_score"]:
         match_level = "High"
-    elif score >= 7:
+    elif score >= thresholds["medium_min_score"]:
         match_level = "Medium"
 
     # Logic change: if it's explicitly a drone/UAV topic, we lower the bar for score/department.
     topic_match = has_topic_keyword(text)
-    likely_relevant = topic_match and (has_target_department(text) or score >= 7)
+    likely_relevant = topic_match and (has_target_department(text) or score >= thresholds["likely_relevant_min_score"])
 
     return {
         "score": score,

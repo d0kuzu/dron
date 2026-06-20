@@ -1,0 +1,166 @@
+{
+  "drone_specs": {
+    "max_payload_kg": 10.5
+  },
+  "search": {
+    "naics_codes": "336411,334511,541715,423860",
+    "procurement_types": ["p", "o", "k"],
+    "sam_search_urls": [
+      "https://api.sam.gov/opportunities/v2/search",
+      "https://api.sam.gov/prod/opportunities/v2/search"
+    ]
+  },
+  "keywords": {
+    "target_departments": [
+      "ncdot",
+      "department of transportation",
+      " dot ",
+      "usda forest service",
+      "forest service",
+      "department of interior",
+      "bureau of land management",
+      "national park service",
+      "police",
+      "fire department",
+      "public safety",
+      "first responder",
+      "dept of defense",
+      "army",
+      "navy",
+      "air force",
+      "marine corps",
+      "homeland security",
+      "dhs"
+    ],
+    "rfp_topics": [
+      "drone",
+      "uav",
+      "uas",
+      "unmanned aircraft",
+      "drone as first responder",
+      "dfr",
+      "drone delivery",
+      "last mile",
+      "payload delivery",
+      "forest",
+      "wildfire",
+      "inspection",
+      "vtol",
+      "vertical take-off",
+      "surveillance",
+      "reconnaissance",
+      "bvlos",
+      "beyond visual line of sight",
+      "long range",
+      "suas"
+    ],
+    "negative": [
+      "c-suas",
+      "counter-uas",
+      "counter uas",
+      "counter-unmanned",
+      "anti-drone",
+      "anti drone",
+      "drone shield",
+      "droneshield",
+      "defeat uas",
+      "detect and defeat",
+      "3d print",
+      "3d printer",
+      "repair parts",
+      "spare parts",
+      "replacement parts"
+    ],
+    "components_only": [
+      "components",
+      "parts",
+      "accessories",
+      "kits"
+    ]
+  },
+  "competitors": {
+    "brands": [
+      "skydio",
+      "dji",
+      "draganfly",
+      "autel",
+      "parrot",
+      "freefly",
+      "wingtra",
+      "sensfly",
+      "ebee",
+      "matrice",
+      "mavic",
+      "phantom",
+      "inspire",
+      "agras"
+    ],
+    "or_equal_patterns": [
+      "\\bor equal\\b",
+      "\\bor equivalent\\b",
+      "\\bor similar\\b"
+    ]
+  },
+  "patterns": {
+    "payload": [
+      "\\b\\d{1,3}\\s?kg\\b",
+      "\\b\\d{1,3}\\s?lb(s)?\\b",
+      "heavy\\s?lift",
+      "delivery\\s?box",
+      "cargo\\s?capacity",
+      "payload\\s?capacity"
+    ],
+    "winch": [
+      "\\bwinch\\b",
+      "\\bgravity release\\b",
+      "\\bdrop( system)?\\b"
+    ],
+    "parachute": [
+      "\\bparachute\\b",
+      "\\brecovery system\\b"
+    ],
+    "comms": [
+      "\\blte\\b",
+      "\\b900\\s?mhz\\b",
+      "\\bcommand and control\\b",
+      "\\bc2\\b"
+    ]
+  },
+  "scoring_weights": {
+    "topic_keyword": 2,
+    "target_department": 3,
+    "ideal_payload_match": 5,
+    "payload_partial_match": 2,
+    "generic_heavy_lift": 2,
+    "winch_delivery": 3,
+    "parachute": 4,
+    "comms": 2,
+    "brand_or_equal": 2,
+    "brand_exclusive_penalty": -3,
+    "vtol": 3,
+    "bvlos": 2,
+    "surveillance": 2,
+    "small_business": 3,
+    "negative_keyword_penalty": -5,
+    "components_only_penalty": -3
+  },
+  "small_biz_codes": [
+    "SBA",
+    "SBP",
+    "8A",
+    "8AN",
+    "HZC",
+    "HZS",
+    "SDVOSBC",
+    "SDVOSBS",
+    "WOSB",
+    "WOSBSS",
+    "EDWOSB",
+    "EDWOSBSS"
+  ],
+  "match_thresholds": {
+    "high_min_score": 8,
+    "medium_min_score": 7,
+    "likely_relevant_min_score": 7
+  }
+}
