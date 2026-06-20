@@ -1722,6 +1722,16 @@ document.addEventListener('DOMContentLoaded', () => {
             if (extracted.comms && extracted.comms.length > 0) {
                 updates.push(`Связь: ${extracted.comms.join(', ')}`);
             }
+            
+            if (extracted.new_topics && extracted.new_topics.length > 0) {
+                const patTopicsBody = document.getElementById('section-body-keywords');
+                if (patTopicsBody && patTopicsBody._rt) {
+                    extracted.new_topics.forEach(t => {
+                        if (!patTopicsBody._rt.includes(t)) patTopicsBody._rt.push(t);
+                    });
+                }
+                updates.push(`Новые ключевые слова: ${extracted.new_topics.join(', ')}`);
+            }
 
             if (updates.length > 0) {
                 // To cleanly update UI if we modified currentConfig objects, we re-render
@@ -1737,6 +1747,13 @@ document.addEventListener('DOMContentLoaded', () => {
                 
                 // apply extracted
                 if (extracted.max_payload_kg) currentConfig.drone_specs.max_payload_kg = extracted.max_payload_kg;
+                if (extracted.new_topics) {
+                    extracted.new_topics.forEach(t => {
+                        if (!currentConfig.keywords.rfp_topics.includes(t)) {
+                            currentConfig.keywords.rfp_topics.push(t);
+                        }
+                    });
+                }
                 
                 renderSettings();
                 markUnsaved();

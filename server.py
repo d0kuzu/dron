@@ -98,6 +98,7 @@ async def parse_docx(file: UploadFile = File(...)):
         extracted = {}
         found_weights = []
         found_comms = []
+        new_topics = set()
         has_winch = False
         has_parachute = False
         
@@ -121,6 +122,12 @@ async def parse_docx(file: UploadFile = File(...)):
                         has_winch = True
                     elif "parachute" in key or "recovery system" in key:
                         has_parachute = True
+                    elif "camera" in key or "camera" in val:
+                        new_topics.update(["camera", "surveillance", "reconnaissance"])
+                    elif "remote id" in key:
+                        new_topics.add("remote id")
+                    elif "rotors" in val or "vtol" in val:
+                        new_topics.update(["vtol", "vertical take-off"])
                     
         # Extract keywords directly from the text as fallback
         for para in doc.paragraphs:
@@ -131,6 +138,10 @@ async def parse_docx(file: UploadFile = File(...)):
                 has_parachute = True
             if "lte" in text: found_comms.append("lte")
             if "900mhz" in text or "900 mhz" in text: found_comms.append("900mhz")
+            if "beyond line of sight" in text or "bvlos" in text:
+                new_topics.update(["bvlos", "beyond visual line of sight", "long range"])
+            if "isr" in text or "surveillance" in text:
+                new_topics.update(["surveillance", "reconnaissance", "isr"])
         
         if found_weights:
             extracted["max_payload_kg"] = round(max(found_weights), 1)
@@ -143,6 +154,9 @@ async def parse_docx(file: UploadFile = File(...)):
             
         if has_parachute:
             extracted["has_parachute"] = True
+            
+        if new_topics:
+            extracted["new_topics"] = list(new_topics)
             
         return {"status": "ok", "extracted": extracted}
     except Exception as e:
@@ -182,6 +196,7 @@ async def test_parse_local_docx():
         extracted = {}
         found_weights = []
         found_comms = []
+        new_topics = set()
         has_winch = False
         has_parachute = False
         
@@ -205,6 +220,12 @@ async def test_parse_local_docx():
                         has_winch = True
                     elif "parachute" in key or "recovery system" in key:
                         has_parachute = True
+                    elif "camera" in key or "camera" in val:
+                        new_topics.update(["camera", "surveillance", "reconnaissance"])
+                    elif "remote id" in key:
+                        new_topics.add("remote id")
+                    elif "rotors" in val or "vtol" in val:
+                        new_topics.update(["vtol", "vertical take-off"])
                     
         # Extract keywords directly from the text as fallback
         for para in doc.paragraphs:
@@ -215,6 +236,10 @@ async def test_parse_local_docx():
                 has_parachute = True
             if "lte" in text: found_comms.append("lte")
             if "900mhz" in text or "900 mhz" in text: found_comms.append("900mhz")
+            if "beyond line of sight" in text or "bvlos" in text:
+                new_topics.update(["bvlos", "beyond visual line of sight", "long range"])
+            if "isr" in text or "surveillance" in text:
+                new_topics.update(["surveillance", "reconnaissance", "isr"])
         
         if found_weights:
             extracted["max_payload_kg"] = round(max(found_weights), 1)
@@ -227,6 +252,9 @@ async def test_parse_local_docx():
             
         if has_parachute:
             extracted["has_parachute"] = True
+            
+        if new_topics:
+            extracted["new_topics"] = list(new_topics)
             
         return {
             "status": "ok", 
