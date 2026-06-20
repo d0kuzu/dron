@@ -2,7 +2,10 @@ import os
 import subprocess
 import json
 import copy
-from fastapi import FastAPI, HTTPException
+import re
+import io
+import docx
+from fastapi import FastAPI, HTTPException, UploadFile, File
 from fastapi.responses import JSONResponse, FileResponse
 from fastapi.staticfiles import StaticFiles
 from pydantic import BaseModel
@@ -82,6 +85,69 @@ async def save_config(payload: dict):
     except Exception as e:
         raise HTTPException(status_code=500, detail=str(e))
 
+@app.post("/parse-docx")
+async def parse_docx(file: UploadFile = File(...)):
+    """Parse an uploaded DOCX file for drone characteristics."""
+    if not file.filename.endswith('.docx'):
+        raise HTTPException(status_code=400, detail="Только файлы .docx поддерживаются.")
+    
+    try:
+        content = await file.read()
+        doc = docx.Document(io.BytesIO(content))
+        
+        extracted = {}
+        found_weights = []
+        found_comms = []
+        has_winch = False
+        has_parachute = False
+        
+        # Parse all tables in the document
+        for table in doc.tables:
+            for row in table.rows:
+                if len(row.cells) >= 2:
+                    key = row.cells[0].text.strip().lower()
+                    val = row.cells[1].text.strip().lower()
+                    
+                    if "payload" in key and "max" in key:
+                        match = re.search(r'(\d+(?:\.\d+)?)\s*kg', val)
+                        if match: found_weights.append(float(match.group(1)))
+                    elif "delivery weight" in key:
+                        match = re.search(r'(\d+(?:\.\d+)?)\s*lbs', val)
+                        if match: found_weights.append(float(match.group(1)) * 0.453)
+                    elif "connectivity" in key:
+                        if "lte" in val: found_comms.append("lte")
+                        if "900mhz" in val or "900 mhz" in val: found_comms.append("900mhz")
+                    elif "payload release" in key or "winch" in key:
+                        has_winch = True
+                    elif "parachute" in key or "recovery system" in key:
+                        has_parachute = True
+                    
+        # Extract keywords directly from the text as fallback
+        for para in doc.paragraphs:
+            text = para.text.lower()
+            if "winch" in text or "gravity release" in text:
+                has_winch = True
+            if "parachute" in text or "recovery system" in text:
+                has_parachute = True
+            if "lte" in text: found_comms.append("lte")
+            if "900mhz" in text or "900 mhz" in text: found_comms.append("900mhz")
+        
+        if found_weights:
+            extracted["max_payload_kg"] = round(max(found_weights), 1)
+        
+        if found_comms:
+            extracted["comms"] = list(set(found_comms))
+            
+        if has_winch:
+            extracted["has_winch"] = True
+            
+        if has_parachute:
+            extracted["has_parachute"] = True
+            
+        return {"status": "ok", "extracted": extracted}
+    except Exception as e:
+        raise HTTPException(status_code=500, detail=f"Ошибка парсинга файла: {str(e)}")
+
 @app.post("/drone-refresh")
 async def refresh_data():
     api_key = os.getenv("SAM_API_KEY")
@@ -102,3 +168,70 @@ async def refresh_data():
         return await get_data()
     except Exception as e:
         raise HTTPException(status_code=500, detail=str(e))
+
+@app.get("/test-parse-local-docx")
+async def test_parse_local_docx():
+    """Test endpoint that reads the local characteristics.docx and returns extracted JSON data."""
+    file_path = "characteristics.docx"
+    if not os.path.exists(file_path):
+        raise HTTPException(status_code=404, detail="Файл characteristics.docx не найден в корне проекта.")
+        
+    try:
+        doc = docx.Document(file_path)
+        
+        extracted = {}
+        found_weights = []
+        found_comms = []
+        has_winch = False
+        has_parachute = False
+        
+        # Parse all tables in the document
+        for table in doc.tables:
+            for row in table.rows:
+                if len(row.cells) >= 2:
+                    key = row.cells[0].text.strip().lower()
+                    val = row.cells[1].text.strip().lower()
+                    
+                    if "payload" in key and "max" in key:
+                        match = re.search(r'(\d+(?:\.\d+)?)\s*kg', val)
+                        if match: found_weights.append(float(match.group(1)))
+                    elif "delivery weight" in key:
+                        match = re.search(r'(\d+(?:\.\d+)?)\s*lbs', val)
+                        if match: found_weights.append(float(match.group(1)) * 0.453)
+                    elif "connectivity" in key:
+                        if "lte" in val: found_comms.append("lte")
+                        if "900mhz" in val or "900 mhz" in val: found_comms.append("900mhz")
+                    elif "payload release" in key or "winch" in key:
+                        has_winch = True
+                    elif "parachute" in key or "recovery system" in key:
+                        has_parachute = True
+                    
+        # Extract keywords directly from the text as fallback
+        for para in doc.paragraphs:
+            text = para.text.lower()
+            if "winch" in text or "gravity release" in text:
+                has_winch = True
+            if "parachute" in text or "recovery system" in text:
+                has_parachute = True
+            if "lte" in text: found_comms.append("lte")
+            if "900mhz" in text or "900 mhz" in text: found_comms.append("900mhz")
+        
+        if found_weights:
+            extracted["max_payload_kg"] = round(max(found_weights), 1)
+        
+        if found_comms:
+            extracted["comms"] = list(set(found_comms))
+            
+        if has_winch:
+            extracted["has_winch"] = True
+            
+        if has_parachute:
+            extracted["has_parachute"] = True
+            
+        return {
+            "status": "ok", 
+            "message": "Это тестовый вывод (ничего не сохранено)",
+            "extracted": extracted
+        }
+    except Exception as e:
+        raise HTTPException(status_code=500, detail=f"Ошибка парсинга файла: {str(e)}")

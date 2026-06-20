@@ -873,6 +873,16 @@ button {
             </div>
 
             <div id="settings-panel" class="tab-content">
+                <div class="settings-actions" style="justify-content: flex-start; border-bottom: 1px solid var(--panel-border); padding-bottom: 1.5rem; margin-bottom: 1.5rem;">
+                    <div style="display: flex; gap: 1rem; align-items: center;">
+                        <input type="file" id="docx-upload" accept=".docx" class="hidden">
+                        <button id="upload-docx-btn" class="primary-btn" style="background-color: #8b5cf6;">
+                            <span class="upload-text">📄 Автозаполнение из DOCX</span>
+                            <div class="loader hidden"></div>
+                        </button>
+                        <span style="font-size: 0.85rem; color: var(--text-secondary);">Выберите документ для извлечения характеристик</span>
+                    </div>
+                </div>
                 <div class="settings-container" id="settings-container">
                     <!-- Settings sections will be injected here -->
                 </div>
@@ -909,6 +919,9 @@ document.addEventListener('DOMContentLoaded', () => {
     const settingsContainer = document.getElementById('settings-container');
     const saveConfigBtn = document.getElementById('save-config-btn');
     const resetConfigBtn = document.getElementById('reset-config-btn');
+    
+    const docxUpload = document.getElementById('docx-upload');
+    const uploadDocxBtn = document.getElementById('upload-docx-btn');
 
     let currentConfig = null;
     let defaultConfig = null;
@@ -1647,6 +1660,100 @@ document.addEventListener('DOMContentLoaded', () => {
         renderSettings();
         markUnsaved();
         showToast('Настройки сброшены. Нажмите "Сохранить" для применения.', 'info');
+    });
+
+    // ===================== DOCX UPLOAD =====================
+    uploadDocxBtn.addEventListener('click', () => {
+        docxUpload.click();
+    });
+
+    docxUpload.addEventListener('change', async (e) => {
+        const file = e.target.files[0];
+        if (!file) return;
+
+        const uploadText = uploadDocxBtn.querySelector('.upload-text');
+        const uploadLoader = uploadDocxBtn.querySelector('.loader');
+        
+        uploadDocxBtn.disabled = true;
+        uploadText.textContent = 'Обработка...';
+        uploadLoader.classList.remove('hidden');
+
+        const formData = new FormData();
+        formData.append('file', file);
+
+        try {
+            const base = window.location.pathname.endsWith('/') ? window.location.pathname : window.location.pathname + '/';
+            const res = await fetch(base + 'parse-docx', {
+                method: 'POST',
+                body: formData
+            });
+
+            if (!res.ok) {
+                const err = await res.json();
+                throw new Error(err.detail || 'Ошибка парсинга DOCX');
+            }
+
+            const data = await res.json();
+            const extracted = data.extracted;
+            
+            let updates = [];
+
+            if (extracted.max_payload_kg) {
+                document.getElementById('cfg-max-payload').value = extracted.max_payload_kg;
+                updates.push(`Грузоподъёмность: ${extracted.max_payload_kg} кг`);
+            }
+
+            if (extracted.has_winch) {
+                // Check if winch patterns have winch, if not we add it just as an example
+                // But realistically, we just ensure it's in the pattern list. 
+                const patWinchBody = document.getElementById('section-body-patterns');
+                if (patWinchBody && patWinchBody._wn && !patWinchBody._wn.some(p => p.includes('winch'))) {
+                    patWinchBody._wn.push('\\bwinch\\b');
+                    // re-render the tag input? Best to just re-render settings after updating currentConfig
+                    currentConfig.patterns.winch.push('\\bwinch\\b');
+                }
+                updates.push('Наличие лебёдки (Winch)');
+            }
+
+            if (extracted.has_parachute) {
+                updates.push('Наличие парашюта');
+            }
+
+            if (extracted.comms && extracted.comms.length > 0) {
+                updates.push(`Связь: ${extracted.comms.join(', ')}`);
+            }
+
+            if (updates.length > 0) {
+                // To cleanly update UI if we modified currentConfig objects, we re-render
+                // But first we collect current UI state into currentConfig so we don't lose other unsaved changes
+                currentConfig.drone_specs = collectDroneSpecs();
+                currentConfig.search = collectSearch();
+                currentConfig.keywords = collectKeywords();
+                currentConfig.competitors = collectCompetitors();
+                currentConfig.patterns = collectPatterns();
+                currentConfig.scoring_weights = collectWeights();
+                currentConfig.small_biz_codes = collectSmallBiz();
+                currentConfig.match_thresholds = collectThresholds();
+                
+                // apply extracted
+                if (extracted.max_payload_kg) currentConfig.drone_specs.max_payload_kg = extracted.max_payload_kg;
+                
+                renderSettings();
+                markUnsaved();
+                showToast(`Извлечено из DOCX: ${updates.join('; ')}. Не забудьте сохранить!`, 'success');
+            } else {
+                showToast('В документе не найдено поддерживаемых характеристик дрона.', 'warning');
+            }
+
+        } catch (err) {
+            console.error(err);
+            showToast(err.message, 'error');
+        } finally {
+            uploadDocxBtn.disabled = false;
+            uploadText.textContent = '📄 Автозаполнение из DOCX';
+            uploadLoader.classList.add('hidden');
+            docxUpload.value = ''; // Reset input
+        }
     });
 
     // ===================== INIT =====================
